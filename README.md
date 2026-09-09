@@ -1,36 +1,36 @@
-# Coding Interview Practice
+# Coding Interview 練習紀錄
 
-This repository tracks my coding interview preparation for new-grad AI / Computer Vision / Software Engineering roles.
+這個 Repository 用來記錄我準備新鮮人 AI / Computer Vision / Software Engineering 職缺的 Coding Interview 練習進度。
 
-## Goal
+## 訓練目標
 
-Build strong fundamentals and pattern recognition so that I can:
+建立扎實的程式基礎與常見題型的辨識能力，目標是：
 
-- Solve common Easy problems independently within about 15–20 minutes.
-- Solve common Medium problems within about 30–40 minutes.
-- Explain my reasoning, complexity, and trade-offs clearly during interviews.
-- Review weak patterns until previously difficult problems become routine.
+- 常見 Easy 題可以在約 15～20 分鐘內獨立完成。
+- 常見 Medium 題可以在約 30～40 分鐘內想出方法並完成。
+- 面試時可以清楚說明自己的思路、時間／空間複雜度與不同解法的取捨。
+- 定期重做不熟的題目，直到原本困難的題型變成熟悉的 Pattern。
 
-## Result Scale
+## 評分方式
 
-| Grade | Meaning |
+| 等級 | 定義 |
 |---|---|
-| A | Solved independently without algorithm hints |
-| B | Solved after a small hint or minor API/syntax lookup |
-| C | Needed to see the main solution idea before completing it |
-| D | Still not fully understood after reviewing the solution |
+| A | 完全自己想出演算法並完成，沒有看演算法提示 |
+| B | 看了小提示，或只查了 API / 語法後完成 |
+| C | 需要先看到主要解題思路，才能完成 |
+| D | 看過解法後仍然沒有完全理解 |
 
-Syntax/API lookups do not automatically count as algorithm hints. For example, checking how `list.append()` / `list.pop()` works in Python is allowed if the algorithmic idea was independently identified.
+查詢程式語法或 API **不等於看演算法提示**。例如自己已經想到要使用 Stack，只是不知道 Python 的 `append()` / `pop()` 怎麼使用，可以查詢語法。
 
-## Training Loop
+## 每日訓練流程
 
-1. Attempt the problem independently.
-2. If stuck, avoid searching for the full solution immediately.
-3. Record where I got stuck and the key idea after solving.
-4. Revisit weak problems after a few days.
-5. Practice explaining the approach out loud as if in an interview.
+1. 先自己嘗試解題。
+2. 卡住時不要立刻搜尋完整 Solution。
+3. 做完後記錄「卡在哪裡」以及「這題真正的關鍵想法」。
+4. 幾天後重新做不熟的題目。
+5. 練習把解題思路說出口，模擬真正的面試情境。
 
-## Files
+## 檔案
 
-- [`progress.md`](progress.md): daily problem log and retry schedule.
-- [`notes/patterns.md`](notes/patterns.md): reusable algorithm patterns and lessons learned.
+- [`progress.md`](progress.md)：每天做過的題目、結果、時間與複習日期。
+- [`notes/patterns.md`](notes/patterns.md)：整理可以重複使用的演算法 Pattern 與學到的觀念。
