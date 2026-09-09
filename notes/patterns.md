@@ -1,45 +1,55 @@
-# Algorithm Pattern Notes
+# 演算法 Pattern 筆記
 
-This file records reusable ideas rather than full problem solutions.
+這裡不是用來抄每一題的完整解答，而是記錄之後遇到其他題目也可以重複使用的解題觀念。
 
 ## Hash Map
 
-### Recognition cue
+### 什麼時候可能要想到它？
 
-When repeatedly asking whether a value has already appeared, or repeatedly searching for a complementary value, consider whether a hash map can replace a nested search.
+當題目一直需要問：
 
-### Current learning target
+- 「這個值之前有沒有出現過？」
+- 「我要找的另一個值存不存在？」
+- 「我是不是一直重複搜尋同一批資料？」
 
-**Two Sum:** the first accepted solution used two loops, which is O(n²). Revisit the problem and determine how storing previously seen values can reduce repeated searching.
+可以想想看是否能用 Hash Map 記住已經看過的資訊，避免重複搜尋。
+
+### 目前的學習目標
+
+**Two Sum：** 第一次 Accepted 使用兩層迴圈，因此時間複雜度是 O(n²)。下一步要思考：如果把已經看過的數字存起來，是否可以不用每次都重新往後搜尋？
 
 ---
 
 ## Stack
 
-### Recognition cue
+### 什麼時候可能要想到它？
 
-A stack is useful when the most recently seen unfinished item must be handled first (LIFO: Last In, First Out).
+當問題具有「最後放進去的東西，要最先處理」的特性時，可以考慮 Stack。
 
-### Python basics
+也就是：
+
+**LIFO（Last In, First Out，後進先出）**
+
+### Python 基本用法
 
 ```python
 stack = []
-stack.append(x)  # push
-x = stack.pop()  # pop
+stack.append(x)  # push：放進 Stack
+x = stack.pop()  # pop：取出最後放進去的元素
 ```
 
-### Learned from
+### 從哪一題學到？
 
-**Valid Parentheses:** independently recognized that opening brackets should be stored and matched when closing brackets appear. Python stack syntax was looked up during the attempt.
+**Valid Parentheses：** 自己判斷出左括號需要先存起來，遇到右括號時再和最近的左括號配對。解題時只查詢了 Python Stack 的語法。
 
 ---
 
 ## One Pass / Running Minimum
 
-### Recognition cue
+### 什麼時候可能要想到它？
 
-When the answer for the current position depends on the best value seen earlier, consider maintaining that value while scanning once instead of comparing every pair.
+如果目前位置的答案只依賴「前面看過的最佳值」，可以思考是否只需要一邊掃描、一邊維護那個最佳值，而不是把所有組合都比較一次。
 
-### Learned from
+### 從哪一題學到？
 
-**Best Time to Buy and Sell Stock:** maintain the cheapest buy price/index seen so far and compare the current selling price against it. This produces an O(n) solution.
+**Best Time to Buy and Sell Stock：** 一路記住目前為止最低的買入價格／位置，再用現在的價格計算可以得到的 profit，並持續更新最大 profit。這樣可以用 O(n) 完成。
