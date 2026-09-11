@@ -30,8 +30,25 @@
 
 Contains Duplicate 也自然沿用了相同概念；下一步要區分 Dictionary 與 Set 的使用情境。Valid Palindrome 則成功第一次實際使用 Two Pointers。
 
+---
+
+## 2026-09-11 — Day 3
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 | 重做日期 |
+|---|---|---|---|---:|---|---|
+| Valid Anagram | Hash Map / Frequency Counting | Easy | A | 12:53 | 使用 dictionary 計算第一個字串各字元出現次數，再用第二個字串逐一扣除；計數歸零就刪除 key，最後確認 dictionary 為空。查詢 `python unordered_map`、`dict del`、`dict empty`，屬於資料結構／語法查詢，沒有查題目解法。 | 2026-09-18 |
+| Move Zeroes | Queue-based in-place tracking | Easy | B | 18:25 | 自己設計出以 deque 記錄目前 zero index 的方法，遇到 non-zero 時搬到最早的 zero 位置，再把新的 zero 位置加入 queue，成功 Accepted。查詢 Stack / Queue。解法可行且時間約 O(n)，但額外 Queue 最壞需要 O(n) 空間，尚未達到這題想訓練的 O(1) space Two Pointers 解法，因此安排較早重做。 | 2026-09-13 |
+| Two Sum II - Input Array Is Sorted | Two Pointers | Medium | A | 12:40 | 根據「已排序」與題目前提供的左右 pointer 提示，從兩端開始：sum 太大就右 pointer 左移，太小就左 pointer 右移，相等則回傳 1-based indices。獨立完成程式並 Accepted，O(n) time / O(1) extra space。 | 2026-09-19 |
+
+### Day 3 觀察
+
+Hash Map / Counting 已開始形成直覺，Valid Anagram 能自行設計 frequency counter。Two Sum II 也能把 sorted array 與左右 Two Pointers 的移動方向連結起來。
+
+今天最值得複習的是 Move Zeroes：目前的 Queue 解法不是錯誤，而且能 Accepted，但它額外保存所有等待填補的 zero index。下一次重做時，目標是不使用 deque / list / 額外陣列，只用兩個整數 pointer，在 O(n) time、O(1) extra space 下完成。
+
 ### 接下來要加強
 
-- Hash Map / Set：看到「是否出現過、是否重複、查找 complement」時開始主動想到。
-- Two Pointers：不只會寫左右 pointer，也要練習在原字串上跳過無效字元，避免一定要先建立清理後的新字串。
-- 每題 Accepted 後練習口頭說明 Time Complexity 與 Space Complexity。
+- Frequency Counting：熟悉「增加計數 → 減少計數 → 判斷是否一致」的模式。
+- Two Pointers：區分「左右夾逼」與「同方向 fast/slow pointer」兩種常見形式。
+- Move Zeroes 在 9/13 重做時，不使用 Queue，嘗試 fast/slow pointer。
+- 每題能寫出來後，仍要練習口頭說出 Time Complexity 與 Space Complexity。
