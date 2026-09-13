@@ -44,11 +44,35 @@
 
 最重要的進展是 Remove Duplicates from Sorted Array：在不知道題型名稱的情況下，自行寫出典型 fast/slow pointer 結構。這表示同方向 Two Pointers 已開始從「看過提示才會」轉成可以自行推導。
 
-Valid Parentheses 則確認 Stack 概念已能跨到 C++ 使用；Best Time to Buy and Sell Stock 也能用 C 重新完成，表示 Running Minimum 的核心概念已有保留。
+---
+
+## 2026-09-13 — Day 5
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 | 重做日期 |
+|---|---|---|---|---:|---|---|
+| Search Insert Position | Binary Search | Easy | A | 11:59 | 沒有事前 Topic 提示，自己使用 `i`、`j`、`m` 縮小搜尋範圍，找到 target 就回傳 `m`，找不到時回傳插入位置 `i`。成功 Accepted，核心為 O(log n) 搜尋。 | 2026-09-21 |
+| Reverse Linked List | Linked List Pointer Reversal | Easy | B | 15:29 | 成功使用 `prev`、`cur`、`nxt` 逐步反轉 `next` 指向並 Accepted。不過有查「需要幾個 ptr」，這已經屬於演算法方向提示，不單純是語法查詢，因此不算完全獨立辨認。之後要在不查 pointer 數量的情況下重做一次。 | 2026-09-17 |
+| Maximum Average Subarray I | Sliding Window | Easy | A | 4:45 | 沒有事前 Topic 提示，先算前 `k` 個元素的總和，之後每往右移一格就減掉離開視窗的元素、加上新元素，並更新最大平均值。成功 Accepted，O(n) time。這是第一次在無提示下自行做出典型 Sliding Window。 | 2026-09-22 |
+
+### 複習題（不計入每日 3 題新題）
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 | 下次複習 |
+|---|---|---|---|---:|---|---|
+| Move Zeroes（第二次） | In-place compaction / Fast-Slow concept | Easy | A（複習） | 17:53 | 這次不用 deque，改成先把 non-zero 依序寫到前面，再把剩餘位置補 0。成功做到 O(n) time / O(1) extra space，代表已修正 Day 3 的空間問題。 | 2026-09-24 |
+
+### Day 5 觀察
+
+今天的新題比前幾天更能顯示 Pattern 遷移能力。Search Insert Position 能自行做出 binary search；Maximum Average Subarray I 更是在 4:45 內自己做出 sliding window，代表你不只是記住既有 Pattern，也開始能從題目條件自行設計高效率的一次掃描方法。
+
+Reverse Linked List 目前要保守看待：程式本身是正確的，但「查需要幾個 pointer」已經透露了核心結構，所以先記 B，之後安排無提示重做。
+
+Move Zeroes 的第二次解法則是很好的複習成果：從 Day 3 的 O(n) 額外 queue，進步到 O(1) extra space，表示前一天在 Remove Duplicates 學到的 in-place index 操作有成功遷移。
 
 ### 接下來要加強
 
-- 繼續維持「出題時不提供 Topic / Pattern / Hint」的規則。
-- 9/13 重做 Move Zeroes，仍不事先提示解法；目標是確認今天學到的 index 操作能否遷移到另一題。
-- 之後用新的 sorted-array 題目重新測試 Two Sum II 所屬的解題能力，不沿用 Day 3 的提示。
-- 開始逐步加入 Binary Search、Linked List 等新題型，同時保留 spaced review。
+- 出題時繼續不提供 Topic / Pattern。
+- 每天至少 3 題全新題目，複習題另外計算。
+- Reverse Linked List 安排短期無提示重做，確認 Linked List pointer 操作是否真正內化。
+- Binary Search 與 Sliding Window 都已出現第一次無提示成功，接下來需要用不同題型驗證是否能重複辨認。
