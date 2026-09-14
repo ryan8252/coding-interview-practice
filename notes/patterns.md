@@ -53,3 +53,90 @@ x = stack.pop()  # pop：取出最後放進去的元素
 ### 從哪一題學到？
 
 **Best Time to Buy and Sell Stock：** 一路記住目前為止最低的買入價格／位置，再用現在的價格計算可以得到的 profit，並持續更新最大 profit。這樣可以用 O(n) 完成。
+
+---
+
+## Linked List 基礎
+
+### 最重要的 traversal 骨架
+
+```python
+cur = head
+
+while cur is not None:
+    # 使用 cur.val
+    cur = cur.next
+```
+
+目前要先熟悉：
+
+- `node.val`：目前節點儲存的值
+- `node.next`：下一個節點
+- `None`：Linked List 結尾
+- 每一輪如果要往下走，必須做 `cur = cur.next`
+
+如果忘記更新 pointer，while loop 會一直停在同一個 node。
+
+### ListNode 的基本概念
+
+```python
+class ListNode:
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+```
+
+目前不要求死背 Python class 語法，但要理解建立一個 node 時會保存 value，並透過 `next` 指向下一個 node。
+
+---
+
+## Linked List Cycle
+
+### 方法 1：Set 記錄看過的 node
+
+重點：Set 要存 **node 本身**，不是 `node.val`。
+
+即使兩個 node 的 value 相同，它們仍然是不同 node。
+
+```python
+seen = set()
+cur = head
+
+while cur is not None:
+    if cur in seen:
+        return True
+    seen.add(cur)
+    cur = cur.next
+
+return False
+```
+
+- Time: O(n)
+- Space: O(n)
+
+### 方法 2：Floyd Slow / Fast Pointer
+
+```python
+slow = head
+fast = head
+
+while fast is not None and fast.next is not None:
+    slow = slow.next
+    fast = fast.next.next
+
+    if slow == fast:
+        return True
+
+return False
+```
+
+直覺：slow 每次走 1 步，fast 每次走 2 步。有 cycle 時兩者進入環後，fast 最終會追上 slow；沒有 cycle 時 fast 會先碰到 `None`。
+
+- Time: O(n)
+- Space: O(1)
+
+### Constraint-based workaround
+
+如果題目明確保證最多只有固定數量的 node，也可以利用這個上限：走超過最大可能 node 數仍然沒有遇到 `None`，依 pigeonhole principle 可以推論存在 cycle。
+
+這個方法在特定 constraint 下是合法的，但不夠泛用；如果 Linked List 長度未知，就不能依賴固定 counter。
