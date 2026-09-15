@@ -88,6 +88,34 @@ class ListNode:
 
 目前不要求死背 Python class 語法，但要理解建立一個 node 時會保存 value，並透過 `next` 指向下一個 node。
 
+### Dummy Node / Tail
+
+當要建立或重新串接一條 Linked List 時，常可以先建立假的頭節點：
+
+```python
+dummy = ListNode()
+tail = dummy
+```
+
+之後每次只要：
+
+```python
+tail.next = 某個node
+tail = tail.next
+```
+
+就不用特別處理「第一個真正節點」。
+
+最後：
+
+```python
+return dummy.next
+```
+
+因為 `dummy` 是假的頭，`dummy.next` 才是真正答案的第一個 node。
+
+**Merge Two Sorted Lists** 是目前第一次正式遇到這個技巧。
+
 ---
 
 ## Linked List Cycle
@@ -140,3 +168,32 @@ return False
 如果題目明確保證最多只有固定數量的 node，也可以利用這個上限：走超過最大可能 node 數仍然沒有遇到 `None`，依 pigeonhole principle 可以推論存在 cycle。
 
 這個方法在特定 constraint 下是合法的，但不夠泛用；如果 Linked List 長度未知，就不能依賴固定 counter。
+
+---
+
+## 利用輸入陣列本身做標記
+
+有些題目限制值域剛好可以對應到 index，例如：
+
+- 長度是 `n`
+- 每個值都在 `1 ~ n`
+
+這時數字 `x` 可以對應到 `index = x - 1`。
+
+如果題目又允許修改輸入，就可以利用陣列本身留下「是否出現過」的記號，避免另外開 O(n) 的 frequency array。
+
+**Find All Numbers Disappeared in an Array** 的做法：利用正負號標記。
+
+```python
+for x in nums:
+    idx = abs(x) - 1
+    if nums[idx] > 0:
+        nums[idx] *= -1
+```
+
+第二次掃描仍為正數的位置 `i`，表示數字 `i+1` 沒出現。
+
+需要注意：
+
+- 因為陣列會被修改，所以讀原本值時要 `abs(x)`。
+- 重複數字不能無條件乘 `-1`，否則第二次會把負數翻回正數。
