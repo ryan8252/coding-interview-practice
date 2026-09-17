@@ -8,7 +8,7 @@
 - 複習題不計入每天 3 題的新題額度。
 - 出題時只給：題號、題名、難度。
 - **不要事前告訴 Topic / Pattern / 解法方向。**
-- 可以查 Python / C / C++ 語法、API、資料結構怎麼使用。
+- 可以查 Python / C / C++ / Java 語法、API、資料結構怎麼使用。
 - 不可以直接搜尋題目 solution 或「這題要用什麼演算法」。
 - 卡住約 10～20 分鐘後，使用者會主動要求 `Hint 1`；提示要逐層給，不要一次透露核心答案。
 - 每題完成後，根據是否拿提示、查了什麼、程式碼品質與時間，記錄 A/B/C/D。
@@ -28,34 +28,35 @@
 - Array 基本操作
 - Hash Map / Frequency Counting
 - Stack
-- Binary Search（已出現無提示成功）
-- Sliding Window（已出現無提示成功）
-- Two Pointers / in-place array 操作（已有數次無提示成功）
 - Running Minimum / One Pass
+- Two Pointers / in-place array 操作（已有數次無提示成功）
+- Binary Search（已有無提示成功，但仍需要換題持續驗證）
+- Sliding Window（已有無提示成功，但仍需要換題持續驗證）
 
-目前最需要補強：
+正在建立中的能力：
 
-- **Linked List 基礎與 pointer 操作**
-  - traversal 曾忘記 `cur = cur.next`
-  - `ListNode` class 定義不熟
-  - Reverse Linked List 已能複習成功
-  - Merge Two Sorted Lists 新題仍會卡住，dummy node / tail 是剛學的新技巧
-  - Linked List Cycle 已學過 Set 與 Floyd slow/fast，但第一次自己做時利用 constraint workaround
+- **Linked List**
+  - Reverse Linked List 已能無提示複習成功
+  - Remove Linked List Elements 新題已能無提示完成
+  - Linked List Cycle 已從第一次需要 Hint / constraint workaround，進步到能用 C++ 無提示寫出 Floyd slow/fast
+  - Intersection of Two Linked Lists 已能自行想到「記錄 A 的 node，再走 B 找同一 node」；但 traversal 時仍再次漏掉 pointer 前進，需要 Hint 1
+  - Merge Two Sorted Lists 的 `dummy` + `tail` 是目前最需要再驗證是否真正內化的技巧
+- **DP / recurrence**
+  - 70 Climbing Stairs 第一次接觸 recurrence 類型就能無提示完成
+  - 目前只有一次成功，還不能視為穩定能力，之後需用不同 Easy 題驗證
+
+目前最需要注意的基本錯誤：
+
+- Linked List traversal 不要漏掉 `cur = cur.next`
+- `ListNode` 的 identity 與 `node.val` 不同；intersection / visited node 類題應比較或儲存 node 本身
 
 ## 最近重要紀錄
 
-### Day 5 — 2026-09-13
-
-- 35 Search Insert Position：A，11:59
-- 206 Reverse Linked List：B，15:29（查了需要幾個 ptr）
-- 643 Maximum Average Subarray I：A，4:45
-- 283 Move Zeroes 複習：A，17:53，已從 queue 解法進步到 O(1) extra space
-
 ### Day 6 — 2026-09-14
 
-- 704 Binary Search：完成
-- 141 Linked List Cycle：需要 Hint，最後先利用題目最多 10000 nodes 的 constraint 做 workaround；之後討論 Set 與 Floyd slow/fast
-- 977 Squares of a Sorted Array：完成
+- 704 Binary Search：B，8:44；有搜尋 implementation
+- 141 Linked List Cycle：B，18:28；拿 Hint，最後先用 node 上限 workaround，之後學 Set 與 Floyd
+- 977 Squares of a Sorted Array：A，10:44
 - Linked List traversal 基礎補強
 
 ### Day 7 — 2026-09-15
@@ -64,18 +65,42 @@
 - 448 Find All Numbers Disappeared in an Array：B，16:16。先獨立完成 O(n) extra-space 解法；O(1) space 的正負號 in-place marking 需要提示
 - 88 Merge Sorted Array：A，15:50。無提示，自己從尾端往前原地合併
 - 206 Reverse Linked List 複習：A，10:44，用 C 自己重做
-- 1213 Intersection of Three Sorted Arrays 因為 Premium 未做，已用 88 替換
+
+### Day 8 — 2026-09-16
+
+新題：
+
+- 203 Remove Linked List Elements：A，21:55，Python，無 Hint
+- 724 Find Pivot Index：A，5:39，無 Hint
+- 392 Is Subsequence：A，約 5:00，Python，忘記計時，無 Hint
+
+複習：
+
+- 1 Two Sum：A，C++，約 14 分鐘有效時間；只查 `unordered_map` / return 等語法
+- 121 Best Time to Buy and Sell Stock：A，Java，約 3 分鐘，忘記計時
+
+### Day 9 — 2026-09-17
+
+新題：
+
+- 160 Intersection of Two Linked Lists：B，19:20，Python。核心方向自己想到，但 traversal / return 邏輯拿 Hint 1 才補完整
+- 169 Majority Element：A，11:59，Python。dictionary frequency counting，無 Hint
+- 70 Climbing Stairs：A，9:39，Python。自行找到 recurrence，無 Hint
+
+複習：
+
+- 141 Linked List Cycle：A，7:56，C++。無 Hint 寫出 Floyd slow/fast，O(n) time / O(1) space
 
 ## 出題策略
 
-接下來仍以 Easy 為主，但逐步擴充題型；每天至少 3 題新題。Linked List 可以持續安排短小基礎練習或新題，但不要一次塞太多，因為目前是明顯弱區。
+接下來仍以 Easy 為主，逐步擴充題型；每天至少 3 題新題。
 
-要持續驗證：
-
-- Binary Search 是否能換題後仍無提示辨認
-- Sliding Window 是否能再次無提示辨認
-- Two Pointers 是否能在新題無提示使用
-- Linked List 的 traversal、dummy、tail、slow/fast、reverse 是否逐步內化
+- Linked List 可以持續安排短小新題或複習，但一天不要塞太多
+- 優先驗證 `dummy` / `tail` 是否能在新情境自己想到
+- traversal 類題持續注意 pointer 是否真的往後移
+- Binary Search、Sliding Window、Two Pointers 要用不同新題再次驗證 pattern recognition
+- DP / recurrence 已出現第一次無提示成功，之後安排新的 Easy 題驗證，但不要事前透露是 DP
+- 複習可以刻意換 Python / C++ / C / Java，語法可查，但演算法核心仍需自己完成
 
 ## 新對話接續方式
 
