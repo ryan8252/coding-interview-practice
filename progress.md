@@ -70,9 +70,84 @@ Reverse Linked List 目前要保守看待：程式本身是正確的，但「查
 
 Move Zeroes 的第二次解法則是很好的複習成果：從 Day 3 的 O(n) 額外 queue，進步到 O(1) extra space，表示前一天在 Remove Duplicates 學到的 in-place index 操作有成功遷移。
 
+---
+
+## 2026-09-14 — Day 6
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 704. Binary Search | Binary Search | Easy | B | 8:44 | Accepted。程式能正確縮小搜尋範圍，但當時有搜尋 `Binary search implementation`，因此不算完全獨立完成。 |
+| 141. Linked List Cycle | Linked List / Cycle Detection | Easy | B | 18:28 | 約 10 分鐘沒有方向後拿 Hint 1。最後先利用最多約 10,000 nodes 的 constraint 做 workaround，之後再學 Set 與 Floyd slow/fast。 |
+| 977. Squares of a Sorted Array | Two Pointers | Easy | A | 10:44 | 沒有提示，平方後從左右兩端比較較大值，依序放入結果。 |
+
+另外補強 Linked List traversal，曾漏掉 `cur = cur.next`，因此把 pointer 往後移列為近期需要特別注意的基本動作。
+
+---
+
+## 2026-09-15 — Day 7
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 21. Merge Two Sorted Lists | Linked List / Dummy + Tail | Easy | C | 43:22 | 前 40 分鐘卡住，之後拿到核心提示 `dummy` + `tail` 才完成。理解 `return dummy.next` 的原因。 |
+| 448. Find All Numbers Disappeared in an Array | In-place Marking | Easy | B | 16:16 | 先自己做出 O(n) extra-space 解法；要做到 O(1) extra space 時，正負號 marking 需要提示。 |
+| 88. Merge Sorted Array | Two Pointers / Backward Merge | Easy | A | 15:50 | 沒有提示，自行從尾端往前原地合併，O(m+n) time / O(1) extra space。 |
+
+### 複習題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 206. Reverse Linked List | Pointer Reversal | Easy | A（複習） | 10:44 | 使用 C 自己重做 `prev` / `cur` / `nxt`，沒有再查 pointer 數量。 |
+
+---
+
+## 2026-09-16 — Day 8
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 203. Remove Linked List Elements | Linked List | Easy | A | 21:55 | 使用 Python，沒有拿 Hint，Linked List 新題獨立成功。 |
+| 724. Find Pivot Index | Prefix Sum / Running Sum | Easy | A | 5:39 | 沒有拿 Hint，快速完成。 |
+| 392. Is Subsequence | Two Pointers | Easy | A | 約 5:00 | 使用 Python，沒有拿 Hint；忘記計時，所以時間為估計值。 |
+
+### 複習題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 1. Two Sum | Hash Map | Easy | A（複習） | 約 14:00 有效時間 | 使用 C++；畫面 24:01，但中間約 10 分鐘滑手機。只詢問 `unordered_map` / return 等 C++ 語法，核心演算法自己完成。 |
+| 121. Best Time to Buy and Sell Stock | One Pass / Running Minimum | Easy | A（複習） | 約 3:00 | 使用 Java，忘記計時；再次重現 O(n) time / O(1) space 解法。 |
+
+---
+
+## 2026-09-17 — Day 9
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 160. Intersection of Two Linked Lists | Linked List / Hash Set | Easy | B | 19:20 | 使用 Python。已自行想到記錄 A 的 node、再走 B 尋找同一 node，但 traversal 與收尾卡住；Hint 1 後補上 pointer 前進和 return 邏輯。也確認 `dict` / `set` 可以直接存 `ListNode` 物件。 |
+| 169. Majority Element | Hash Map / Frequency Counting | Easy | A | 11:59 | 使用 Python，沒有拿 Hint。dictionary 計數並在次數超過 `n/2` 時立即 return。O(n) time / O(n) space。 |
+| 70. Climbing Stairs | Dynamic Programming / Recurrence | Easy | A | 9:39 | 使用 Python，沒有拿 Hint，自行得到 `s[i] = s[i-1] + s[i-2]`。O(n) time / O(n) space。 |
+
+### 複習題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 141. Linked List Cycle | Floyd Slow/Fast | Easy | A（複習） | 7:56 | 使用 C++，沒有拿 Hint，直接寫出 Floyd slow/fast，O(n) time / O(1) space。相較 Day 6 已明顯內化。 |
+
+### Day 9 觀察
+
+Linked List 有明顯進步：Reverse、Remove Elements、Cycle 都已有無提示成功紀錄；160 的核心方向也能自己想到。不過 traversal 時漏掉 pointer 前進仍再次出現，因此基礎 pointer 操作仍要持續用短題鞏固。
+
+Climbing Stairs 是目前第一次 recurrence / DP 類型的成功，先視為新能力訊號，之後要用不同題型再次驗證。
+
 ### 接下來要加強
 
 - 出題時繼續不提供 Topic / Pattern。
 - 每天至少 3 題全新題目，複習題另外計算。
-- Reverse Linked List 安排短期無提示重做，確認 Linked List pointer 操作是否真正內化。
-- Binary Search 與 Sliding Window 都已出現第一次無提示成功，接下來需要用不同題型驗證是否能重複辨認。
+- Linked List 繼續安排短小新題與複習，但不要一天塞太多。
+- 特別驗證 dummy/tail 是否能在不同 Linked List 題中自行想到。
+- Binary Search、Sliding Window、Two Pointers 需要換題再次確認辨認能力。
+- DP / recurrence 才剛出現第一次成功，之後安排 Easy 新題驗證，不事前提示是 DP。
