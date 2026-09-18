@@ -151,3 +151,41 @@ Climbing Stairs 是目前第一次 recurrence / DP 類型的成功，先視為�
 - 特別驗證 dummy/tail 是否能在不同 Linked List 題中自行想到。
 - Binary Search、Sliding Window、Two Pointers 需要換題再次確認辨認能力。
 - DP / recurrence 才剛出現第一次成功，之後安排 Easy 新題驗證，不事前提示是 DP。
+
+
+---
+
+## 2026-09-18 — Day 10
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 876. Middle of the Linked List | Linked List / Slow-Fast | Easy | A | 5:50 | 使用 Python，沒有拿 Hint。直接把 slow / fast pointer 從 Cycle 類題遷移到「找中點」的新情境，O(n) time / O(1) space。 |
+| 14. Longest Common Prefix | String / Prefix Scan | Easy | A | 11:18 | 使用 Python，沒有拿 Hint。以第一個字串為基準逐字元檢查其他字串；遇到長度不足或字元不同就停止。演算法正確，控制流程可再簡化。 |
+| 746. Min Cost Climbing Stairs | Dynamic Programming / Recurrence | Easy | A | 7:23 | 使用 Python。只請 ChatGPT 將英文題意翻成白話，沒有取得演算法提示；之後自行得到 `s[i] = cost[i] + min(s[i-1], s[i-2])`。這是連續第二天無提示完成 recurrence / DP 類題。 |
+
+### 複習題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 21. Merge Two Sorted Lists | Linked List / Dummy + Tail | Easy | A（複習） | 10:22 | 使用 C++。核心 `dummy + tail`、比較兩條 list、接上剩餘 list 與回傳結果都能自行重現。詢問 GPT 的內容是 debug C++ pointer 初始化：`ListNode* dummy;` 只有宣告未初始化 pointer，`tail=dummy` 後直接 `tail->next` 會存取無效位置。這屬於語言 / pointer 基礎問題，不是演算法提示，因此仍記 A。相較 9/15 第一次 C、43:22，進步明顯。 |
+
+### Day 10 觀察
+
+今天 3 題新題全部 A。slow/fast pointer 已能跨題遷移；DP / recurrence 也連續兩天無提示成功，代表這類能力開始形成。
+
+Merge Two Sorted Lists 的演算法核心已能自行重現；目前暴露出的弱點轉為 **C++ pointer / object 初始化**，之後需要安排獨立短複習，特別確認以下概念：
+
+- 宣告 pointer 不等於建立 object
+- `ListNode dummy;` 會建立一個 object
+- `ListNode* p = &dummy;` 是讓 pointer 指向既有 object
+- `new ListNode()` 會建立 object 並回傳 pointer
+- 使用 `ptr->member` 前，`ptr` 必須先指向有效 object
+
+### 接下來要加強
+
+- 安排 C++ pointer 初始化 / object vs pointer 短複習，不計入每日 3 題新題。
+- Linked List 繼續用不同題型驗證 dummy / tail，而不是只重做 21。
+- DP / recurrence 再用不同型態 Easy 題驗證。
+- Binary Search、Sliding Window、Two Pointers 仍需要換題持續驗證 pattern recognition。
