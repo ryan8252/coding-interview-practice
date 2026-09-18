@@ -43,12 +43,18 @@
   - Merge Two Sorted Lists 的 `dummy` + `tail` 是目前最需要再驗證是否真正內化的技巧
 - **DP / recurrence**
   - 70 Climbing Stairs 第一次接觸 recurrence 類型就能無提示完成
-  - 目前只有一次成功，還不能視為穩定能力，之後需用不同 Easy 題驗證
+  - 746 Min Cost Climbing Stairs 隔天再次無提示自行建立 recurrence
+  - 已連續兩天成功，開始形成能力，但仍需用不同 Easy 題型驗證
+- **C++ pointer / object 基礎**
+  - 21 Merge Two Sorted Lists 複習時，演算法核心可自行重現
+  - 但寫出 `ListNode* dummy;` 後直接令 `tail=dummy`，暴露出「宣告 pointer 不等於建立 object」這個初始化觀念仍不熟
+  - 之後需要安排短複習：stack object + `&`、heap object + `new`、pointer 必須先指向有效 object 才能使用 `->`
 
 目前最需要注意的基本錯誤：
 
 - Linked List traversal 不要漏掉 `cur = cur.next`
 - `ListNode` 的 identity 與 `node.val` 不同；intersection / visited node 類題應比較或儲存 node 本身
+- C++ 中「宣告 pointer」不代表已建立 object；使用 `ptr->member` 前要先確認 pointer 已指向有效 object
 
 ## 最近重要紀錄
 
@@ -91,15 +97,28 @@
 
 - 141 Linked List Cycle：A，7:56，C++。無 Hint 寫出 Floyd slow/fast，O(n) time / O(1) space
 
+### Day 10 — 2026-09-18
+
+新題：
+
+- 876 Middle of the Linked List：A，5:50，Python。無 Hint，將 slow/fast 成功遷移到找中點
+- 14 Longest Common Prefix：A，11:18，Python。無 Hint
+- 746 Min Cost Climbing Stairs：A，7:23，Python。只詢問題意，沒有演算法提示，自行建立 recurrence
+
+複習：
+
+- 21 Merge Two Sorted Lists：A，10:22，C++。dummy/tail 演算法核心自行重現；只因未初始化 `ListNode* dummy` 而詢問 debug，顯示 C++ pointer 初始化需另外補強
+
 ## 出題策略
 
 接下來仍以 Easy 為主，逐步擴充題型；每天至少 3 題新題。
 
 - Linked List 可以持續安排短小新題或複習，但一天不要塞太多
-- 優先驗證 `dummy` / `tail` 是否能在新情境自己想到
+- `dummy` / `tail` 在 21 複習已能自行重現；接下來改用不同題型驗證遷移
 - traversal 類題持續注意 pointer 是否真的往後移
+- **安排 C++ pointer 初始化 / object vs pointer 的短複習，不算每日 3 題新題**
 - Binary Search、Sliding Window、Two Pointers 要用不同新題再次驗證 pattern recognition
-- DP / recurrence 已出現第一次無提示成功，之後安排新的 Easy 題驗證，但不要事前透露是 DP
+- DP / recurrence 已連續兩天無提示成功，之後用不同 Easy 題型繼續驗證，但不要事前透露是 DP
 - 複習可以刻意換 Python / C++ / C / Java，語法可查，但演算法核心仍需自己完成
 
 ## 新對話接續方式
