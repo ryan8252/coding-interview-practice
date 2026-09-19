@@ -13,6 +13,7 @@
 - 卡住約 10～20 分鐘後，使用者會主動要求 `Hint 1`；提示要逐層給，不要一次透露核心答案。
 - 每題完成後，根據是否拿提示、查了什麼、程式碼品質與時間，記錄 A/B/C/D。
 - 練習紀錄以中文為主，演算法術語可保留英文。
+- 從 Day 11 起開始逐步混入 **基礎 Medium**；原則上可朝 2 Easy + 1 Medium 前進，但遇到全新領域時先用 Easy 建基礎。
 
 ## 評分概念
 
@@ -30,8 +31,8 @@
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- Binary Search（已有無提示成功，但仍需要換題持續驗證）
-- Sliding Window（已有無提示成功，但仍需要換題持續驗證）
+- Sliding Window：Easy 固定長度題已無提示成功；Medium 3 已能自己維護合法 window，但目前是 O(n²) / O(1) 版本
+- DP / recurrence：70、746 連續兩天無提示成功，開始形成能力
 
 正在建立中的能力：
 
@@ -39,87 +40,75 @@
   - Reverse Linked List 已能無提示複習成功
   - Remove Linked List Elements 新題已能無提示完成
   - Linked List Cycle 已從第一次需要 Hint / constraint workaround，進步到能用 C++ 無提示寫出 Floyd slow/fast
-  - Intersection of Two Linked Lists 已能自行想到「記錄 A 的 node，再走 B 找同一 node」；但 traversal 時仍再次漏掉 pointer 前進，需要 Hint 1
-  - Merge Two Sorted Lists 的 `dummy` + `tail` 是目前最需要再驗證是否真正內化的技巧
-- **DP / recurrence**
-  - 70 Climbing Stairs 第一次接觸 recurrence 類型就能無提示完成
-  - 746 Min Cost Climbing Stairs 隔天再次無提示自行建立 recurrence
-  - 已連續兩天成功，開始形成能力，但仍需用不同 Easy 題型驗證
+  - Middle of the Linked List 已能把 slow/fast 遷移到新情境
+  - Intersection of Two Linked Lists 核心方向能自己想到，但 traversal 時曾漏掉 pointer 前進
+  - Merge Two Sorted Lists 的 `dummy + tail` 複習已能自行重現
+- **Binary Search**
+  - Search Insert Position 曾無提示成功
+  - 69 Sqrt(x) 需要 Hint 2 才辨認 Binary Search
+  - 能寫 `start/end/mid` 主體，但 boundary、最大合法值 / 最小合法值、loop 結束後應回傳 `start` / `end` / `mid` 還不穩
+- **Binary Tree**
+  - Day 11 第一次正式接觸
+  - 100 Same Tree 查過 tree traversal 與 Python stack 後完成
+  - 目前要先建立 `node.val` / `node.left` / `node.right`、DFS/stack、`None` handling
+- **Medium 題**
+  - 3 Longest Substring Without Repeating Characters：B，50:30
+  - Hint 1 後自行設計 O(n²) / O(1) space 的 sliding-window 解法並 Accepted
+  - 還需要學會用額外資料結構把內層掃描消掉，提升到 O(n)
 - **C++ pointer / object 基礎**
   - 21 Merge Two Sorted Lists 複習時，演算法核心可自行重現
-  - 但寫出 `ListNode* dummy;` 後直接令 `tail=dummy`，暴露出「宣告 pointer 不等於建立 object」這個初始化觀念仍不熟
-  - 之後需要安排短複習：stack object + `&`、heap object + `new`、pointer 必須先指向有效 object 才能使用 `->`
+  - 但曾寫出 `ListNode* dummy;` 後直接令 `tail=dummy`，顯示「宣告 pointer 不等於建立 object」仍不熟
+  - 後續需複習 stack object + `&`、heap object + `new`、使用 `->` 前 pointer 必須指向有效 object
 
 目前最需要注意的基本錯誤：
 
 - Linked List traversal 不要漏掉 `cur = cur.next`
 - `ListNode` 的 identity 與 `node.val` 不同；intersection / visited node 類題應比較或儲存 node 本身
-- C++ 中「宣告 pointer」不代表已建立 object；使用 `ptr->member` 前要先確認 pointer 已指向有效 object
+- C++ 中宣告 pointer 不代表已建立 object；使用 `ptr->member` 前要先確認 pointer 已指向有效 object
+- Binary Search 不要機械式 `return mid`；要先理解 loop 結束時 `start` / `end` 各代表什麼
 
 ## 最近重要紀錄
-
-### Day 6 — 2026-09-14
-
-- 704 Binary Search：B，8:44；有搜尋 implementation
-- 141 Linked List Cycle：B，18:28；拿 Hint，最後先用 node 上限 workaround，之後學 Set 與 Floyd
-- 977 Squares of a Sorted Array：A，10:44
-- Linked List traversal 基礎補強
-
-### Day 7 — 2026-09-15
-
-- 21 Merge Two Sorted Lists：C，43:22。前 40 分鐘卡住，之後學 `dummy` + `tail`，理解 `return dummy.next`
-- 448 Find All Numbers Disappeared in an Array：B，16:16。先獨立完成 O(n) extra-space 解法；O(1) space 的正負號 in-place marking 需要提示
-- 88 Merge Sorted Array：A，15:50。無提示，自己從尾端往前原地合併
-- 206 Reverse Linked List 複習：A，10:44，用 C 自己重做
-
-### Day 8 — 2026-09-16
-
-新題：
-
-- 203 Remove Linked List Elements：A，21:55，Python，無 Hint
-- 724 Find Pivot Index：A，5:39，無 Hint
-- 392 Is Subsequence：A，約 5:00，Python，忘記計時，無 Hint
-
-複習：
-
-- 1 Two Sum：A，C++，約 14 分鐘有效時間；只查 `unordered_map` / return 等語法
-- 121 Best Time to Buy and Sell Stock：A，Java，約 3 分鐘，忘記計時
 
 ### Day 9 — 2026-09-17
 
 新題：
-
-- 160 Intersection of Two Linked Lists：B，19:20，Python。核心方向自己想到，但 traversal / return 邏輯拿 Hint 1 才補完整
-- 169 Majority Element：A，11:59，Python。dictionary frequency counting，無 Hint
-- 70 Climbing Stairs：A，9:39，Python。自行找到 recurrence，無 Hint
+- 160 Intersection of Two Linked Lists：B，19:20
+- 169 Majority Element：A，11:59
+- 70 Climbing Stairs：A，9:39
 
 複習：
-
-- 141 Linked List Cycle：A，7:56，C++。無 Hint 寫出 Floyd slow/fast，O(n) time / O(1) space
+- 141 Linked List Cycle：A，7:56，C++，Floyd slow/fast
 
 ### Day 10 — 2026-09-18
 
 新題：
-
-- 876 Middle of the Linked List：A，5:50，Python。無 Hint，將 slow/fast 成功遷移到找中點
-- 14 Longest Common Prefix：A，11:18，Python。無 Hint
-- 746 Min Cost Climbing Stairs：A，7:23，Python。只詢問題意，沒有演算法提示，自行建立 recurrence
+- 876 Middle of the Linked List：A，5:50
+- 14 Longest Common Prefix：A，11:18
+- 746 Min Cost Climbing Stairs：A，7:23
 
 複習：
+- 21 Merge Two Sorted Lists：A，10:22，C++。dummy/tail 核心自行重現；C++ pointer 初始化需補強
 
-- 21 Merge Two Sorted Lists：A，10:22，C++。dummy/tail 演算法核心自行重現；只因未初始化 `ListNode* dummy` 而詢問 debug，顯示 C++ pointer 初始化需另外補強
+### Day 11 — 2026-09-19
+
+新題：
+- 3 Longest Substring Without Repeating Characters：B，50:30，Medium；Hint 1 後自行完成 O(n²) / O(1) window 解
+- 100 Same Tree：B，26:27；第一次 Binary Tree，查 tree traversal / Python stack 後完成
+- 69 Sqrt(x)：C，19:27；Hint 2 明確指出 Binary Search，之後 boundary / return end 再需說明
+
+複習：
+- 125 Valid Palindrome：A，12:48，C++
 
 ## 出題策略
 
-接下來仍以 Easy 為主，逐步擴充題型；每天至少 3 題新題。
-
-- Linked List 可以持續安排短小新題或複習，但一天不要塞太多
-- `dummy` / `tail` 在 21 複習已能自行重現；接下來改用不同題型驗證遷移
-- traversal 類題持續注意 pointer 是否真的往後移
-- **安排 C++ pointer 初始化 / object vs pointer 的短複習，不算每日 3 題新題**
-- Binary Search、Sliding Window、Two Pointers 要用不同新題再次驗證 pattern recognition
-- DP / recurrence 已連續兩天無提示成功，之後用不同 Easy 題型繼續驗證，但不要事前透露是 DP
-- 複習可以刻意換 Python / C++ / C / Java，語法可查，但演算法核心仍需自己完成
+- 每天至少 3 題新題；開始逐步採用 **2 Easy + 1 基礎 Medium**，但全新領域第一次接觸時可以先用 Easy。
+- Medium 卡約 20～30 分鐘後可開始 Hint；不要求第一次就完全獨立解出。
+- 3 Longest Substring Without Repeating Characters 之後安排重做，目標是自行從 O(n²) 改成 O(n) sliding window。
+- Binary Tree 接下來安排短小 Easy 題，確認 traversal 是否能不再查資料自行重現。
+- Binary Search 安排 boundary 類練習，特別是 first/last valid 與 loop 結束後 `start/end` 語意。
+- Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
+- 安排 C++ pointer 初始化 / object vs pointer 的短複習，不算每日 3 題新題。
+- 複習可刻意換 Python / C++ / C / Java；語法可查，但演算法核心仍需自己完成。
 
 ## 新對話接續方式
 
