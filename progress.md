@@ -189,3 +189,38 @@ Merge Two Sorted Lists 的演算法核心已能自行重現；目前暴露出的
 - Linked List 繼續用不同題型驗證 dummy / tail，而不是只重做 21。
 - DP / recurrence 再用不同型態 Easy 題驗證。
 - Binary Search、Sliding Window、Two Pointers 仍需要換題持續驗證 pattern recognition。
+
+
+---
+
+## 2026-09-19 — Day 11
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 3. Longest Substring Without Repeating Characters | Sliding Window | Medium | B | 50:30 | 第一題正式加入訓練的 Medium。Hint 1 後自行完成 O(n²) / O(1) space 的 window 解法；每次掃描目前合法 window 找重複，沒有直接採用標準 Hash Map / Set O(n) 解。之後安排重做，目標自行消掉內層掃描。 |
+| 100. Same Tree | Binary Tree / DFS Traversal | Easy | B | 26:27 | 第一次正式碰 Binary Tree。查詢 tree traversal 與 Python stack；traversal 屬核心基礎，因此記 B。之後自行完成同步 traversal / compare 並 Accepted。 |
+| 69. Sqrt(x) | Binary Search / Boundary | Easy | C | 19:27 | Hint 1 後仍無方向，Hint 2 明確指出 Binary Search。主體自行寫出，但最後錯誤回傳 `mid`；經說明後理解 loop 結束時 `end` 是最大合法值，改成 `return end` 後 Accepted。 |
+
+### 複習題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 125. Valid Palindrome | Two Pointers | Easy | A（複習） | 12:48 | 使用 C++，左右 pointer 從兩端往中間比較；本輪未回報查題目解法或拿 Hint。 |
+
+### Day 11 觀察
+
+今天開始把訓練往下一階段推：加入基礎 Medium、第一次正式 Tree、以及需要處理 boundary 的 Binary Search。
+
+- Longest Substring 已能自己維護合法 window，但目前以時間換空間，O(n²) / O(1)；之後要學會用額外結構換成 O(n)。
+- Tree traversal 是全新基礎，目前需要查資料屬正常學習階段，下一次換題再驗證能否自行重現。
+- Binary Search 主體不是最大問題，真正需要補的是「最大合法值 / 最小合法值」這類 boundary 與 loop 結束後 start/end 的語意。
+
+### 接下來要加強
+
+- 逐步採用 2 Easy + 1 基礎 Medium。
+- 重做 3，目標 O(n) sliding window。
+- 安排 Binary Tree Easy 題驗證 traversal。
+- 安排 Binary Search boundary 類短練習。
+- 保留 C++ pointer / object 初始化的短複習。
