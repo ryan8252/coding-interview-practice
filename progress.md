@@ -224,3 +224,36 @@ Merge Two Sorted Lists 的演算法核心已能自行重現；目前暴露出的
 - 安排 Binary Tree Easy 題驗證 traversal。
 - 安排 Binary Search boundary 類短練習。
 - 保留 C++ pointer / object 初始化的短複習。
+
+
+---
+
+## 2026-09-20 — Day 12
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 226. Invert Binary Tree | Binary Tree / Iterative Traversal | Easy | A | 11:17 | Python，完全無查詢、無 Hint。自行用 stack traversal 交換每個 node 的左右 child。相較 Day 11 Same Tree 還需要查 traversal，今天已能無查詢重現。 |
+| 278. First Bad Version | Binary Search / First True | Easy | A | 16:15 | Python，完全無查詢、無 Hint。自行寫出 first-true boundary binary search，最後回傳第一個 bad version。相比 Day 11 Sqrt(x) 的 boundary 問題有明顯進步。 |
+| 198. House Robber | Dynamic Programming | Medium | A | 9:41 | Python，完全無查詢、無 Hint。自行得到 `m[i] = max(nums[i] + m[i-2], m[i-1])`。目前最乾淨的一次 Medium 無提示成功之一。 |
+
+### 複習題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 203. Remove Linked List Elements | Linked List / Dummy + Tail | Easy | A（複習） | 6:28 | C++。演算法與 dummy/tail 自行完成；先寫出未初始化 `ListNode* dummy;`，程式錯誤後才詢問 GPT 如何建立 dummy node，改為 `new ListNode()`。演算法仍記 A，但 C++ pointer/object 初始化仍需補強。 |
+
+### Day 12 觀察
+
+今天 3 題新題全部 A，而且正好驗證了昨天較弱的 Tree 與 Binary Search boundary，兩者都有明顯改善。House Robber 則顯示 DP / recurrence 已開始穩定遷移到 Medium。
+
+C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成獨立基礎能力練習，而不是只在 linked-list 題裡順便處理。
+
+### 接下來要加強
+
+- 維持 2 Easy + 1 基礎 Medium。
+- 重做 3 Longest Substring Without Repeating Characters，目標 O(n) sliding window。
+- Tree 再換一題驗證 traversal。
+- Binary Search 再換一種 boundary 形式驗證。
+- 安排 C++ pointer/object 初始化短複習。
