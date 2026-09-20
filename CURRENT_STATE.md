@@ -31,8 +31,9 @@
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- Sliding Window：Easy 固定長度題已無提示成功；Medium 3 已能自己維護合法 window，但目前是 O(n²) / O(1) 版本
-- DP / recurrence：70、746 連續兩天無提示成功，開始形成能力
+- DP / recurrence：70、746、198 都能無提示完成，已開始出現穩定遷移
+- Binary Tree traversal：100 首次需要查 traversal；226 隔天已能無查詢自行用 stack 完成
+- Binary Search：278 First Bad Version 能無查詢自行處理 first-true boundary，較 69 Sqrt(x) 有明顯進步
 
 正在建立中的能力：
 
@@ -43,41 +44,32 @@
   - Middle of the Linked List 已能把 slow/fast 遷移到新情境
   - Intersection of Two Linked Lists 核心方向能自己想到，但 traversal 時曾漏掉 pointer 前進
   - Merge Two Sorted Lists 的 `dummy + tail` 複習已能自行重現
-- **Binary Search**
-  - Search Insert Position 曾無提示成功
-  - 69 Sqrt(x) 需要 Hint 2 才辨認 Binary Search
-  - 能寫 `start/end/mid` 主體，但 boundary、最大合法值 / 最小合法值、loop 結束後應回傳 `start` / `end` / `mid` 還不穩
-- **Binary Tree**
-  - Day 11 第一次正式接觸
-  - 100 Same Tree 查過 tree traversal 與 Python stack 後完成
-  - 目前要先建立 `node.val` / `node.left` / `node.right`、DFS/stack、`None` handling
-- **Medium 題**
-  - 3 Longest Substring Without Repeating Characters：B，50:30
-  - Hint 1 後自行設計 O(n²) / O(1) space 的 sliding-window 解法並 Accepted
-  - 還需要學會用額外資料結構把內層掃描消掉，提升到 O(n)
+- **Sliding Window**
+  - 固定長度 Easy 已無提示成功
+  - 3 Longest Substring Without Repeating Characters 已能自己維護合法 window，但目前是 O(n²) / O(1) 版本
+  - 後續要練習用額外資料結構把內層掃描消掉，提升到 O(n)
+- **Binary Search boundary**
+  - 69 Sqrt(x) 曾需要 Hint 2 才辨認 Binary Search，且最後回傳 boundary 出錯
+  - 278 First Bad Version 已能無提示自行完成 first-true 類 binary search
+  - 還需要持續驗證不同 boundary 形式
 - **C++ pointer / object 基礎**
-  - 21 Merge Two Sorted Lists 複習時，演算法核心可自行重現
-  - 但曾寫出 `ListNode* dummy;` 後直接令 `tail=dummy`，顯示「宣告 pointer 不等於建立 object」仍不熟
-  - 後續需複習 stack object + `&`、heap object + `new`、使用 `->` 前 pointer 必須指向有效 object
+  - 21 Merge Two Sorted Lists 與 203 Remove Linked List Elements 的演算法核心都能自行重現
+  - 但兩次都曾先寫出未初始化 `ListNode* dummy;`，之後才詢問 GPT debug
+  - 已理解：
+    - `ListNode dummy;` 會建立 local object
+    - `ListNode* p = &dummy;` 讓 pointer 指向該 object
+    - `ListNode* p = new ListNode();` 會建立 dynamic object 並回傳 pointer
+    - 單純 `ListNode* p;` 只宣告 pointer，沒有建立 object
+  - 之後仍需再次無查詢驗證是否真正內化
 
 目前最需要注意的基本錯誤：
 
 - Linked List traversal 不要漏掉 `cur = cur.next`
 - `ListNode` 的 identity 與 `node.val` 不同；intersection / visited node 類題應比較或儲存 node 本身
 - C++ 中宣告 pointer 不代表已建立 object；使用 `ptr->member` 前要先確認 pointer 已指向有效 object
-- Binary Search 不要機械式 `return mid`；要先理解 loop 結束時 `start` / `end` 各代表什麼
+- Binary Search 不要機械式 `return mid`；要理解 loop invariant 與 `start/end` 最後各代表什麼
 
 ## 最近重要紀錄
-
-### Day 9 — 2026-09-17
-
-新題：
-- 160 Intersection of Two Linked Lists：B，19:20
-- 169 Majority Element：A，11:59
-- 70 Climbing Stairs：A，9:39
-
-複習：
-- 141 Linked List Cycle：A，7:56，C++，Floyd slow/fast
 
 ### Day 10 — 2026-09-18
 
@@ -99,15 +91,26 @@
 複習：
 - 125 Valid Palindrome：A，12:48，C++
 
+### Day 12 — 2026-09-20
+
+新題：
+- 226 Invert Binary Tree：A，11:17，Python，無查詢、無 Hint；自行用 stack traversal 完成
+- 278 First Bad Version：A，16:15，Python，無查詢、無 Hint；自行寫出 first-true binary search
+- 198 House Robber：A，9:41，Medium，Python，無查詢、無 Hint；自行得到 `m[i] = max(nums[i] + m[i-2], m[i-1])`
+
+複習：
+- 203 Remove Linked List Elements：A，6:28，C++。演算法與 dummy/tail 使用自行完成；先寫錯 `ListNode* dummy;` 後才詢問 GPT「如何建立 dummy node」，再次暴露 pointer/object 初始化仍未完全內化
+
 ## 出題策略
 
-- 每天至少 3 題新題；開始逐步採用 **2 Easy + 1 基礎 Medium**，但全新領域第一次接觸時可以先用 Easy。
+- 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
 - Medium 卡約 20～30 分鐘後可開始 Hint；不要求第一次就完全獨立解出。
 - 3 Longest Substring Without Repeating Characters 之後安排重做，目標是自行從 O(n²) 改成 O(n) sliding window。
-- Binary Tree 接下來安排短小 Easy 題，確認 traversal 是否能不再查資料自行重現。
-- Binary Search 安排 boundary 類練習，特別是 first/last valid 與 loop 結束後 `start/end` 語意。
+- Binary Tree 已出現從「查 traversal」到「無查詢完成 226」的遷移，接下來可再用不同 Easy 題驗證。
+- Binary Search 278 已顯示 boundary 有進步，之後再用 last-true / first-false 或 search insert 類題驗證。
+- DP / recurrence 已連續在不同題型成功，接下來可逐步加入基礎 Medium。
 - Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
-- 安排 C++ pointer 初始化 / object vs pointer 的短複習，不算每日 3 題新題。
+- **C++ pointer/object 初始化仍需安排短複習**，直到能無查詢分辨 object、address、pointer、`new`。
 - 複習可刻意換 Python / C++ / C / Java；語法可查，但演算法核心仍需自己完成。
 
 ## 新對話接續方式
