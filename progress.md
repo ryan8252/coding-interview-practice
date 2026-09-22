@@ -257,3 +257,29 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - Tree 再換一題驗證 traversal。
 - Binary Search 再換一種 boundary 形式驗證。
 - 安排 C++ pointer/object 初始化短複習。
+
+
+---
+
+## 2026-09-21 — Day 13
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 543. Diameter of Binary Tree | Binary Tree / Depth Aggregation | Easy | C | 51:52 | Python。先自行嘗試 iterative stack / dictionary，後續詢問 GPT 並取得主要解題結構：child depth、`max(left,right)` 與 `left+right`。因此記 C。顯示 traversal 已較熟，但 bottom-up / postorder thinking 還不穩。 |
+| 209. Minimum Size Subarray Sum | Sliding Window | Medium | A | 23:20 | Python，完全自己完成。維護可伸縮 window，右指標單向前進，整體 O(n) time / O(1) extra space。相較 3 題的 O(n²) window 有明顯進步。 |
+| 202. Happy Number | Hash / Cycle Detection | Easy | A | 7:41 | Python，完全自己完成。使用 dictionary 記錄已出現狀態來偵測 cycle；若只需 membership 可改用 set。 |
+
+### Day 13 觀察
+
+209 是今天最重要的進步：Medium、無提示、O(n) Sliding Window，代表這個 pattern 已開始內化。
+
+543 顯示 Binary Tree 的新弱點已從「traversal」轉成「如何由 child 的結果回推 parent」，也就是 postorder / bottom-up depth aggregation。後續應用短小 Tree 題驗證。
+
+### 接下來要加強
+
+- Binary Tree：安排 depth / bottom-up 類 Easy 題。
+- Sliding Window：之後重做 3，目標自行從 O(n²) 改成 O(n)。
+- 維持 2 Easy + 1 基礎 Medium。
+- 保留 C++ pointer / object 初始化短複習。
