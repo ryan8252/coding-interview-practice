@@ -283,3 +283,30 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - Sliding Window：之後重做 3，目標自行從 O(n²) 改成 O(n)。
 - 維持 2 Easy + 1 基礎 Medium。
 - 保留 C++ pointer / object 初始化短複習。
+
+
+---
+
+## 2026-09-22 — Day 14
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 104. Maximum Depth of Binary Tree | Binary Tree / Depth | Easy | A | 12:43 | Python，無查詢、無 Hint，自行完成。延續 543 後，這次已能獨立處理 Tree depth。 |
+| 367. Valid Perfect Square | Binary Search | Easy | A | 13:55 | Python，無查詢、無 Hint，自行完成 Binary Search 判斷 perfect square。 |
+| 213. House Robber II | Dynamic Programming / Case Split | Medium | C | 33:31 | Python。Hint 1 指出首尾不能同時選；Hint 2 明確指出拆成「不搶第一間」與「不搶最後一間」兩次普通 House Robber，再取最大值。核心轉換由提示提供，因此記 C；DP 實作自行完成。 |
+
+### Day 14 觀察
+
+104 與 367 都無提示完成，顯示 Binary Tree depth 與 Binary Search 的基礎穩定度持續提升。
+
+213 的主要弱點不是 recurrence，而是遇到額外 constraint 時如何做 case split。後續應安排重做，確認能否自行把 circular problem 轉成兩個 linear subproblems。
+
+### 接下來要加強
+
+- House Robber II 之後安排無提示重做。
+- Binary Tree 可逐步增加 postorder / recursive 變化。
+- Binary Search 持續用不同 boundary 類型驗證。
+- Sliding Window 之後重做 3，目標 O(n)。
+- 保留 C++ pointer / object 初始化短複習。
