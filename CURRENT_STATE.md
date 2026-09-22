@@ -101,12 +101,21 @@
 複習：
 - 203 Remove Linked List Elements：A，6:28，C++。演算法與 dummy/tail 使用自行完成；先寫錯 `ListNode* dummy;` 後才詢問 GPT「如何建立 dummy node」，再次暴露 pointer/object 初始化仍未完全內化
 
+
+
+### Day 13 — 2026-09-21
+
+新題：
+- 543 Diameter of Binary Tree：C，51:52；GPT 提供主要 depth / diameter 結構
+- 209 Minimum Size Subarray Sum：A，23:20，Medium；無提示自行完成 O(n) Sliding Window
+- 202 Happy Number：A，7:41；無提示自行用 visited-state 偵測 cycle
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
 - Medium 卡約 20～30 分鐘後可開始 Hint；不要求第一次就完全獨立解出。
-- 3 Longest Substring Without Repeating Characters 之後安排重做，目標是自行從 O(n²) 改成 O(n) sliding window。
-- Binary Tree 已出現從「查 traversal」到「無查詢完成 226」的遷移，接下來可再用不同 Easy 題驗證。
+- 3 Longest Substring Without Repeating Characters 之後安排重做，目標是自行從 O(n²) 改成 O(n) sliding window；209 已證明可以獨立完成 O(n) window。
+- Binary Tree traversal 已有進步；接下來重點改成 depth / postorder / bottom-up 類 Easy 題，驗證 child -> parent 的資訊傳遞。
 - Binary Search 278 已顯示 boundary 有進步，之後再用 last-true / first-false 或 search insert 類題驗證。
 - DP / recurrence 已連續在不同題型成功，接下來可逐步加入基礎 Medium。
 - Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
