@@ -31,9 +31,9 @@
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- DP / recurrence：70、746、198 都能無提示完成，已開始出現穩定遷移
-- Binary Tree traversal：100 首次需要查 traversal；226 隔天已能無查詢自行用 stack 完成
-- Binary Search：278 First Bad Version 能無查詢自行處理 first-true boundary，較 69 Sqrt(x) 有明顯進步
+- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」這個轉換上仍需要核心提示
+- Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 隔天已能無提示完成 depth 類題，顯示這塊開始改善
+- Binary Search：278 First Bad Version 與 367 Valid Perfect Square 都能無查詢自行完成，較 69 Sqrt(x) 時的 boundary 問題已有明顯進步
 
 正在建立中的能力：
 
@@ -110,6 +110,15 @@
 - 209 Minimum Size Subarray Sum：A，23:20，Medium；無提示自行完成 O(n) Sliding Window
 - 202 Happy Number：A，7:41；無提示自行用 visited-state 偵測 cycle
 
+
+
+### Day 14 — 2026-09-22
+
+新題：
+- 104 Maximum Depth of Binary Tree：A，12:43；無提示、無查詢，自行完成 Tree depth
+- 367 Valid Perfect Square：A，13:55；無提示、無查詢，自行完成 Binary Search
+- 213 House Robber II：C，33:31；Hint 2 明確指出拆成「不搶第一間」與「不搶最後一間」兩次普通 House Robber，再取最大值
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
@@ -117,7 +126,7 @@
 - 3 Longest Substring Without Repeating Characters 之後安排重做，目標是自行從 O(n²) 改成 O(n) sliding window；209 已證明可以獨立完成 O(n) window。
 - Binary Tree traversal 已有進步；接下來重點改成 depth / postorder / bottom-up 類 Easy 題，驗證 child -> parent 的資訊傳遞。
 - Binary Search 278 已顯示 boundary 有進步，之後再用 last-true / first-false 或 search insert 類題驗證。
-- DP / recurrence 已連續在不同題型成功，接下來可逐步加入基礎 Medium。
+- DP / recurrence 基礎已相對穩定；213 顯示額外 constraint 的 case split 還不熟，之後安排 House Robber II 無提示重做。
 - Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
 - **C++ pointer/object 初始化仍需安排短複習**，直到能無查詢分辨 object、address、pointer、`new`。
 - 複習可刻意換 Python / C++ / C / Java；語法可查，但演算法核心仍需自己完成。
