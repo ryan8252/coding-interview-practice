@@ -31,8 +31,8 @@
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」這個轉換上仍需要核心提示
-- Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 隔天已能無提示完成 depth 類題，顯示這塊開始改善
+- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」上仍需要核心提示；322 Coin Change 則顯示對 min-DP / 多 transition 的 state design 還不熟，需無提示重做
+- Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 已能無提示完成；112 Path Sum 也能無提示自行維護 path-specific state，Tree 能力持續改善
 - Binary Search：278 First Bad Version 與 367 Valid Perfect Square 都能無查詢自行完成，較 69 Sqrt(x) 時的 boundary 問題已有明顯進步
 
 正在建立中的能力：
@@ -119,6 +119,18 @@
 - 367 Valid Perfect Square：A，13:55；無提示、無查詢，自行完成 Binary Search
 - 213 House Robber II：C，33:31；Hint 2 明確指出拆成「不搶第一間」與「不搶最後一間」兩次普通 House Robber，再取最大值
 
+
+
+### Day 15 — 2026-09-23
+
+新題：
+- 83 Remove Duplicates from Sorted List：A，7:10；無提示、無查詢
+- 322 Coin Change：C，23:17；原本完全沒方向，Google 演算法後完成 DP
+- 112 Path Sum：A，17:20；無提示、無查詢，自行維護 traversal 中的 path sum
+
+未完成：
+- 234 Palindrome Linked List：本次未作答，不計入今日新題額度
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
@@ -126,7 +138,7 @@
 - 3 Longest Substring Without Repeating Characters 之後安排重做，目標是自行從 O(n²) 改成 O(n) sliding window；209 已證明可以獨立完成 O(n) window。
 - Binary Tree traversal 已有進步；接下來重點改成 depth / postorder / bottom-up 類 Easy 題，驗證 child -> parent 的資訊傳遞。
 - Binary Search 278 已顯示 boundary 有進步，之後再用 last-true / first-false 或 search insert 類題驗證。
-- DP / recurrence 基礎已相對穩定；213 顯示額外 constraint 的 case split 還不熟，之後安排 House Robber II 無提示重做。
+- DP / recurrence 基礎 recurrence 已相對穩定；213 顯示 case split 還不熟，322 顯示 min-DP / 多 transition state design 還不熟。之後安排 House Robber II 與 Coin Change 無提示重做。
 - Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
 - **C++ pointer/object 初始化仍需安排短複習**，直到能無查詢分辨 object、address、pointer、`new`。
 - 複習可刻意換 Python / C++ / C / Java；語法可查，但演算法核心仍需自己完成。
