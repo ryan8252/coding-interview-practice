@@ -310,3 +310,30 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - Binary Search 持續用不同 boundary 類型驗證。
 - Sliding Window 之後重做 3，目標 O(n)。
 - 保留 C++ pointer / object 初始化短複習。
+
+
+---
+
+## 2026-09-23 — Day 15
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 83. Remove Duplicates from Sorted List | Linked List | Easy | A | 7:10 | Python，無查詢、無 Hint，自行完成並 Accepted。 |
+| 322. Coin Change | Dynamic Programming | Medium | C | 23:17 | 一開始完全沒有方向，後來 Google 演算法後才掌握 DP transition，最後自行寫出 `dp[i] = min(dp[i], dp[i-c] + 1)` 並 Accepted。因核心演算法是查到的，記 C；後續需無提示重做。 |
+| 112. Path Sum | Binary Tree / Path State | Easy | A | 17:20 | Python，無查詢、無 Hint。自行用 iterative traversal 維護 path sum，leaf 時判斷 target，成功 Accepted。 |
+
+### Day 15 觀察
+
+83 與 112 都能無提示完成，顯示 Linked List 與 Tree 的基礎操作已逐漸穩定。
+
+322 顯示 DP 能力目前仍偏向熟悉的 recurrence 類型；遇到「多個 coin transition + 取最小值」的 state design 時還無法自行推導。後續應安排 Coin Change 無提示重做，或用相似 min-DP 題驗證。
+
+### 接下來要加強
+
+- 322 Coin Change 無提示重做。
+- DP 擴展到 min/max transition 與多來源 transition。
+- Tree 繼續加入 path / postorder 類題型。
+- Sliding Window 之後重做 3，目標 O(n)。
+- 保留 C++ pointer / object 初始化短複習。
