@@ -31,8 +31,8 @@
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」上仍需要核心提示；322 Coin Change 則顯示對 min-DP / 多 transition 的 state design 還不熟，需無提示重做
-- Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 已能無提示完成；112 Path Sum 也能無提示自行維護 path-specific state，Tree 能力持續改善
+- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；64 Minimum Path Sum 與 120 Triangle 也已能無提示完成 min-DP，顯示 state / transition 能力開始擴展；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」上仍需要核心提示；322 Coin Change 對多 transition / unbounded min-DP 仍需無提示重做。120 的 O(n) space follow-up 最後看了 GPT 完整解法，因此空間壓縮尚不能算已獨立掌握
+- Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 與 112 Path Sum 已能無提示完成；110 Balanced Binary Tree 更進一步自行用 iterative stack + dictionary 完成 child -> parent depth aggregation，表示 postorder / bottom-up 能力已有無提示成功紀錄
 - Binary Search：278 First Bad Version 與 367 Valid Perfect Square 都能無查詢自行完成，較 69 Sqrt(x) 時的 boundary 問題已有明顯進步
 
 正在建立中的能力：
@@ -44,6 +44,7 @@
   - Middle of the Linked List 已能把 slow/fast 遷移到新情境
   - Intersection of Two Linked Lists 核心方向能自己想到，但 traversal 時曾漏掉 pointer 前進
   - Merge Two Sorted Lists 的 `dummy + tail` 複習已能自行重現
+  - 1290 Convert Binary Number in a Linked List to Integer 已能無提示完成 traversal，且正確維護 `head = head.next`，再次驗證基本 traversal 已較穩
 - **Sliding Window**
   - 固定長度 Easy 已無提示成功
   - 3 Longest Substring Without Repeating Characters 已能自己維護合法 window，但目前是 O(n²) / O(1) 版本
@@ -131,17 +132,38 @@
 未完成：
 - 234 Palindrome Linked List：本次未作答，不計入今日新題額度
 
+### Day 16 — 2026-09-24
+
+新題：
+- 110 Balanced Binary Tree：A，13:25；無提示，自行用 iterative stack + dictionary 完成 bottom-up depth aggregation
+- 27 Remove Element：A，39:15；無提示，自行完成 O(n) / O(1) in-place 處理
+- 64 Minimum Path Sum：A，約 25:00；忘記一開始計時，無提示自行完成 2D min-DP
+
+### Day 17 — 2026-09-25
+
+> 744 與 1290 雖實際提交跨到 9/26 00:xx，但依使用者指定仍算 9/25。2026-09-26 今日練習尚未開始。
+
+新題：
+- 120 Triangle：A，20:22；原題 2D DP 無提示自行完成。O(n) space follow-up 在 Accepted 後由 GPT 直接提供完整解法，optimization 另列學習內容
+- 744 Find Smallest Letter Greater Than Target：A，9:43；核心自行完成，只因不熟 Python 語法詢問 GPT
+- 1290 Convert Binary Number in a Linked List to Integer：A，13:02；完全自己完成
+
+複習：
+- 35 Search Insert Position：A（複習），7:12，C++；過去已用 Python 做過
+- 643 Maximum Average Subarray I：A（複習），4:40，C++；過去已用 Python 做過
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
 - Medium 卡約 20～30 分鐘後可開始 Hint；不要求第一次就完全獨立解出。
 - 3 Longest Substring Without Repeating Characters 之後安排重做，目標是自行從 O(n²) 改成 O(n) sliding window；209 已證明可以獨立完成 O(n) window。
-- Binary Tree traversal 已有進步；接下來重點改成 depth / postorder / bottom-up 類 Easy 題，驗證 child -> parent 的資訊傳遞。
+- Binary Tree 的 traversal、path state、bottom-up depth aggregation 都已有無提示成功紀錄；之後用不同 postorder / child -> parent 題型驗證穩定性。
 - Binary Search 278 已顯示 boundary 有進步，之後再用 last-true / first-false 或 search insert 類題驗證。
-- DP / recurrence 基礎 recurrence 已相對穩定；213 顯示 case split 還不熟，322 顯示 min-DP / 多 transition state design 還不熟。之後安排 House Robber II 與 Coin Change 無提示重做。
+- DP / recurrence 基礎 recurrence 已相對穩定；64、120 顯示一般 min-DP 已有無提示成功，但 213 的 case split、322 的多 transition/unbounded min-DP 仍需補強。之後安排 House Robber II 與 Coin Change 無提示重做；120 的 O(n) space optimization 也要隔一段時間再無提示驗證。
 - Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
 - **C++ pointer/object 初始化仍需安排短複習**，直到能無查詢分辨 object、address、pointer、`new`。
 - 複習可刻意換 Python / C++ / C / Java；語法可查，但演算法核心仍需自己完成。
+- **出新題前必須先檢查 `progress.md` 與最近 `days/`，避免把做過的題誤當新題。** 35 與 643 在 Day 17 曾誤重複，因此當天只算複習。
 
 ## 新對話接續方式
 
