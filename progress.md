@@ -337,3 +337,63 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - Tree 繼續加入 path / postorder 類題型。
 - Sliding Window 之後重做 3，目標 O(n)。
 - 保留 C++ pointer / object 初始化短複習。
+
+
+---
+
+## 2026-09-24 — Day 16
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 110. Balanced Binary Tree | Binary Tree / Bottom-up Depth | Easy | A | 13:25 | Python，無 Hint，自行完成。使用 stack + dictionary 模擬 postorder，先處理 child，再計算 parent depth 並檢查左右高度差。543 曾卡住的 child -> parent aggregation 這次已能獨立完成。 |
+| 27. Remove Element | Two Pointers / In-place Array | Easy | A | 39:15 | Python，無 Hint，自行完成並 Accepted。使用左右 pointer 把要移除的值往後處理，O(n) time / O(1) extra space。控制流程較繞，但核心自行完成。 |
+| 64. Minimum Path Sum | Dynamic Programming / Grid Min DP | Medium | A | 約 25:00 | Python，無 Hint，自行完成。忘記一開始按計時，實際約 25 分鐘。自行建立 2D DP，第一列/第一行分開處理，其餘位置取上方與左方較小值再加目前格子。 |
+
+### Day 16 觀察
+
+110 是重要進展：Tree 已從 traversal / path-state 進一步到能無提示完成 bottom-up depth aggregation。
+
+64 則顯示在 322 Coin Change 卡住後，已能自行完成另一種 minimum DP，表示 DP state / transition 能力開始擴展。
+
+### 接下來要加強
+
+- Tree 繼續用不同 postorder / bottom-up 題驗證。
+- DP 繼續 min/max transition 類題，並保留 322 Coin Change 無提示重做。
+- 出題前檢查歷史紀錄，避免把已做過的題當新題。
+
+---
+
+## 2026-09-25 — Day 17
+
+> 744 與 1290 實際提交已跨到 2026-09-26 00:xx，但使用者明確指定這組仍算 9/25；2026-09-26 的每日練習尚未開始。
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 120. Triangle | Dynamic Programming | Medium | A | 20:22 | Python，原題無 Hint、自行完成 2D DP 並 Accepted。Accepted 後才研究 O(n) extra space follow-up；空間壓縮解法最後由 GPT 直接提供，所以原題仍記 A，optimization 另列學習內容。 |
+| 744. Find Smallest Letter Greater Than Target | Ordered Scan | Easy | A | 9:43 | Python。核心演算法自行完成；因不熟 Python 語法詢問 GPT，屬語法/API 查詢，不算演算法提示。線性掃描找到第一個大於 target 的字元，否則 wrap-around 回傳第一個。 |
+| 1290. Convert Binary Number in a Linked List to Integer | Linked List / Running Value | Easy | A | 13:02 | Python，完全自己完成。逐 node traversal，使用 `n = n * 2 + head.val` 累積值，並正確執行 `head = head.next`。 |
+
+### 複習題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 35. Search Insert Position | Binary Search | Easy | A（複習） | 7:12 | 之前已用 Python 做過，本次改用 C++ 重做並 Accepted，不計入今日新題。 |
+| 643. Maximum Average Subarray I | Sliding Window | Easy | A（複習） | 4:40 | 之前已用 Python 做過，本次改用 C++ 重做 fixed-size window，Accepted，不計入今日新題。 |
+
+### Day 17 觀察
+
+120 是連續第二天出現 min-DP 無提示成功（前一天 64），顯示 DP 類型正在擴展；但 O(n) space optimization 不是自行完成，之後仍需新題驗證空間壓縮能力。
+
+1290 再次驗證 Linked List traversal 已穩定。35、643 因出題重複，這次只算複習，不列入每日 3 題新題。
+
+### 接下來要加強
+
+- 出新題前先查 `progress.md` / 最近 `days/`，避免重複。
+- 120 的 O(n) space follow-up 之後可無提示重做。
+- 322 Coin Change 仍需無提示重做。
+- 3 Longest Substring Without Repeating Characters 仍保留 O(n) 重做目標。
+- 2026-09-26 尚未開始每日練習。
