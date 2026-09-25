@@ -4,6 +4,7 @@
 
 ## 目前訓練規則
 
+- **每次出題前先讀 `PROBLEM_TRACKER.md`。它是題目去重與複習安排的主要索引。**
 - 每天至少 3 題 **全新題目**。
 - 複習題不計入每天 3 題的新題額度。
 - 出題時只給：題號、題名、難度。
@@ -163,12 +164,12 @@
 - Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
 - **C++ pointer/object 初始化仍需安排短複習**，直到能無查詢分辨 object、address、pointer、`new`。
 - 複習可刻意換 Python / C++ / C / Java；語法可查，但演算法核心仍需自己完成。
-- **出新題前必須先檢查 `progress.md` 與最近 `days/`，避免把做過的題誤當新題。** 35 與 643 在 Day 17 曾誤重複，因此當天只算複習。
+- **出新題前必須先檢查 `PROBLEM_TRACKER.md`。** 已出現在「已完成題目總表」中的題目不得再當新題；若安排重做只能標成複習，且不計入每日 3 題新題。再搭配 `progress.md` 與最近 `days/` 查看詳細紀錄。35 與 643 在 Day 17 曾誤重複，因此當天只算複習。
 
 ## 新對話接續方式
 
 在新的 ChatGPT 對話中，可以直接說：
 
-> 請讀取 GitHub repo `ryan8252/coding-interview-practice` 的 `CURRENT_STATE.md`、`progress.md` 和最近的 `days/` 紀錄，然後繼續我的每日 coding interview 練習。
+> 請讀取 GitHub repo `ryan8252/coding-interview-practice` 的 `PROBLEM_TRACKER.md`、`CURRENT_STATE.md`、`progress.md` 和最近的 `days/` 紀錄，然後繼續我的每日 coding interview 練習。出新題前先用 `PROBLEM_TRACKER.md` 去重。
 
 這樣即可從目前進度接續，不需要重新解釋整個訓練背景。
