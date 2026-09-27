@@ -32,7 +32,7 @@
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；64 Minimum Path Sum 與 120 Triangle 也已能無提示完成 min-DP，顯示 state / transition 能力開始擴展；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」上仍需要核心提示；322 Coin Change 對多 transition / unbounded min-DP 仍需無提示重做。120 的 O(n) space follow-up 最後看了 GPT 完整解法，因此空間壓縮尚不能算已獨立掌握
+- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；64 Minimum Path Sum 與 120 Triangle 也已能無提示完成 min-DP，顯示 state / transition 能力開始擴展；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」上仍需要核心提示；322 Coin Change 對多 transition / unbounded min-DP 仍需無提示重做。120 的 O(n) space follow-up 最後看了 GPT 完整解法；但 931 Minimum Falling Path Sum 已能在只查 `list.copy()` 語法的情況下，自行完成 previous/current row 的 O(n) space optimization，表示空間壓縮能力開始出現獨立成功紀錄
 - Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 與 112 Path Sum 已能無提示完成；110 Balanced Binary Tree 更進一步自行用 iterative stack + dictionary 完成 child -> parent depth aggregation，表示 postorder / bottom-up 能力已有無提示成功紀錄
 - Binary Search：278 First Bad Version 與 367 Valid Perfect Square 都能無查詢自行完成，較 69 Sqrt(x) 時的 boundary 問題已有明顯進步
 
@@ -161,6 +161,15 @@
 - 58 Length of Last Word：A，2:10；無提示、無查詢
 - 111 Minimum Depth of Binary Tree：A，25:14；無提示、無查詢，自行 BFS
 - 62 Unique Paths：A，5:15；無提示、無查詢，自行用組合數完成
+
+### Day 19 — 2026-09-27
+
+> 931 雖實際提交跨到 9/28 00:06，但這一組依規則仍算 9/27。2026-09-28 尚未開始。
+
+新題：
+- 680 Valid Palindrome II：C，37:55；有看解答，列入複習
+- 374 Guess Number Higher or Lower：A，3:47；自己完成
+- 931 Minimum Falling Path Sum：A，30:24；只問 `list.copy()` 語法，演算法與 O(n) space 狀態壓縮自行完成
 
 ## 出題策略
 
