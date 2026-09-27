@@ -422,3 +422,24 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - Tree 可繼續混合 BFS / DFS。
 - DP / recurrence 持續不同型態，322、213 仍保留複習。
 - 2026-09-27 尚未開始每日練習。
+
+
+---
+
+## 2026-09-27 — Day 19
+
+> 931 實際提交跨到 2026-09-28 00:06，但依既有規則仍算在 9/27；2026-09-28 練習尚未開始。
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 680. Valid Palindrome II | Two Pointers | Easy | C | 37:55 | Python，有看解答，因此核心結構不是完全自行推出。之後需無提示重做。 |
+| 374. Guess Number Higher or Lower | Binary Search | Easy | A | 3:47 | Python，自行完成並 Accepted。 |
+| 931. Minimum Falling Path Sum | Dynamic Programming / Space Optimization | Medium | A | 30:24 | Python，只詢問 `list.copy()` 語法/API；演算法核心自行完成。使用 previous/current row 一維狀態，依三個上一列來源的最小值更新。 |
+
+### Day 19 觀察
+
+374 再次驗證 Binary Search 已穩定。931 是第一次在沒有取得演算法提示的情況下，自行完成明確的一維 DP space optimization，因此這方面能力有新的正向證據。
+
+680 因看解答記 C，列入後續複習。
