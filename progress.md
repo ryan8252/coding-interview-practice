@@ -397,3 +397,28 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - 322 Coin Change 仍需無提示重做。
 - 3 Longest Substring Without Repeating Characters 仍保留 O(n) 重做目標。
 - 2026-09-26 尚未開始每日練習。
+
+
+---
+
+## 2026-09-26 — Day 18
+
+> 58、111、62 的實際提交有部分跨到 2026-09-27，但依使用者指定全部算在 9/26；2026-09-27 的練習尚未開始。
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 58. Length of Last Word | String | Easy | A | 2:10 | Python，完全自己完成，沒有查資料、沒有拿 Hint。 |
+| 111. Minimum Depth of Binary Tree | Binary Tree / BFS | Easy | A | 25:14 | Python，完全自己完成，沒有查資料、沒有拿 Hint。自行使用 level-order traversal，遇到第一個 leaf 回傳 depth。 |
+| 62. Unique Paths | Combinatorics | Medium | A | 5:15 | Python，完全自己完成，沒有查資料、沒有拿 Hint。自行由路徑所需的固定步數推導組合數解法並 Accepted。 |
+
+### Day 18 觀察
+
+今天 3 題新題全部 A。111 驗證 Tree BFS；62 顯示 grid path 題也能從組合數角度自行解出。
+
+### 接下來要加強
+
+- Tree 可繼續混合 BFS / DFS。
+- DP / recurrence 持續不同型態，322、213 仍保留複習。
+- 2026-09-27 尚未開始每日練習。
