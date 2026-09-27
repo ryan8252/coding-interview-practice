@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-09-26  
-> 目前進度：Day 17（2026-09-25）完成；**2026-09-26 / Day 18 尚未開始**。
+> 更新日期：2026-09-27  
+> 目前進度：Day 18（2026-09-26）完成；**2026-09-27 / Day 19 尚未開始**。
 
 ## 已完成題目總表
 
@@ -19,6 +19,8 @@
 | 26 | Remove Duplicates from Sorted Array | Easy | 2026-09-12 | A |  |
 | 27 | Remove Element | Easy | 2026-09-24 | A |  |
 | 35 | Search Insert Position | Easy | 2026-09-13 | A | 9/25 C++ 複習 |
+| 58 | Length of Last Word | Easy | 2026-09-26 | A | 無提示、無查詢 |
+| 62 | Unique Paths | Medium | 2026-09-26 | A | 無提示、無查詢；使用組合數解法 |
 | 64 | Minimum Path Sum | Medium | 2026-09-24 | A |  |
 | 69 | Sqrt(x) | Easy | 2026-09-19 | C | Binary Search boundary 曾需 Hint 2 |
 | 70 | Climbing Stairs | Easy | 2026-09-17 | A |  |
@@ -27,6 +29,7 @@
 | 100 | Same Tree | Easy | 2026-09-19 | B | 首次 Tree，曾查 traversal；後續 Tree 已明顯進步 |
 | 104 | Maximum Depth of Binary Tree | Easy | 2026-09-22 | A |  |
 | 110 | Balanced Binary Tree | Easy | 2026-09-24 | A |  |
+| 111 | Minimum Depth of Binary Tree | Easy | 2026-09-26 | A | 無提示、無查詢；BFS |
 | 112 | Path Sum | Easy | 2026-09-23 | A |  |
 | 120 | Triangle | Medium | 2026-09-25 | A | 2D DP 自行完成；O(n) extra-space follow-up 看完整解法 |
 | 121 | Best Time to Buy and Sell Stock | Easy | 2026-09-09 | A | 9/12 C、9/16 Java 複習成功 |
@@ -60,7 +63,7 @@
 | 977 | Squares of a Sorted Array | Easy | 2026-09-14 | A |  |
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | 2026-09-25 | A |  |
 
-**目前已完成：48 題不同 LeetCode 題目。**
+**目前已完成：51 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
