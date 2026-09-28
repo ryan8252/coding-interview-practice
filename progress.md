@@ -443,3 +443,22 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 374 再次驗證 Binary Search 已穩定。931 是第一次在沒有取得演算法提示的情況下，自行完成明確的一維 DP space optimization，因此這方面能力有新的正向證據。
 
 680 因看解答記 C，列入後續複習。
+
+
+---
+
+## 2026-09-28 — Day 20
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 94. Binary Tree Inorder Traversal | Binary Tree / Iterative Traversal | Easy | A | 9:00 | Python，自己完成。使用 stack + dictionary 記錄 visited node，因此額外 O(n) space；核心 inorder traversal 自行完成。 |
+| 136. Single Number | Bit Manipulation / XOR | Easy | B | 4:29 | Python，有看提示，並查 Python XOR 語法；最後 Accepted。 |
+| 300. Longest Increasing Subsequence | DP / Binary Search | Medium | C | 40:05 | Python。先自行想到 O(n²) DP state；之後主動挑戰 O(n log n)，經多層提示理解 tails / 最小結尾值，最後 Binary Search 更新完整寫法由 GPT 提供。 |
+
+### Day 20 觀察
+
+94 顯示 Tree traversal 已熟，但 iterative inorder 還可進一步去掉 visited 結構。
+
+300 顯示 O(n²) DP 思路已能自行建立，但 O(n log n) tails + lower_bound 還需要主要提示，因此列入複習。
