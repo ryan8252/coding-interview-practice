@@ -5,7 +5,7 @@
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
 > 更新日期：2026-09-28  
-> 目前進度：Day 19（2026-09-27）完成；**2026-09-28 / Day 20 尚未開始**。
+> 目前進度：Day 20（2026-09-28）完成。
 
 ## 已完成題目總表
 
@@ -26,6 +26,7 @@
 | 70 | Climbing Stairs | Easy | 2026-09-17 | A |  |
 | 83 | Remove Duplicates from Sorted List | Easy | 2026-09-23 | A |  |
 | 88 | Merge Sorted Array | Easy | 2026-09-15 | A |  |
+| 94 | Binary Tree Inorder Traversal | Easy | 2026-09-28 | A | 自己完成；目前使用 visited dictionary，額外 O(n) space |
 | 100 | Same Tree | Easy | 2026-09-19 | B | 首次 Tree，曾查 traversal；後續 Tree 已明顯進步 |
 | 104 | Maximum Depth of Binary Tree | Easy | 2026-09-22 | A |  |
 | 110 | Balanced Binary Tree | Easy | 2026-09-24 | A |  |
@@ -34,6 +35,7 @@
 | 120 | Triangle | Medium | 2026-09-25 | A | 2D DP 自行完成；O(n) extra-space follow-up 看完整解法 |
 | 121 | Best Time to Buy and Sell Stock | Easy | 2026-09-09 | A | 9/12 C、9/16 Java 複習成功 |
 | 125 | Valid Palindrome | Easy | 2026-09-10 | A | 9/19 C++ 複習 |
+| 136 | Single Number | Easy | 2026-09-28 | B | 有看提示；查 Python XOR 語法 |
 | 141 | Linked List Cycle | Easy | 2026-09-14 | A | 初次 B；9/17 C++ Floyd 無提示重做 |
 | 160 | Intersection of Two Linked Lists | Easy | 2026-09-17 | B | 核心方向自行想到；traversal 曾漏 pointer 前進 |
 | 167 | Two Sum II - Input Array Is Sorted | Medium | 2026-09-11 | B | 當時事前得到 Two Pointers 方向；後續 Two Pointers 已多次 A |
@@ -49,6 +51,7 @@
 | 242 | Valid Anagram | Easy | 2026-09-11 | A |  |
 | 278 | First Bad Version | Easy | 2026-09-20 | A |  |
 | 283 | Move Zeroes | Easy | 2026-09-11 | A | 初次 B；9/13 O(1) extra space 複習 A |
+| 300 | Longest Increasing Subsequence | Medium | 2026-09-28 | C | O(n²) DP direction 自行想到；O(n log n) tails + binary search 經主要提示完成 |
 | 322 | Coin Change | Medium | 2026-09-23 | C | Google 演算法後完成；需無提示重做 |
 | 367 | Valid Perfect Square | Easy | 2026-09-22 | A |  |
 | 374 | Guess Number Higher or Lower | Easy | 2026-09-27 | A | 自己完成 |
@@ -66,7 +69,7 @@
 | 977 | Squares of a Sorted Array | Easy | 2026-09-14 | A |  |
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | 2026-09-25 | A |  |
 
-**目前已完成：54 題不同 LeetCode 題目。**
+**目前已完成：57 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -77,6 +80,7 @@
 | 高 | 3 | Longest Substring Without Repeating Characters | 第一次拿 Hint 1，完成的是 O(n²) window | 無提示自行做到 O(n) | 待複習 |
 | 高 | 213 | House Robber II | circular constraint → case split 需 Hint 2 | 無提示自行想到拆成兩個 linear case | 待複習 |
 | 高 | 322 | Coin Change | 完全沒方向後 Google 演算法 | 無提示自行定義 state / transition，完成 min-DP | 待複習 |
+| 高 | 300 | Longest Increasing Subsequence | O(n log n) tails + binary search 經多層提示後完成 | 無提示自行完成 O(n log n)，並能解釋 tails 的語意 | 待複習 |
 | 中 | 120 | Triangle | 原題 A，但 O(n) extra-space follow-up 由 GPT 直接給完整解法 | 無提示把 2D DP 壓成 O(n) space | 待複習 |
 | 中 | 21 | Merge Two Sorted Lists | 演算法已 A，但 C++ 曾寫未初始化 `ListNode* dummy;` | 用 C++ 無查詢正確建立 dummy object / pointer | 待複習 |
 | 中 | 203 | Remove Linked List Elements | C++ 複習時再次出現未初始化 dummy pointer | 用 C++ 無查詢完成，且不再犯 pointer/object 初始化錯誤 | 待複習 |
@@ -85,6 +89,7 @@
 | 低 | 448 | Find All Numbers Disappeared in an Array | O(1) marking 技巧曾需要提示 | 無提示自行做到 O(1) extra space | 待複習 |
 | 低 | 543 | Diameter of Binary Tree | bottom-up depth aggregation 曾需主要提示 | 無提示完成 child → parent aggregation | 待複習 |
 | 低 | 160 | Intersection of Two Linked Lists | traversal / node identity 曾卡住 | 無提示完成並避免漏 pointer 前進 | 待複習 |
+| 低 | 94 | Binary Tree Inorder Traversal | 已能自行完成，但目前額外使用 visited dictionary | 不用 visited set/dict，僅用 stack 完成 iterative inorder | 待複習 |
 
 ## 已出過但未完成／跳過
 
