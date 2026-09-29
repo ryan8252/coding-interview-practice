@@ -462,3 +462,20 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 94 顯示 Tree traversal 已熟，但 iterative inorder 還可進一步去掉 visited 結構。
 
 300 顯示 O(n²) DP 思路已能自行建立，但 O(n log n) tails + lower_bound 還需要主要提示，因此列入複習。
+
+
+---
+
+## 2026-09-29 — Day 21
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 1413. Minimum Value to Get Positive Step by Step Sum | Prefix Sum | Easy | A | 9:59 | Python，自己完成。 |
+| 237. Delete Node in a Linked List | Linked List / Node Mutation Trick | Medium | C | 14:47 | Python。因看不懂題意直接問 GPT；解釋已涵蓋核心技巧：copy next value + skip next node，因此記 C。 |
+| 455. Assign Cookies | Greedy / Sorting | Easy | A | 13:35 | Python，自己完成。 |
+
+### Day 21 觀察
+
+1413 與 455 都是無提示完成。237 的主要問題是題意與資料結構限制的理解，而不是語法；之後應無提示重做。
