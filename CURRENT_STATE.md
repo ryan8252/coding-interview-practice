@@ -178,6 +178,13 @@
 - 136 Single Number：B，4:29；有看提示並查 Python XOR 語法
 - 300 Longest Increasing Subsequence：C，40:05；先自行想到 O(n²) DP，O(n log n) tails + binary search 經多層提示後完成，列入複習
 
+### Day 21 — 2026-09-29
+
+新題：
+- 1413 Minimum Value to Get Positive Step by Step Sum：A，9:59；自己完成
+- 237 Delete Node in a Linked List：C，14:47；因看不懂題目直接問 GPT，核心技巧由 GPT 解釋，列入複習
+- 455 Assign Cookies：A，13:35；自己完成
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
