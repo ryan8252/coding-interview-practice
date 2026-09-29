@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-09-28  
-> 目前進度：Day 20（2026-09-28）完成。
+> 更新日期：2026-09-29  
+> 目前進度：Day 21（2026-09-29）完成。
 
 ## 已完成題目總表
 
@@ -36,6 +36,7 @@
 | 121 | Best Time to Buy and Sell Stock | Easy | 2026-09-09 | A | 9/12 C、9/16 Java 複習成功 |
 | 125 | Valid Palindrome | Easy | 2026-09-10 | A | 9/19 C++ 複習 |
 | 136 | Single Number | Easy | 2026-09-28 | B | 有看提示；查 Python XOR 語法 |
+| 1413 | Minimum Value to Get Positive Step by Step Sum | Easy | 2026-09-29 | A | 自己完成 |
 | 141 | Linked List Cycle | Easy | 2026-09-14 | A | 初次 B；9/17 C++ Floyd 無提示重做 |
 | 160 | Intersection of Two Linked Lists | Easy | 2026-09-17 | B | 核心方向自行想到；traversal 曾漏 pointer 前進 |
 | 167 | Two Sum II - Input Array Is Sorted | Medium | 2026-09-11 | B | 當時事前得到 Two Pointers 方向；後續 Two Pointers 已多次 A |
@@ -48,6 +49,7 @@
 | 213 | House Robber II | Medium | 2026-09-22 | C | case split 需 Hint 2；需無提示重做 |
 | 217 | Contains Duplicate | Easy | 2026-09-10 | A |  |
 | 226 | Invert Binary Tree | Easy | 2026-09-20 | A |  |
+| 237 | Delete Node in a Linked List | Medium | 2026-09-29 | C | 因看不懂題意直接問 GPT；核心技巧由 GPT 解釋 |
 | 242 | Valid Anagram | Easy | 2026-09-11 | A |  |
 | 278 | First Bad Version | Easy | 2026-09-20 | A |  |
 | 283 | Move Zeroes | Easy | 2026-09-11 | A | 初次 B；9/13 O(1) extra space 複習 A |
@@ -57,6 +59,7 @@
 | 374 | Guess Number Higher or Lower | Easy | 2026-09-27 | A | 自己完成 |
 | 392 | Is Subsequence | Easy | 2026-09-16 | A |  |
 | 448 | Find All Numbers Disappeared in an Array | Easy | 2026-09-15 | B | O(1) marking 需要提示 |
+| 455 | Assign Cookies | Easy | 2026-09-29 | A | 自己完成 |
 | 543 | Diameter of Binary Tree | Easy | 2026-09-21 | C | bottom-up depth 結構需主要提示；110 已顯示進步 |
 | 643 | Maximum Average Subarray I | Easy | 2026-09-13 | A | 9/25 C++ 複習 |
 | 680 | Valid Palindrome II | Easy | 2026-09-27 | C | 有看解答；需無提示重做 |
@@ -69,7 +72,7 @@
 | 977 | Squares of a Sorted Array | Easy | 2026-09-14 | A |  |
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | 2026-09-25 | A |  |
 
-**目前已完成：57 題不同 LeetCode 題目。**
+**目前已完成：60 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -86,6 +89,7 @@
 | 中 | 203 | Remove Linked List Elements | C++ 複習時再次出現未初始化 dummy pointer | 用 C++ 無查詢完成，且不再犯 pointer/object 初始化錯誤 | 待複習 |
 | 中 | 69 | Sqrt(x) | 曾需 Hint 2 才辨認 Binary Search，且 final boundary 出錯 | 無提示完成並正確解釋 loop 結束後 boundary | 待複習 |
 | 中 | 680 | Valid Palindrome II | 第一次作答有看解答 | 無提示自行想到 mismatch 後檢查刪左或刪右 | 待複習 |
+| 中 | 237 | Delete Node in a Linked List | 第一次因看不懂題意直接問 GPT，核心技巧已被解釋 | 無提示重做，並自行解釋 copy-next + skip-next 為什麼等價於刪除目前 node | 待複習 |
 | 低 | 448 | Find All Numbers Disappeared in an Array | O(1) marking 技巧曾需要提示 | 無提示自行做到 O(1) extra space | 待複習 |
 | 低 | 543 | Diameter of Binary Tree | bottom-up depth aggregation 曾需主要提示 | 無提示完成 child → parent aggregation | 待複習 |
 | 低 | 160 | Intersection of Two Linked Lists | traversal / node identity 曾卡住 | 無提示完成並避免漏 pointer 前進 | 待複習 |
