@@ -29,10 +29,11 @@
 
 - Array 基本操作
 - Hash Map / Frequency Counting
+- 219 Contains Duplicate II 已能無提示使用 last-seen index 解出；但 705 Design HashSet 顯示底層 hash function / bucket / collision handling 尚未獨立掌握
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；64 Minimum Path Sum 與 120 Triangle 也已能無提示完成 min-DP，顯示 state / transition 能力開始擴展；213 House Robber II 在「環狀 constraint -> 拆兩個線性 case」上仍需要核心提示；322 Coin Change 對多 transition / unbounded min-DP 仍需無提示重做。120 的 O(n) space follow-up 最後看了 GPT 完整解法；但 931 Minimum Falling Path Sum 已能在只查 `list.copy()` 語法的情況下，自行完成 previous/current row 的 O(n) space optimization，表示空間壓縮能力開始出現獨立成功紀錄
+- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；64 Minimum Path Sum 與 120 Triangle 也已能無提示完成 min-DP；931 Minimum Falling Path Sum 已能自行完成 O(n) space optimization。152 Maximum Product Subarray 在取得「同時維護 max/min ending product」關鍵提示後能自行完成 recurrence，表示多狀態 DP 開始建立，但仍需無提示重做。213 House Robber II 與 322 Coin Change 仍需優先複習。
 - Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 與 112 Path Sum 已能無提示完成；110 Balanced Binary Tree 更進一步自行用 iterative stack + dictionary 完成 child -> parent depth aggregation；94 Inorder Traversal 也能無提示完成，但目前 iterative inorder 仍額外使用 visited dictionary，可再優化
 - Binary Search：278 First Bad Version 與 367 Valid Perfect Square 都能無查詢自行完成，較 69 Sqrt(x) 時的 boundary 問題已有明顯進步
 
@@ -184,6 +185,13 @@
 - 1413 Minimum Value to Get Positive Step by Step Sum：A，9:59；自己完成
 - 237 Delete Node in a Linked List：C，14:47；因看不懂題目直接問 GPT，核心技巧由 GPT 解釋，列入複習
 - 455 Assign Cookies：A，13:35；自己完成
+
+### Day 22 — 2026-09-30
+
+新題：
+- 219 Contains Duplicate II：A，12:32；自己完成
+- 705 Design HashSet：C，23:22；詢問 GPT modulo / collision / chaining / linear probing 等核心 Hash Table 設計
+- 152 Maximum Product Subarray：B，43:23；先自行嘗試，之後拿到 max/min ending product 關鍵提示，再自行完成 recurrence
 
 ## 出題策略
 
