@@ -479,3 +479,20 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 ### Day 21 觀察
 
 1413 與 455 都是無提示完成。237 的主要問題是題意與資料結構限制的理解，而不是語法；之後應無提示重做。
+
+
+---
+
+## 2026-09-30 — Day 22
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | 時間 | 紀錄 |
+|---|---|---|---|---:|---|
+| 219. Contains Duplicate II | Hash Map / Last Seen Index | Easy | A | 12:32 | Python，自己完成；記錄每個值最近一次出現的位置並檢查 index distance。 |
+| 705. Design HashSet | Hash Table Design | Easy | C | 23:22 | Python。詢問 GPT modulo、bucket、collision、separate chaining、linear probing 等核心設計概念，因此記 C。 |
+| 152. Maximum Product Subarray | Dynamic Programming / Max-Min State | Medium | B | 43:23 | Python。先自行嘗試；之後拿到同時維護 max/min ending product 的關鍵提示，再自行完成 recurrence 並 Accepted。 |
+
+### Day 22 觀察
+
+219 的 Hash Map 應用已能獨立完成。705 需要補 Hash Table 底層設計。152 對 max/min 雙狀態 DP 已有初步理解，但仍需無提示重做確認。
