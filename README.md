@@ -137,3 +137,5 @@ Accepted: 40:00
 
 - [`progress.md`](progress.md)：每天做過的題目、結果、時間與複習日期。
 - [`notes/patterns.md`](notes/patterns.md)：整理可以重複使用的演算法 Pattern 與學到的觀念。
+- [`theory/`](theory/)：C++、資料結構、演算法、OS、Networking、Database、計組與 ML/CV 理論複習。
+- [`theory/progress.md`](theory/progress.md)：每日理論複習紀錄、評價與下一次複習安排。
