@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-09-30  
-> 目前進度：Day 22（2026-09-30）完成。
+> 更新日期：2026-10-01  
+> 目前進度：Day 23（2026-10-01）完成。
 
 ## 已完成題目總表
 
@@ -75,7 +75,11 @@
 | 977 | Squares of a Sorted Array | Easy | 2026-09-14 | A |  |
 | 1290 | Convert Binary Number in a Linked List to Integer | Easy | 2026-09-25 | A |  |
 
-**目前已完成：63 題不同 LeetCode 題目。**
+| 139 | Word Break | Medium | 2026-10-01 | B | 6:05 有初步切字想法；22:30 H1 後改成保存多個 reachable index，47:25 Accepted；需無提示重做 state/model |
+| 349 | Intersection of Two Arrays | Easy | 2026-10-01 | A | 排序 + two pointers 自行完成；Idea 1:00，Accepted 7:52；之後補出去重可直接利用排序後 ans[-1] |
+| 733 | Flood Fill | Easy | 2026-10-01 | A | 自行辨認 traversal；Idea 2:57，第一次程式 11:14，Accepted 13:14；implementation 可再改 deque / enqueue 時標記 |
+
+**目前已完成：66 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -83,6 +87,7 @@
 
 | 優先度 | # | 題目 | 為什麼需要複習 | 下次複習目標 | 狀態 |
 |---|---:|---|---|---|---|
+| 高 | 139 | Word Break | Medium 時先採單一路徑 greedy，H1 後才建立「多個 reachable index」模型 | 無提示自行定義 reachable / dp state，完成正確解法並解釋為何 greedy 不成立 | 待複習 |
 | 高 | 3 | Longest Substring Without Repeating Characters | 第一次拿 Hint 1，完成的是 O(n²) window | 無提示自行做到 O(n) | 待複習 |
 | 高 | 213 | House Robber II | circular constraint → case split 需 Hint 2 | 無提示自行想到拆成兩個 linear case | 待複習 |
 | 高 | 322 | Coin Change | 完全沒方向後 Google 演算法 | 無提示自行定義 state / transition，完成 min-DP | 待複習 |
