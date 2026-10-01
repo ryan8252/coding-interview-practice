@@ -21,21 +21,13 @@
 
 | 日期 | 類別 | 主題 | 時間 | 評價 | 主要弱點 / 學到什麼 | 下次複習 |
 |---|---|---|---:|---|---|---|
+| 2026-10-01 | C++ | Pointer / Reference / Object Lifetime | 約 25–30 分鐘 | A | 能分辨 object、pointer、reference；理解 `T* p` 只建立 pointer、不建立 T object；理解 `&x`、`*p`、`p->member`；理解 pass-by-value / reference；能解釋 dangling pointer 與 local/dynamic object lifetime。中途曾把 `Student* q = p` 誤認為 q 指向 p，經 tracing 後已修正。 | 2026-10-08 左右做一次短 Active Recall |
 
 ## 下一個優先主題
 
-### 2026-10-01
-**C++ — Pointer / Reference / Object Lifetime**
-
-目標：
-- 分清楚 pointer、reference、object。
-- 理解 `ListNode* p;` 為什麼沒有建立 `ListNode`。
-- 分清楚 local object、dynamic object 與 lifetime。
-- 能解釋 stack / heap 在這些例子中的差異。
-- 能不看筆記回答幾個簡短 code tracing 題。
-
-之後優先候選：
+優先候選：
 1. Data Structures — Hash Table：hash function / bucket / collision / chaining / probing
-2. Operating System — Process vs Thread
-3. C++ — STL containers / reference / const / pass-by-value vs pass-by-reference
-4. Data Structures — Stack / Queue / Heap 的操作與 complexity
+2. C++ — Stack vs Heap / dynamic allocation（補完今天尚未完整測過的部分）
+3. Operating System — Process vs Thread
+4. C++ — STL containers / const / pass-by-value vs pass-by-reference
+5. Data Structures — Stack / Queue / Heap 的操作與 complexity
