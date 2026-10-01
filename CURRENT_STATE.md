@@ -193,6 +193,19 @@
 - 705 Design HashSet：C，23:22；詢問 GPT modulo / collision / chaining / linear probing 等核心 Hash Table 設計
 - 152 Maximum Product Subarray：B，43:23；先自行嘗試，之後拿到 max/min ending product 關鍵提示，再自行完成 recurrence
 
+### Day 23 — 2026-10-01
+
+新題：
+- 733 Flood Fill：A，13:14；Idea 2:57，11:14 第一版程式有 bug，13:14 自行修正 Accepted。核心 traversal 自行辨認；可再優化 Python queue 與 visited/染色時機。
+- 349 Intersection of Two Arrays：A，7:52；0:20 讀完，Idea 1:00。自行使用 sorting + two pointers 完成；原本用 dictionary 去重，Accepted 後理解排序下可用 `ans[-1]` 去重。
+- 139 Word Break：B，47:25；0:50 讀完，6:05 有初步想法但偏 greedy；22:30 H1 提示改從「哪些 index 可到達」建模，之後自行發展 reachable-position queue 並 Accepted。只問過 Python slicing 語法。列入高優先複習。
+
+Day 23 觀察：
+- Easy 題的 pattern recognition 很快：733 在 2:57 有主要方向，349 在 1:00 有主要方向。
+- 139 再次顯示目前 Medium 的主要瓶頸偏向 **state / model 建立**，不是單純 implementation；一旦把問題改寫為 reachable index，後續能持續自行推進。
+- Python list 的 `pop(0)` 與 `x in list` 都可能造成 O(n) 操作；之後可逐步熟悉 `collections.deque` 與 set。
+- 139 後續複習時，除了無提示重建 BFS/reachable 解法，也要能自己說出 `dp[i]` 的語意，而不是直接背 recurrence。
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
