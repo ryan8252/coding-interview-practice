@@ -496,3 +496,28 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 ### Day 22 觀察
 
 219 的 Hash Map 應用已能獨立完成。705 需要補 Hash Table 底層設計。152 對 max/min 雙狀態 DP 已有初步理解，但仍需無提示重做確認。
+
+
+---
+
+## 2026-10-01 — Day 23
+
+### 新題
+
+| 題目 | Pattern | 難度 | 結果 | Idea | Hint | Accepted | 紀錄 |
+|---|---|---|---|---:|---:|---:|---|
+| 733. Flood Fill | Graph/Grid Traversal | Easy | A | 2:57 | 無 | 13:14 | 2:57 讀題後形成主要方向；11:14 第一版程式完成但有 bug；13:14 自行修正 Accepted。演算法核心完全自行辨認。Python implementation 使用 list + `pop(0)`，且在 dequeue 後才染色，之後可改 deque 並在 enqueue 時標記以避免重複加入。 |
+| 349. Intersection of Two Arrays | Sorting / Two Pointers | Easy | A | 1:00 | 無 | 7:52 | 0:20 讀完題目，1:00 想到解法，7:52 Accepted。自行排序兩陣列並使用 two pointers；原本以 dictionary 防重複。Accepted 後詢問不用 dictionary 的方式，理解排序後可比較 `ans[-1]` 去重。沒有查演算法。 |
+| 139. Word Break | Reachability / BFS-State Modeling | Medium | B | 6:05（初步） | H1 22:30 | 47:25 | 0:50 讀完。6:05 有「找到字就從剩餘字串繼續」的想法，但本質上仍是單一路徑 greedy，且不知道如何實作。22:30 H1 提示改思考「哪些 index 可以到達」，之後自行用 reachable positions 建立 queue 式 traversal 並 Accepted。只詢問 Python slicing 語法，不算演算法提示。後續又理解 `pop(0)`、list membership 的成本，以及 deque / set 可改善 implementation。 |
+
+### Day 23 觀察
+
+- 733、349 的 Idea time 分別為 2:57、1:00，Easy 題的辨認與建模速度良好。
+- 139 的主要卡點不是語法，而是 **如何把字串切割問題轉成 state / reachability model**。在 H1 後能自行延伸出 queue 式解法，因此評 B 而非 C。
+- 139 列入高優先複習：目標是無提示自行說明為何 greedy 不成立、建立 reachable/DP state，並完成解法。
+- 今日再次確認：之後分析單題表現時，要區分 Idea time 與 Accepted time。733 雖總共 13:14，但主要想法在 2:57 已形成，後段主要是 implementation/debug。
+
+### 後續複習
+
+- 高優先新增：139 Word Break。
+- 139 下次重做時，不先告知 BFS / DP；要求先自行定義 state，再驗證能否無提示完成。
