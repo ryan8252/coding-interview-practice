@@ -206,6 +206,19 @@ Day 23 觀察：
 - Python list 的 `pop(0)` 與 `x in list` 都可能造成 O(n) 操作；之後可逐步熟悉 `collections.deque` 與 set。
 - 139 後續複習時，除了無提示重建 BFS/reachable 解法，也要能自己說出 `dp[i]` 的語意，而不是直接背 recurrence。
 
+### Day 24 — 2026-10-02
+
+新題：
+- 205 Isomorphic Strings：A，10:08；0:38 讀完、Idea 3:00、3:39 第一版有 bug、10:08 Accepted。雙向 map 自行完成。
+- 572 Subtree of Another Tree：B，38:10；0:29 讀完，2:10 原始 idea 是 traversal 找候選 root 再比 subtree；3:04 看 LeetCode Topic「string matching」後被帶偏，12:13 自己判斷不成立，14:00 發現 node value 可重複後要求 H1。H1 後回到 traversal + Same Tree；超過 Easy 硬上限後由 GPT 補完整 sameTree 核心，38:10 Accepted。
+- 416 Partition Equal Subset Sum：B，21:58；0:30 讀完，1:05 自行想到總和奇數 False、偶數轉成 subset sum = total/2；1:57 判斷可能是 DP，3:21 想到記 reachable sum；H1 後定義 dp[x]，20:24 主體完成但 forward update 會重複使用同一元素，debug 提示改成 reverse update，21:58 Accepted。
+
+Day 24 觀察：
+- 205 顯示 Hash Map mapping 類 Easy 已相對穩定。
+- 572 的主要問題不是 traversal，而是比較 tree structure 時沒有保留 None；另外外部 Topic 會把原本正確的思路帶偏，之後應優先相信自己先驗證過的 reasoning。
+- 416 顯示 Medium 的 problem reduction 已能很快完成，但 DP state definition / transition 仍是主要弱點；尤其要理解 0/1 類問題為何需要反向更新。
+- 新增複習：416 高優先；572 中優先。
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
