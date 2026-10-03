@@ -521,3 +521,29 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 
 - 高優先新增：139 Word Break。
 - 139 下次重做時，不先告知 BFS / DP；要求先自行定義 state，再驗證能否無提示完成。
+
+
+---
+
+## 2026-10-02 — Day 24
+
+| 題目 | 難度 | 結果 | Idea | Hint | Accepted |
+|---|---|---|---:|---:|---:|
+| 205. Isomorphic Strings | Easy | A | 3:00 | 無 | 10:08 |
+| 572. Subtree of Another Tree | Easy | B | 2:10 | H1 約 14:00 | 38:10 |
+| 416. Partition Equal Subset Sum | Medium | B | 1:05 | H1 約 13:52 | 21:58 |
+
+416 的 problem reduction 自行完成，但 DP state 與 0/1 反向更新仍需複習。572 需重做 Same Tree 結構比較。
+
+
+---
+
+## 2026-10-03 — Day 25
+
+| 題目 | 難度 | 結果 | Idea | Hint | Accepted |
+|---|---|---|---:|---:|---:|
+| 290. Word Pattern | Easy | A | 1:11 | 無 | 9:00 |
+| 530. Minimum Absolute Difference in BST | Easy | A | 1:00 | 無 | 9:07 |
+| 377. Combination Sum IV | Medium | A | 3:17 | 無 | 15:43 |
+
+今日 3 題全 A。377 無 Hint 自行完成 1D counting DP，是近期 Medium state/model 建立的重要正向證據。
