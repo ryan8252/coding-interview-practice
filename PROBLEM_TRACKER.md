@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-01  
-> 目前進度：Day 23（2026-10-01）完成。
+> 更新日期：2026-10-03  
+> 目前進度：Day 25（2026-10-03）完成。
 
 ## 已完成題目總表
 
@@ -79,7 +79,14 @@
 | 349 | Intersection of Two Arrays | Easy | 2026-10-01 | A | 排序 + two pointers 自行完成；Idea 1:00，Accepted 7:52；之後補出去重可直接利用排序後 ans[-1] |
 | 733 | Flood Fill | Easy | 2026-10-01 | A | 自行辨認 traversal；Idea 2:57，第一次程式 11:14，Accepted 13:14；implementation 可再改 deque / enqueue 時標記 |
 
-**目前已完成：66 題不同 LeetCode 題目。**
+| 205 | Isomorphic Strings | Easy | 2026-10-02 | A | Idea 3:00，Accepted 10:08；雙向 mapping 自行完成 |
+| 290 | Word Pattern | Easy | 2026-10-03 | A | Idea 1:11，Accepted 9:00；split + 雙向 mapping 自行完成 |
+| 377 | Combination Sum IV | Medium | 2026-10-03 | A | Idea 3:17，Accepted 15:43；無 Hint 自行建立 1D counting DP |
+| 416 | Partition Equal Subset Sum | Medium | 2026-10-02 | B | 1:05 自行完成 target=sum/2 reduction；H1 後建立 subset-sum DP，21:58 Accepted |
+| 530 | Minimum Absolute Difference in BST | Easy | 2026-10-03 | A | Idea 1:00，Accepted 9:07；inorder 後比較相鄰值 |
+| 572 | Subtree of Another Tree | Easy | 2026-10-02 | B | 2:10 原始方向正確；H1 後回到 traversal + Same Tree；38:10 Accepted |
+
+**目前已完成：72 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -87,6 +94,8 @@
 
 | 優先度 | # | 題目 | 為什麼需要複習 | 下次複習目標 | 狀態 |
 |---|---:|---|---|---|---|
+| 高 | 416 | Partition Equal Subset Sum | problem reduction 很快，但 DP state definition 與 0/1 反向更新仍需提示 | 無提示自行定義 subset-sum state，解釋為何 j 需反向更新並完成 | 待複習 |
+| 中 | 572 | Subtree of Another Tree | 原始方向正確，但 Same Tree 結構處理仍需提示 | 無提示拆成 traversal + Same Tree，正確處理 None / tree structure | 待複習 |
 | 高 | 139 | Word Break | Medium 時先採單一路徑 greedy，H1 後才建立「多個 reachable index」模型 | 無提示自行定義 reachable / dp state，完成正確解法並解釋為何 greedy 不成立 | 待複習 |
 | 高 | 3 | Longest Substring Without Repeating Characters | 第一次拿 Hint 1，完成的是 O(n²) window | 無提示自行做到 O(n) | 待複習 |
 | 高 | 213 | House Robber II | circular constraint → case split 需 Hint 2 | 無提示自行想到拆成兩個 linear case | 待複習 |
