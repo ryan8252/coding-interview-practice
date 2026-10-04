@@ -219,6 +219,12 @@ Day 24 觀察：
 - 416 顯示 Medium 的 problem reduction 已能很快完成，但 DP state definition / transition 仍是主要弱點；尤其要理解 0/1 類問題為何需要反向更新。
 - 新增複習：416 高優先；572 中優先。
 
+### Day 26 — 2026-10-04
+- 101 Symmetric Tree：A，10:07；0:19 先想到左右子樹比較，9:32 發現題意要求 mirror of itself，將 Same Tree 比較方向改成 left-vs-right / right-vs-left 後 AC。
+- 409 Longest Palindrome：A，6:44；Idea 1:46；自行統計字元頻率，偶數全取、奇數取 count-1，最後若有任一奇數再加 1。
+- 55 Jump Game：A，8:04；1:21 先想到 reachable positions，4:08 主動簡化為只維護 farthest reachable index，無 Hint AC。這是 greedy reasoning 的正向證據。
+- 複習 322 Coin Change：A（複習），15:32，C++。核心 recurrence 自行重建；只詢問 `vector<int> dp(amount+1, amount+1)` 初始化與 sentinel return 寫法，依規則不算演算法提示。高優先複習狀態解除。
+
 ## 出題策略
 
 - 每天至少 3 題新題；可持續採用 **2 Easy + 1 基礎 Medium**。
