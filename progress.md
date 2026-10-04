@@ -547,3 +547,27 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 | 377. Combination Sum IV | Medium | A | 3:17 | 無 | 15:43 |
 
 今日 3 題全 A。377 無 Hint 自行完成 1D counting DP，是近期 Medium state/model 建立的重要正向證據。
+
+
+---
+
+## 2026-10-04 — Day 26
+
+### 新題
+
+| 題目 | 難度 | 結果 | Idea / 轉折 | Accepted |
+|---|---|---|---|---:|
+| 101. Symmetric Tree | Easy | A | 0:19 先想左右子樹比較；9:32 發現需 mirror compare | 10:07 |
+| 409. Longest Palindrome | Easy | A | 1:46 自行建立頻率奇偶計算 | 6:44 |
+| 55. Jump Game | Medium | A | 1:21 reachable list；4:08 簡化為只維護 farthest reachable | 8:04 |
+
+### 複習
+
+| 題目 | 語言 | 結果 | 時間 | 紀錄 |
+|---|---|---|---:|---|
+| 322. Coin Change | C++ | A（複習） | 15:32 | 核心 DP recurrence 自行重建；只詢問 vector sentinel 初始化與最終 -1 判斷寫法，沒有查演算法。解除高優先複習。 |
+
+### Day 26 觀察
+- 55 是重要進展：先想到保存所有 reachable positions，之後自己壓縮成單一 farthest state，顯示 greedy / state compression reasoning 有進步。
+- 322 從初次 C 進步到 C++ 無演算法提示完成，代表 min-DP transition 已內化到可跨語言重現。
+- 101 顯示 tree traversal / recursion 基礎已穩，但讀題時需更快抓到「mirror」而非「same」的結構差異。
