@@ -571,3 +571,41 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - 55 是重要進展：先想到保存所有 reachable positions，之後自己壓縮成單一 farthest state，顯示 greedy / state compression reasoning 有進步。
 - 322 從初次 C 進步到 C++ 無演算法提示完成，代表 min-DP transition 已內化到可跨語言重現。
 - 101 顯示 tree traversal / recursion 基礎已穩，但讀題時需更快抓到「mirror」而非「same」的結構差異。
+
+
+---
+
+## 2026-10-05 — Day 27
+
+### 新題
+
+| 題目 | 難度 | 結果 | Idea / Hint | Accepted | 紀錄 |
+|---|---|---|---|---:|---|
+| 225. Implement Stack using Queues | Easy | C | 核心解法完全問 AI | 13:01 | 使用 deque；push 後旋轉 queue，讓最新元素移到 front。需無提示重做。 |
+| 257. Binary Tree Paths | Easy | C | 看答案 | 24:36 | traversal 時 stack 同時保存 node 與 path。需無提示重做。 |
+| 91. Decode Ways | Medium | B | 12:11 H1 | 23:17 | H1 後建立 dp[i]=前 i 碼解碼方法數；單碼合法加 dp[i-1]，雙碼合法加 dp[i-2]。 |
+
+### 複習
+- 213 House Robber II：C++。20:49 時核心 case split 已自行重建；後續主要是 rob1 DP indexing debug。本日未明確回報 Accepted time，因此暫不解除複習。
+
+### Day 27 觀察
+- 225、257 都是核心結構由外部答案提供，之後要無提示重做。
+- 91 再次顯示陌生 Medium DP 的主要瓶頸仍是 state definition / recurrence。
+
+
+---
+
+## 2026-10-06 — Day 28
+
+### 新題
+
+| 題目 | 難度 | 結果 | Idea / 轉折 | Hint | Accepted |
+|---|---|---|---|---|---:|
+| 1046. Last Stone Weight | Easy | B | 3:26 想到排序；7:30 懷疑可不排序；12:23 回到排序 | H1 14:37 | 15:58 |
+| 700. Search in a Binary Search Tree | Easy | A | Idea 0:24 | 無 | 8:16 |
+| 238. Product of Array Except Self | Medium | A | 0:33 想總乘積除自己；5:07 發現題目禁止除法後重新建模 | 無 | 30:45 |
+
+### Day 28 觀察
+- 1046 的核心行為「反覆取最大兩個並插回」已辨認，但資料結構選擇在 H1 後才轉成 heap；Python heapq API 查詢不算額外 Hint。
+- 700 能直接利用 BST ordering，只走單一路徑，Tree 基礎穩定。
+- 238 雖 Accepted 30:45，但 5:07 原方法被 constraint 推翻後，最終自行建立 prefix × suffix，並做到 output 不計時 O(1) extra space。這應記為重新建模較慢，不是單純 debug。
