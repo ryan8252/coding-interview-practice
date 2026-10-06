@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-03  
-> 目前進度：Day 25（2026-10-03）完成。
+> 更新日期：2026-10-06  
+> 目前進度：Day 28（2026-10-06）完成。
 
 ## 已完成題目總表
 
@@ -56,7 +56,7 @@
 | 278 | First Bad Version | Easy | 2026-09-20 | A |  |
 | 283 | Move Zeroes | Easy | 2026-09-11 | A | 初次 B；9/13 O(1) extra space 複習 A |
 | 300 | Longest Increasing Subsequence | Medium | 2026-09-28 | C | O(n²) DP direction 自行想到；O(n log n) tails + binary search 經主要提示完成 |
-| 322 | Coin Change | Medium | 2026-09-23 | C | Google 演算法後完成；需無提示重做 |
+| 322 | Coin Change | Medium | 2026-09-23 | A | 初次 C；2026-10-04 C++ 複習 15:32，核心 recurrence 無演算法提示重建成功；只查初始化與 sentinel return 語法 |
 | 367 | Valid Perfect Square | Easy | 2026-09-22 | A |  |
 | 374 | Guess Number Higher or Lower | Easy | 2026-09-27 | A | 自己完成 |
 | 392 | Is Subsequence | Easy | 2026-09-16 | A |  |
@@ -86,7 +86,17 @@
 | 530 | Minimum Absolute Difference in BST | Easy | 2026-10-03 | A | Idea 1:00，Accepted 9:07；inorder 後比較相鄰值 |
 | 572 | Subtree of Another Tree | Easy | 2026-10-02 | B | 2:10 原始方向正確；H1 後回到 traversal + Same Tree；38:10 Accepted |
 
-**目前已完成：72 題不同 LeetCode 題目。**
+| 55 | Jump Game | Medium | 2026-10-04 | A | Idea 1:21；4:08 從 reachable list 簡化為 farthest；8:04 Accepted |
+| 91 | Decode Ways | Medium | 2026-10-05 | B | 12:11 H1 後建立 dp state；23:17 Accepted；需複習 state/recurrence |
+| 101 | Symmetric Tree | Easy | 2026-10-04 | A | 9:32 發現需 mirror compare；10:07 Accepted |
+| 225 | Implement Stack using Queues | Easy | 2026-10-05 | C | 核心解法完全問 AI；13:01 Accepted |
+| 238 | Product of Array Except Self | Medium | 2026-10-06 | A | 5:07 發現不能除法後自行重建 prefix × suffix；30:45 Accepted |
+| 257 | Binary Tree Paths | Easy | 2026-10-05 | C | 看答案後完成；24:36 Accepted；需複習 traversal + path state |
+| 409 | Longest Palindrome | Easy | 2026-10-04 | A | Idea 1:46；6:44 Accepted |
+| 700 | Search in a Binary Search Tree | Easy | 2026-10-06 | A | Idea 0:24；8:16 Accepted；利用 BST ordering |
+| 1046 | Last Stone Weight | Easy | 2026-10-06 | B | 14:37 H1 指向可反覆取最大值的資料結構；15:58 Accepted；heapq API 查詢不算額外 Hint |
+
+**目前已完成：81 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -94,12 +104,16 @@
 
 | 優先度 | # | 題目 | 為什麼需要複習 | 下次複習目標 | 狀態 |
 |---|---:|---|---|---|---|
+| 高 | 225 | Implement Stack using Queues | 第一次核心解法完全問 AI | 無提示自行用 queue 模擬 stack，並能解釋 push-rotation 為何成立 | 待複習 |
+| 高 | 257 | Binary Tree Paths | 第一次看答案後完成 | 無提示自行 traversal 並攜帶 path state | 待複習 |
+| 中高 | 91 | Decode Ways | H1 後才建立 DP state / recurrence | 無提示自行定義 dp[i]，處理 0、單碼與雙碼合法性 | 待複習 |
+| 中 | 1046 | Last Stone Weight | 已想到反覆取最大兩個，但 H1 後才辨認 heap | 無提示辨認 max-heap 並完成 | 待複習 |
 | 高 | 416 | Partition Equal Subset Sum | problem reduction 很快，但 DP state definition 與 0/1 反向更新仍需提示 | 無提示自行定義 subset-sum state，解釋為何 j 需反向更新並完成 | 待複習 |
 | 中 | 572 | Subtree of Another Tree | 原始方向正確，但 Same Tree 結構處理仍需提示 | 無提示拆成 traversal + Same Tree，正確處理 None / tree structure | 待複習 |
 | 高 | 139 | Word Break | Medium 時先採單一路徑 greedy，H1 後才建立「多個 reachable index」模型 | 無提示自行定義 reachable / dp state，完成正確解法並解釋為何 greedy 不成立 | 待複習 |
 | 高 | 3 | Longest Substring Without Repeating Characters | 第一次拿 Hint 1，完成的是 O(n²) window | 無提示自行做到 O(n) | 待複習 |
 | 高 | 213 | House Robber II | circular constraint → case split 需 Hint 2 | 無提示自行想到拆成兩個 linear case | 待複習 |
-| 高 | 322 | Coin Change | 完全沒方向後 Google 演算法 | 無提示自行定義 state / transition，完成 min-DP | 待複習 |
+| 高 | 322 | Coin Change | 初次完全沒方向後 Google 演算法；2026-10-04 已用 C++ 無演算法提示重做成功 | 已能自行定義 state / transition 並完成 min-DP | 已解除 |
 | 高 | 300 | Longest Increasing Subsequence | O(n log n) tails + binary search 經多層提示後完成 | 無提示自行完成 O(n log n)，並能解釋 tails 的語意 | 待複習 |
 | 高 | 705 | Design HashSet | 第一次作答詢問了 hash function、modulo、collision handling 等核心設計 | 無提示自行完成 bucket + collision handling，並能解釋 chaining 或 probing | 待複習 |
 | 中 | 120 | Triangle | 原題 A，但 O(n) extra-space follow-up 由 GPT 直接給完整解法 | 無提示把 2D DP 壓成 O(n) space | 待複習 |
