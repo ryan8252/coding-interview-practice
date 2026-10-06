@@ -33,7 +33,7 @@
 - Stack
 - Running Minimum / One Pass
 - Two Pointers / in-place array 操作（已有數次無提示成功）
-- DP / recurrence：70、746、198 都能無提示完成，基礎 recurrence 已開始穩定；64 Minimum Path Sum 與 120 Triangle 也已能無提示完成 min-DP；931 Minimum Falling Path Sum 已能自行完成 O(n) space optimization。152 Maximum Product Subarray 在取得「同時維護 max/min ending product」關鍵提示後能自行完成 recurrence，表示多狀態 DP 開始建立，但仍需無提示重做。213 House Robber II 與 322 Coin Change 仍需優先複習。
+- DP / recurrence：70、746、198、64、120、931 已有多次無提示成功。322 Coin Change 已於 2026-10-04 用 C++ 無演算法提示重做成功並解除複習；377 Combination Sum IV 也能無 Hint 自行建立 counting DP。91 Decode Ways 仍顯示遇到新的字串 DP 時，state definition / recurrence 需要提示；152、416 仍需持續驗證。
 - Binary Tree：100 首次需要查 traversal；226 已能無查詢自行 traversal；543 在 bottom-up depth aggregation 上需要主要提示；104 Maximum Depth 與 112 Path Sum 已能無提示完成；110 Balanced Binary Tree 更進一步自行用 iterative stack + dictionary 完成 child -> parent depth aggregation；94 Inorder Traversal 也能無提示完成，但目前 iterative inorder 仍額外使用 visited dictionary，可再優化
 - Binary Search：278 First Bad Version 與 367 Valid Perfect Square 都能無查詢自行完成，較 69 Sqrt(x) 時的 boundary 問題已有明顯進步
 
@@ -224,6 +224,18 @@ Day 24 觀察：
 - 409 Longest Palindrome：A，6:44；Idea 1:46；自行統計字元頻率，偶數全取、奇數取 count-1，最後若有任一奇數再加 1。
 - 55 Jump Game：A，8:04；1:21 先想到 reachable positions，4:08 主動簡化為只維護 farthest reachable index，無 Hint AC。這是 greedy reasoning 的正向證據。
 - 複習 322 Coin Change：A（複習），15:32，C++。核心 recurrence 自行重建；只詢問 `vector<int> dp(amount+1, amount+1)` 初始化與 sentinel return 寫法，依規則不算演算法提示。高優先複習狀態解除。
+
+### Day 27 — 2026-10-05
+- 225 Implement Stack using Queues：C，13:01；核心解法完全問 AI。列入複習。
+- 257 Binary Tree Paths：C，24:36；看答案完成 traversal + path state。列入複習。
+- 91 Decode Ways：B，23:17；12:11 H1 後建立 dp state，需複習新的字串 DP state/recurrence。
+- 複習 213 House Robber II：C++，20:49 時核心 case split 已自行重建；後續主要是 DP indexing debug。本日未明確回報 Accepted time，因此暫不解除複習狀態。
+
+### Day 28 — 2026-10-06
+- 1046 Last Stone Weight：B，15:58；14:37 H1 後辨認 heap；heapq API 查詢不算額外 Hint。列入複習。
+- 700 Search in a Binary Search Tree：A，8:16；Idea 0:24，正確利用 BST ordering。
+- 238 Product of Array Except Self：A，30:45；5:07 注意到不能除法，之後自行重建 prefix × suffix，無 Hint。
+- 今日 238 的總時間雖長，但屬重新建模後獨立完成；不是單純 implementation 卡住。
 
 ## 出題策略
 
