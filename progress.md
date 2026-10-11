@@ -634,3 +634,18 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - 108 顯示 tree divide-and-conquer 可獨立完成。
 - 1143 是 Medium state/model 的正向證據：2:07 就能自行建立 2D DP；後段主要是 Python reference semantics 問題。
 - 新增明確 training item：C / C++ / Python 物件、class/struct 與 container initialization。
+
+
+---
+
+## 2026-10-11 — Day 30
+
+| 題目 | 難度 | 評價 | Idea / Hint | Accepted |
+|---|---|---|---|---|
+| 56. Merge Intervals | Medium | B | 4:26 想到排序並取得 H1；7:12 自行形成合併方向；查 Python sort key 語法 | 21:18 |
+| 200. Number of Islands | Medium | A（附 Debug 協助） | 0:28 辨認 Graph Traversal；15:49 TLE，詢問座標、visited、index 的 implementation 問題；採 iterative DFS | 19:31 |
+| 844. Backspace String Compare | Easy | A | 0:42 讀完，無 Hint，自行以 list 模擬 | 7:48 |
+
+- 844 O(1) space follow-up 尚未完成，已獲從右往左的 Hint 1；原題仍為 A。
+- 56 列入低頻複習；200 traversal stack state / visited 標記需留意。
+- 三題均 AC；10/08～10/10 休息無需補題。
