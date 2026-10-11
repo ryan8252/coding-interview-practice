@@ -609,3 +609,28 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - 1046 的核心行為「反覆取最大兩個並插回」已辨認，但資料結構選擇在 H1 後才轉成 heap；Python heapq API 查詢不算額外 Hint。
 - 700 能直接利用 BST ordering，只走單一路徑，Tree 基礎穩定。
 - 238 雖 Accepted 30:45，但 5:07 原方法被 constraint 推翻後，最終自行建立 prefix × suffix，並做到 output 不計時 O(1) extra space。這應記為重新建模較慢，不是單純 debug。
+
+
+---
+
+## 2026-10-07 — Day 29
+
+### 新題
+
+| 題目 | 難度 | 結果 | Idea / 轉折 | Hint / 查詢 | Accepted |
+|---|---|---|---|---|---:|
+| 496. Next Greater Element I | Easy | B | 初始只想到逐一找右側第一個更大的值 | H1 7:20；後續理解一次掃 nums2 建 next-greater map | 30:39 |
+| 108. Convert Sorted Array to Binary Search Tree | Easy | A | Idea 4:36，divide and conquer | 無 | 15:31 |
+| 1143. Longest Common Subsequence | Medium | A | Idea 2:07，2D DP O(MN) | 無演算法 Hint；只問 Python 2D list 初始化 aliasing bug | 24:08 |
+
+### 複習：705. Design HashSet
+- C++，20:41 仍無法從空殼自行完成後詢問 AI。
+- 本次確認 HashSet、hash function、collision、separate chaining 原理其實已理解。
+- 真正弱點是跨語言 initialization：C 的 struct/create/malloc/free、C++ class/constructor/vector、Python __init__ 與 nested mutable list。
+- 複習狀態：未解除；後續先補 theory 初始化模板，再回來完整實作。
+
+### Day 29 觀察
+- 496 需要複習 monotonic stack，尤其要能自己說明 stack 是用來預處理 nums2，而不是每找到一個答案就重掃 nums1。
+- 108 顯示 tree divide-and-conquer 可獨立完成。
+- 1143 是 Medium state/model 的正向證據：2:07 就能自行建立 2D DP；後段主要是 Python reference semantics 問題。
+- 新增明確 training item：C / C++ / Python 物件、class/struct 與 container initialization。
