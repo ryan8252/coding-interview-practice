@@ -55,6 +55,11 @@
   - 69 Sqrt(x) 曾需要 Hint 2 才辨認 Binary Search，且最後回傳 boundary 出錯
   - 278 First Bad Version 已能無提示自行完成 first-true 類 binary search
   - 還需要持續驗證不同 boundary 形式
+- **跨語言 object / container initialization 基礎**
+  - 2026-10-07 的 705 複習確認 HashSet 原理本身已理解，但從 C / C++ / Python 空殼開始時，常卡在 struct/class、constructor/create function、container 初始化。
+  - 1143 也出現 Python 2D list aliasing：`[[0]*(m+1)]*(n+1)` 多列共用同一 inner list。
+  - 後續應獨立練習 C `typedef struct` + `malloc/create/free`、C++ constructor / `vector<T>(n)`、Python `__init__` 與 nested mutable container 初始化，而不是只靠重刷 705。
+
 - **C++ pointer / object 基礎**
   - 21 Merge Two Sorted Lists 與 203 Remove Linked List Elements 的演算法核心都能自行重現
   - 但兩次都曾先寫出未初始化 `ListNode* dummy;`，之後才詢問 GPT debug
@@ -236,6 +241,13 @@ Day 24 觀察：
 - 700 Search in a Binary Search Tree：A，8:16；Idea 0:24，正確利用 BST ordering。
 - 238 Product of Array Except Self：A，30:45；5:07 注意到不能除法，之後自行重建 prefix × suffix，無 Hint。
 - 今日 238 的總時間雖長，但屬重新建模後獨立完成；不是單純 implementation 卡住。
+
+### Day 29 — 2026-10-07
+- 496 Next Greater Element I：B，30:39；7:20 H1 後理解先處理 nums2 建立 next-greater map，最後自行完成 monotonic stack。
+- 108 Convert Sorted Array to Binary Search Tree：A，15:31；Idea 4:36，無 Hint，自行 divide and conquer。
+- 1143 Longest Common Subsequence：A，24:08；Idea 2:07，自行建立 O(MN) 2D DP；只查 Python 2D list 初始化 aliasing bug。
+- 複習 705 Design HashSet：未解除。HashSet / chaining 原理已理解；真正卡點是 C/C++/Python 的 object / class / struct / container 初始化模板。
+- 新增基礎弱點：跨語言初始化與 object construction，應獨立放進 theory 練習。
 
 ## 出題策略
 
