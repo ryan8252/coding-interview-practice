@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-07  
-> 目前進度：Day 29（2026-10-07）完成。
+> 更新日期：2026-10-11  
+> 目前進度：Day 30（2026-10-11）完成。
 
 ## 已完成題目總表
 
@@ -100,7 +100,11 @@
 | 496 | Next Greater Element I | Easy | 2026-10-07 | B | 7:20 H1 後理解一次處理 nums2 建 next-greater map；30:39 Accepted；需複習 monotonic stack |
 | 1143 | Longest Common Subsequence | Medium | 2026-10-07 | A | Idea 2:07；24:08 Accepted；只詢問 Python 2D list 初始化 aliasing bug，無演算法 Hint |
 
-**目前已完成：84 題不同 LeetCode 題目。**
+| 56 | Merge Intervals | Medium | 2026-10-11 | B | 4:26 H1 提示按 start 排序；7:12 自行形成合併 Idea；21:18 AC；sort API 查詢不算 Hint |
+| 200 | Number of Islands | Medium | 2026-10-11 | A | 0:28 自行辨認 Graph Traversal；15:49 TLE 後有 implementation/debug 協助，19:31 AC；無演算法 Hint |
+| 844 | Backspace String Compare | Easy | 2026-10-11 | A | 7:48 自行 stack 模擬 AC；O(1) space follow-up 未完成、已拿 H1 |
+
+**目前已完成：87 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -108,6 +112,8 @@
 
 | 優先度 | # | 題目 | 為什麼需要複習 | 下次複習目標 | 狀態 |
 |---|---:|---|---|---|---|
+| 低 | 56 | Merge Intervals | H1 後才建立完整排序＋合併流程 | 無提示自行重做並說明區間端點的更新 | 待複習 |
+| 低 | 844 | Backspace String Compare | 原題 A，但 O(1) space Follow-up 尚未完成，已得 H1 | 無提示自行完成 O(1) space 版本 | 待複習 |
 | 高 | 225 | Implement Stack using Queues | 第一次核心解法完全問 AI | 無提示自行用 queue 模擬 stack，並能解釋 push-rotation 為何成立 | 待複習 |
 | 高 | 257 | Binary Tree Paths | 第一次看答案後完成 | 無提示自行 traversal 並攜帶 path state | 待複習 |
 | 中高 | 91 | Decode Ways | H1 後才建立 DP state / recurrence | 無提示自行定義 dp[i]，處理 0、單碼與雙碼合法性 | 待複習 |
