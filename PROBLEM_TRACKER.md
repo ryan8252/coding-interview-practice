@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-06  
-> 目前進度：Day 28（2026-10-06）完成。
+> 更新日期：2026-10-07  
+> 目前進度：Day 29（2026-10-07）完成。
 
 ## 已完成題目總表
 
@@ -96,7 +96,11 @@
 | 700 | Search in a Binary Search Tree | Easy | 2026-10-06 | A | Idea 0:24；8:16 Accepted；利用 BST ordering |
 | 1046 | Last Stone Weight | Easy | 2026-10-06 | B | 14:37 H1 指向可反覆取最大值的資料結構；15:58 Accepted；heapq API 查詢不算額外 Hint |
 
-**目前已完成：81 題不同 LeetCode 題目。**
+| 108 | Convert Sorted Array to Binary Search Tree | Easy | 2026-10-07 | A | Idea 4:36；15:31 Accepted；無 Hint，divide and conquer 自行完成 |
+| 496 | Next Greater Element I | Easy | 2026-10-07 | B | 7:20 H1 後理解一次處理 nums2 建 next-greater map；30:39 Accepted；需複習 monotonic stack |
+| 1143 | Longest Common Subsequence | Medium | 2026-10-07 | A | Idea 2:07；24:08 Accepted；只詢問 Python 2D list 初始化 aliasing bug，無演算法 Hint |
+
+**目前已完成：84 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -107,6 +111,7 @@
 | 高 | 225 | Implement Stack using Queues | 第一次核心解法完全問 AI | 無提示自行用 queue 模擬 stack，並能解釋 push-rotation 為何成立 | 待複習 |
 | 高 | 257 | Binary Tree Paths | 第一次看答案後完成 | 無提示自行 traversal 並攜帶 path state | 待複習 |
 | 中高 | 91 | Decode Ways | H1 後才建立 DP state / recurrence | 無提示自行定義 dp[i]，處理 0、單碼與雙碼合法性 | 待複習 |
+| 中 | 496 | Next Greater Element I | H1 後才理解 monotonic stack 用來一次處理 nums2 並建立 next-greater map | 無提示辨認並完成 monotonic stack，能解釋為何每個元素至多 push/pop 一次 | 待複習 |
 | 中 | 1046 | Last Stone Weight | 已想到反覆取最大兩個，但 H1 後才辨認 heap | 無提示辨認 max-heap 並完成 | 待複習 |
 | 高 | 416 | Partition Equal Subset Sum | problem reduction 很快，但 DP state definition 與 0/1 反向更新仍需提示 | 無提示自行定義 subset-sum state，解釋為何 j 需反向更新並完成 | 待複習 |
 | 中 | 572 | Subtree of Another Tree | 原始方向正確，但 Same Tree 結構處理仍需提示 | 無提示拆成 traversal + Same Tree，正確處理 None / tree structure | 待複習 |
@@ -115,7 +120,7 @@
 | 高 | 213 | House Robber II | circular constraint → case split 需 Hint 2 | 無提示自行想到拆成兩個 linear case | 待複習 |
 | 高 | 322 | Coin Change | 初次完全沒方向後 Google 演算法；2026-10-04 已用 C++ 無演算法提示重做成功 | 已能自行定義 state / transition 並完成 min-DP | 已解除 |
 | 高 | 300 | Longest Increasing Subsequence | O(n log n) tails + binary search 經多層提示後完成 | 無提示自行完成 O(n log n)，並能解釋 tails 的語意 | 待複習 |
-| 高 | 705 | Design HashSet | 第一次作答詢問了 hash function、modulo、collision handling 等核心設計 | 無提示自行完成 bucket + collision handling，並能解釋 chaining 或 probing | 待複習 |
+| 高 | 705 | Design HashSet | 初次曾詢問 hash/collision 核心；2026-10-07 複習確認原理已理解，但仍無法從空殼自行完成初始化與 implementation | 不只重刷題目；先補 C/C++/Python class/struct/object/container initialization，再無提示完整實作 | 待複習 |
 | 中 | 120 | Triangle | 原題 A，但 O(n) extra-space follow-up 由 GPT 直接給完整解法 | 無提示把 2D DP 壓成 O(n) space | 待複習 |
 | 中 | 21 | Merge Two Sorted Lists | 演算法已 A，但 C++ 曾寫未初始化 `ListNode* dummy;` | 用 C++ 無查詢正確建立 dummy object / pointer | 待複習 |
 | 中 | 203 | Remove Linked List Elements | C++ 複習時再次出現未初始化 dummy pointer | 用 C++ 無查詢完成，且不再犯 pointer/object 初始化錯誤 | 待複習 |
