@@ -269,3 +269,10 @@ Day 24 觀察：
 > 請讀取 GitHub repo `ryan8252/coding-interview-practice` 的 `PROBLEM_TRACKER.md`、`CURRENT_STATE.md`、`progress.md` 和最近的 `days/` 紀錄，然後繼續我的每日 coding interview 練習。出新題前先用 `PROBLEM_TRACKER.md` 去重。
 
 這樣即可從目前進度接續，不需要重新解釋整個訓練背景。
+
+
+## 2026-10-11 Day 30 能力狀態
+- 當日 3 題全部 AC：56 Merge Intervals B（21:18，排序提示後自行實作）、200 Number of Islands A（19:31，演算法獨立想到，曾求助 implementation/debug）、844 Backspace String Compare A（7:48，無提示）。
+- 200 的主要弱點是 stack 要存座標及正確維護 visited，並非辨認演算法。迭代實作是 DFS。
+- 844 O(1) extra-space follow-up 尚未完成，獲 H1 後仍待驗證；56 應低頻複習。
+- 今日題目已列入 tracker，今後不可重複當新題。
