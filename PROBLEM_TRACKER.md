@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-11  
-> 目前進度：Day 30（2026-10-11）完成。
+> 更新日期：2026-10-12  
+> 目前進度：Day 31（2026-10-12）完成。
 
 ## 已完成題目總表
 
@@ -104,7 +104,11 @@
 | 200 | Number of Islands | Medium | 2026-10-11 | A | 0:28 自行辨認 Graph Traversal；15:49 TLE 後有 implementation/debug 協助，19:31 AC；無演算法 Hint |
 | 844 | Backspace String Compare | Easy | 2026-10-11 | A | 7:48 自行 stack 模擬 AC；O(1) space follow-up 未完成、已拿 H1 |
 
-**目前已完成：87 題不同 LeetCode 題目。**
+| 739 | Daily Temperatures | Medium | 2026-10-12 | A | Idea 1:48，自行想到 stack；無 Hint；21:14 AC |
+| 207 | Course Schedule | Medium | 2026-10-12 | C | Idea 2:21 自行辨認 graph/cycle；Hint 1；Google DFS cycle detection；AI 協助找 implementation typo/縮排問題，使用者已理解原理與 Scope；26:43 AC |
+| 67 | Add Binary | Easy | 2026-10-12 | A | 5:01 AC；僅 Google 二進位轉換的 Python API；使用 int 與 format |
+
+**目前已完成：90 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -112,6 +116,7 @@
 
 | 優先度 | # | 題目 | 為什麼需要複習 | 下次複習目標 | 狀態 |
 |---|---:|---|---|---|---|
+| 高 | 207 | Course Schedule | 有 Google 查詢 DFS cycle detection；原程式 debug 是 typo、縮排與 class 變數設計詢問，不代表不理解原理 | 無提示自行完成有向 Graph cycle detection，說明 visiting/visited 差異 | 待複習 |
 | 低 | 56 | Merge Intervals | H1 後才建立完整排序＋合併流程 | 無提示自行重做並說明區間端點的更新 | 待複習 |
 | 低 | 844 | Backspace String Compare | 原題 A，但 O(1) space Follow-up 尚未完成，已得 H1 | 無提示自行完成 O(1) space 版本 | 待複習 |
 | 高 | 225 | Implement Stack using Queues | 第一次核心解法完全問 AI | 無提示自行用 queue 模擬 stack，並能解釋 push-rotation 為何成立 | 待複習 |
