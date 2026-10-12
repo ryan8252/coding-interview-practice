@@ -276,3 +276,9 @@ Day 24 觀察：
 - 200 的主要弱點是 stack 要存座標及正確維護 visited，並非辨認演算法。迭代實作是 DFS。
 - 844 O(1) extra-space follow-up 尚未完成，獲 H1 後仍待驗證；56 應低頻複習。
 - 今日題目已列入 tracker，今後不可重複當新題。
+
+
+## 2026-10-12 Day 31 更新
+- 739 Daily Temperatures A (21:14)，1:48 自行使用 stack；207 Course Schedule 暫列 C (26:43)，已辨認 graph/cycle，但 Google 查 DFS cycle detection；67 Add Binary A (5:01)，僅查 Python API。
+- 對 207：self.dfs(node)/neighbour 與 return False 縮排是已知原理下的筆誤和 debug 困難；Class Scope 亦已理解，只是在諮詢比較好的設計。不得再錯誤標記為不理解 Scope/DFS。核心 cycle detection 獨立性待 active recall 驗證。
+- 67 Python int(base=2)/format 方法已 AC，不強制要求 follow-up。
