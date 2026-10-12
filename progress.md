@@ -649,3 +649,28 @@ C++ pointer/object 初始化錯誤第二次出現，因此之後要把它當成�
 - 844 O(1) space follow-up 尚未完成，已獲從右往左的 Hint 1；原題仍為 A。
 - 56 列入低頻複習；200 traversal stack state / visited 標記需留意。
 - 三題均 AC；10/08～10/10 休息無需補題。
+
+
+---
+
+## 2026-10-12 — Day 31
+
+## 739. Daily Temperatures
+- 難度 Medium，Python；讀題 0:38；Idea 1:48（自行想到 stack）；無 Hint；Accepted 21:14；評價 A。
+- 使用 stack 儲存 (temperature,index)，while 處理所有可被更高溫度解決的日期。O(n) time / O(n) space。
+- 之前 496 需要提示，本題已能獨立使用；496 仍待無提示複習，不直接解除。
+
+## 207. Course Schedule
+- 難度 Medium，Python；讀題 0:53；Idea 2:21（自行辨認 graph / cycle）；Hint 1 5:00；Accepted 26:43。
+- 曾 Google 搜尋 DFS 判斷 cycle，並詢問 AI Debug；評價暫列 C（依目前提供的資訊，外部查詢涉及關鍵 cycle detection 技巧，若只是核對已知技巧可再調整）。
+- 原始版本出現 self.dfs(node) 應為 self.dfs(neighbor)、return False 縮排位置錯誤；使用者澄清兩者為單純打字失誤、知道原理但未找到 bug。state/graph 變數 Scope 原理使用者也已理解，詢問 AI 是為了較佳的設定與共享方式；**不要**將以上記為不理解 DFS 或 Scope。
+- 最終使用 state 0=unvisited、1=visiting、2=visited 的 DFS 判斷有向環，O(V+E) time / O(V+E) space。後續以無提示 active recall 驗證 cycle detection 的獨立實作。
+
+## 67. Add Binary
+- 難度 Easy，Python；Accepted 5:01，Idea / Read time 未回報；無演算法 Hint；Google 查二進位字串與整數轉換 Python API；評價 A。
+- 使用 int(a,base=2)、整數相加與 format(cc,'b')；語法查詢不扣分。
+- 若之後需要，可練不透過整數轉換的版本，但原題已 A，不強制複習。
+
+## Day 31 觀察
+- 三題全 AC：739 A、207 C（需保留 debug 性質的正確說明）、67 A。
+- 207 的 Cycle Detection Google 查詢與 debug 查詢須分開；不把 typo 或 Class Scope 諮詢誤判為演算法能力不足。
