@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-12  
-> 目前進度：Day 31（2026-10-12）完成。
+> 更新日期：2026-10-13  
+> 目前進度：Day 32（2026-10-13）完成。
 
 ## 已完成題目總表
 
@@ -108,7 +108,11 @@
 | 207 | Course Schedule | Medium | 2026-10-12 | C | Idea 2:21 自行辨認 graph/cycle；Hint 1；Google DFS cycle detection；AI 協助找 implementation typo/縮排問題，使用者已理解原理與 Scope；26:43 AC |
 | 67 | Add Binary | Easy | 2026-10-12 | A | 5:01 AC；僅 Google 二進位轉換的 Python API；使用 int 與 format |
 
-**目前已完成：90 題不同 LeetCode 題目。**
+| 133 | Clone Graph | Medium | 2026-10-13 | C | 22:22 H1、28:37 H2，36:17 AC；graph clone mapping 核心需提示，已理解先記錄再遞迴 |
+| 153 | Find Minimum in Rotated Sorted Array | Medium | 2026-10-13 | A | 1:27 自行想到 Binary Search，25:38 AC；分支較繁複但可判斷最小值區間 |
+| 232 | Implement Queue using Stacks | Easy | 2026-10-13 | B | 17:10 H1 後修正雙 stack 職責與 implementation，23:48 AC |
+
+**目前已完成：93 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -116,6 +120,8 @@
 
 | 優先度 | # | 題目 | 為什麼需要複習 | 下次複習目標 | 狀態 |
 |---|---:|---|---|---|---|
+| 高 | 133 | Clone Graph | 需 Hint 2 才建立原始 Node→複製 Node 對應與先記錄再 DFS 的主要結構 | 無提示獨立實作含 cycle 的 graph clone，解釋 mapping 與 neighbors 的正確性 | 待複習 |
+| 中 | 232 | Implement Queue using Stacks | 原題需 H1 才修正兩個 stack 的角色與搬移時機 | 無提示實作，說明 amortized O(1) | 待複習 |
 | 高 | 207 | Course Schedule | 有 Google 查詢 DFS cycle detection；原程式 debug 是 typo、縮排與 class 變數設計詢問，不代表不理解原理 | 無提示自行完成有向 Graph cycle detection，說明 visiting/visited 差異 | 待複習 |
 | 低 | 56 | Merge Intervals | H1 後才建立完整排序＋合併流程 | 無提示自行重做並說明區間端點的更新 | 待複習 |
 | 低 | 844 | Backspace String Compare | 原題 A，但 O(1) space Follow-up 尚未完成，已得 H1 | 無提示自行完成 O(1) space 版本 | 待複習 |
