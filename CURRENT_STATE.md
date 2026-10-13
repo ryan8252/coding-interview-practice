@@ -282,3 +282,10 @@ Day 24 觀察：
 - 739 Daily Temperatures A (21:14)，1:48 自行使用 stack；207 Course Schedule 暫列 C (26:43)，已辨認 graph/cycle，但 Google 查 DFS cycle detection；67 Add Binary A (5:01)，僅查 Python API。
 - 對 207：self.dfs(node)/neighbour 與 return False 縮排是已知原理下的筆誤和 debug 困難；Class Scope 亦已理解，只是在諮詢比較好的設計。不得再錯誤標記為不理解 Scope/DFS。核心 cycle detection 獨立性待 active recall 驗證。
 - 67 Python int(base=2)/format 方法已 AC，不強制要求 follow-up。
+
+
+## 2026-10-13 Day 32 更新
+- 133 Clone Graph：C，36:17；DFS / dictionary 初步方向自行想到，但 H2 才取得 graph clone mapping 核心結構；能解釋先記錄再遞迴避免 cycle，列高優先複習。
+- 153 Find Minimum in Rotated Sorted Array：A，25:38；1:27 自行辨認 binary search，無提示；邊界分支較繁複但 AC。
+- 232 Implement Queue using Stacks：B，23:48；17:10 H1 後完成；理解 push stack / pop stack 分工與攤銷複雜度；之後只需一次無提示複習。
+- Day 32 三題均 AC；總計 93 題。
