@@ -696,3 +696,24 @@ Python Binary Search。使用者根據 O(log n) 要求自行辨認搜尋方法�
 Python 兩個 stack：data1 接收 push，data2 負責 pop/peek；只有 data2 空時才從 data1 搬移。最初 return 縮排、stack 職責與 empty 判斷需修正；Hint 1 後完成。pop/peek 攤銷 O(1)，空間 O(n)。使用者能正確解釋新 push 的值放在另一個 stack 不會影響 data2 中舊元素取出順序。中優先複習，之後一次無提示實作即可驗證。
 
 Day 32 三題全部 Accepted；總累計 93 題不同題目。
+
+---
+
+## 2026-10-14 — Day 33
+
+| 題目 | 難度 | 評價 | Idea / Hint | Accepted |
+|---|---|---|---|---|
+| 994. Rotting Oranges | Medium | A | 讀完 1:12、立即想到 BFS；15:12 MLE 後自行修正 visited 標記 | 19:09 |
+| 494. Target Sum | Medium | C | 讀完 0:58；5:53 發現 greedy 不可行；Hint 1：完整分支；14:30 暴力枚舉 TLE；Hint 2：統計相同總和的方法數；20:19 第一次字典實作；另向 Gemini 詢問 defaultdict(int)、.items() | 27:38 |
+| 1047. Remove All Adjacent Duplicates In String | Easy | B | 一開始想到遞迴，看 LeetCode Topic 得知 Stack；只另查 list 轉 string 的 Python API | 4:59 |
+
+## 994 觀察
+Python 多源 BFS。第一次 MLE 因為入 Queue 時沒有將新鮮橘子標記成腐爛，造成重複加入；自行修正、使用 deque 分層計時、最後掃描是否還有新鮮橘子。Time O(nm)，Space O(nm)。自行 debug，評 A。
+
+## 494 觀察
+Python。先推翻 greedy；Hint 1 後自行列舉正負所有可能，但 O(2^n) TLE；Hint 2 後轉往 sum→ways 計數。第一次 dict 版本有 counts[0]=0、混淆 key=sum 和 value=count、在迭代中修改同個字典的錯誤。最後使用 counts={0:1}、next_dp=defaultdict(int)、for current_sum,count in counts.items()，將 count 加到 next_dp[current_sum±n]。使用者能正確完成狀態轉移理解測試 {0:2,2:1} +1 → {1:3,-1:2,3:1}。列高優先 Active Recall，評 C。
+
+## 1047 觀察
+Python Stack。使用者表示先想到遞迴，看 LeetCode Topic「Stack」後自行完成 stack[-1] 相等則 pop，否則 append；Google 查 '' .join 語法，屬 API 查詢。Time O(n)，Space O(n)。評 B。不需強制重刷，日後藉由新題驗證自行辨認資料結構。
+
+今日三題全 AC，累計 96 題不同 LeetCode 題目。
