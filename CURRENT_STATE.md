@@ -289,3 +289,10 @@ Day 24 觀察：
 - 153 Find Minimum in Rotated Sorted Array：A，25:38；1:27 自行辨認 binary search，無提示；邊界分支較繁複但 AC。
 - 232 Implement Queue using Stacks：B，23:48；17:10 H1 後完成；理解 push stack / pop stack 分工與攤銷複雜度；之後只需一次無提示複習。
 - Day 32 三題均 AC；總計 93 題。
+
+
+## 2026-10-14 Day 33 更新
+- 994 Rotting Oranges A（19:09）：1:12 BFS Idea；15:12 MLE 自行修正 visited，顯示 grid traversal debugging 進步。
+- 494 Target Sum C（27:38）：greedy 自行推翻；H1 後暴力列舉 TLE；H2 後得到 sum→ways DP，初版混淆 key/value 與新舊狀態，Gemini 協助 Python defaultdict 與 items。能正確回答 DP 狀態轉移小測驗。列高優先複習。
+- 1047 Remove All Adjacent Duplicates In String B（4:59）：看 LeetCode Topic 知道 Stack 後自行實作；只查 join 語法。以新題驗證辨認能力即可。
+- Day 33 三題 AC，總計 96 題。
