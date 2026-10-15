@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-14  
-> 目前進度：Day 33（2026-10-14）完成。
+> 更新日期：2026-10-15  
+> 目前進度：Day 34（2026-10-15）完成。
 
 ## 已完成題目總表
 
@@ -116,7 +116,11 @@
 | 494 | Target Sum | Medium | 2026-10-14 | C | H1、H2 後建立 sum→ways DP；27:38 AC；已通過狀態轉移理解測試 |
 | 1047 | Remove All Adjacent Duplicates In String | Easy | 2026-10-14 | B | 看 LeetCode Stack Topic 後自行實作；查 join API；4:59 AC |
 
-**目前已完成：96 題不同 LeetCode 題目。**
+| 560 | Subarray Sum Equals K | Medium | 2026-10-15 | B | H1 17:11 後用 Prefix Sum + C++ map，34:19 AC |
+| 435 | Non-overlapping Intervals | Medium | 2026-10-15 | B | H1 7:25 後懂保留較早結束者；Gemini 提供 C++ 語法及狀態變數，36:28 AC |
+| 703 | Kth Largest Element in a Stream | Easy | 2026-10-15 | A | 18:43 AC；自選 min heap；僅查 C++ Class / vector API |
+
+**目前已完成：99 題不同 LeetCode 題目。**
 
 ## 需要複習的題目
 
@@ -124,6 +128,8 @@
 
 | 優先度 | # | 題目 | 為什麼需要複習 | 下次複習目標 | 狀態 |
 |---|---:|---|---|---|---|
+| 低 | 560 | Subarray Sum Equals K | H1 後才由 Sliding Window 轉成 Prefix Sum 計數 | 無提示完成有負數的 Prefix Sum frequency 解法 | 待複習 |
+| 低 | 435 | Non-overlapping Intervals | H1 後才掌握保留較早結束的區間 | 無提示解釋 Greedy 選擇及正確實作 | 待複習 |
 | 高 | 494 | Target Sum | 暴力枚舉 TLE，需 H2 才轉成 sum→ways 計數狀態 | 無提示定義計數 DP，正確逐輪更新狀態 | 待複習 |
 | 高 | 133 | Clone Graph | 需 Hint 2 才建立原始 Node→複製 Node 對應與先記錄再 DFS 的主要結構 | 無提示獨立實作含 cycle 的 graph clone，解釋 mapping 與 neighbors 的正確性 | 待複習 |
 | 中 | 232 | Implement Queue using Stacks | 原題需 H1 才修正兩個 stack 的角色與搬移時機 | 無提示實作，說明 amortized O(1) | 待複習 |
