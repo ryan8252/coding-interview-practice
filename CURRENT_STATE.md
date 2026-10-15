@@ -296,3 +296,10 @@ Day 24 觀察：
 - 494 Target Sum C（27:38）：greedy 自行推翻；H1 後暴力列舉 TLE；H2 後得到 sum→ways DP，初版混淆 key/value 與新舊狀態，Gemini 協助 Python defaultdict 與 items。能正確回答 DP 狀態轉移小測驗。列高優先複習。
 - 1047 Remove All Adjacent Duplicates In String B（4:59）：看 LeetCode Topic 知道 Stack 後自行實作；只查 join 語法。以新題驗證辨認能力即可。
 - Day 33 三題 AC，總計 96 題。
+
+
+## 2026-10-15 Day 34 更新
+- 560 B，34:19，C++；H1 後從不適用負數的 Sliding Window 改成 Prefix Sum + map，列低頻複習。
+- 435 B，36:28，C++；H1 後掌握保留較早結束區間的 Greedy，Gemini 僅提供語法與狀態變數建議，列低頻複習。
+- 703 A，18:43，C++；11:30 只詢問 Class member / scope 與 vector API，自行改用 min-heap priority_queue，無演算法 Hint，不強制複習。
+- 全部 AC，累計 99 題。
