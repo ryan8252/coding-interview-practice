@@ -739,3 +739,16 @@ Python Stack。使用者表示先想到遞迴，看 LeetCode Topic「Stack」後
 C++ 使用 private priority_queue<int, vector<int>, greater<int>> mn 和 int K。建構子放入初始 nums，再 pop 到最多 K 個；add 對不足 K 的情況 push，否則只有新數比 mn.top() 大才替換。Constructor O(n log(n+1)) time，add O(log k)，Space O(k)。C++ Class 語法詢問不算演算法 Hint。已 A，不強制重刷。
 
 Day 34 全三題 AC；累計 99 題不同 LeetCode 題目。
+
+
+---
+
+## 2026-10-19 — Day 38
+
+| 題目 | 難度 | 評價 | 解題過程 | Accepted |
+|---|---|---|---|---|
+| 15. 3Sum | Medium | B | 原版 35:45 TLE，三指標移動不穩、去重用 list membership；經 GPT Hint 1：利用排序跳過重複值，並討論固定一個指標的方向後，獨立寫出正確 O(n²) 版本 | 41:08 |
+| 46. Permutations | Medium | C | 知道排列規則及 Backtracking，但無法獨立把遞迴寫出；參考完整答案後 13:30 AC；對參考程式有理解，但從零建立狀態、選擇、遞迴與還原仍卡住 | 13:30 |
+| 231. Power of Two | Easy | A | 無 Hint，自行以反覆除 2 並檢查奇偶完成；排除 n<=0；O(log n) time / O(1) space | 04:09 |
+
+今日 3 題全 AC。累計 102 題不同 LeetCode 題目。15 的 41:08 是更正後 Accepted time（先前誤回報 14:08）。46 高優先複習：短時間刻意練習 Backtracking 的 state/choices/base case/undo 與從空白程式建立遞迴，不要單純重讀答案。使用者亦回顧之前面試邏輯測驗中真假話/條件推理表現偏弱，需區分演算法建模、實作 Debug 及邏輯推理，不因弱項就降低每日 2 Medium + 1 Easy 難度。
