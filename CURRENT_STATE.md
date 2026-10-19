@@ -303,3 +303,11 @@ Day 24 觀察：
 - 435 B，36:28，C++；H1 後掌握保留較早結束區間的 Greedy，Gemini 僅提供語法與狀態變數建議，列低頻複習。
 - 703 A，18:43，C++；11:30 只詢問 Class member / scope 與 vector API，自行改用 min-heap priority_queue，無演算法 Hint，不強制複習。
 - 全部 AC，累計 99 題。
+
+
+## 2026-10-19 Day 38 更新
+- 15 3Sum：B，41:08 AC。初版 35:45 TLE，Hint 1 處理重複及固定第一個數字的搜尋方向後，自行完成排序＋雙指標 O(n²)；中優先無提示複習。
+- 46 Permutations：C，13:30 AC。知道 Backtracking 規則但看完整答案才寫出來；可理解現有遞迴碼，無法從零建立 recursion/backtrack structure。高優先補強 State、Choices、Base Case、Undo，採小單位獨立編寫與 Active Recall。
+- 231 Power of Two：A，04:09 AC；無 Hint，以 n>0 並反覆除 2 判定，O(log n) / O(1)。
+- 今日 3 題 AC；累計 **102 題不同題目**。2026-10-16～18 已各出 3 題，未回報作答；已記於 tracker，後續不得當新題。
+- 使用者對部分邏輯推理題與 Backtracking 建構較缺乏信心；已有多次獨立完成其他 Medium 的證據，避免概括為天生邏輯差。每日 2 Medium + 1 Easy 不因卡關降低難度。
