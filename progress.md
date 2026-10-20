@@ -752,3 +752,16 @@ Day 34 全三題 AC；累計 99 題不同 LeetCode 題目。
 | 231. Power of Two | Easy | A | 無 Hint，自行以反覆除 2 並檢查奇偶完成；排除 n<=0；O(log n) time / O(1) space | 04:09 |
 
 今日 3 題全 AC。累計 102 題不同 LeetCode 題目。15 的 41:08 是更正後 Accepted time（先前誤回報 14:08）。46 高優先複習：短時間刻意練習 Backtracking 的 state/choices/base case/undo 與從空白程式建立遞迴，不要單純重讀答案。使用者亦回顧之前面試邏輯測驗中真假話/條件推理表現偏弱，需區分演算法建模、實作 Debug 及邏輯推理，不因弱項就降低每日 2 Medium + 1 Easy 難度。
+
+
+---
+
+## 2026-10-20 — Day 39
+
+| 題目 | 難度 | 評價 | Accepted | 說明 |
+|---|---|---|---|---|
+| 17 Letter Combinations of a Phone Number | Medium | B（暫定） | 30:32 | 參考前一日 46 的遞迴寫法，但自行建構新的 first-digit + suffix combinations 解法；無網路查解。貼出版本缺少 digits 為空字串的 base case，待確認 LeetCode AC 程式是否相同。 |
+| 102 Binary Tree Level Order Traversal | Medium | A | 06:10 | 自行 deque BFS 按每輪 queue 長度分層，無 Hint，O(n) time and space。 |
+| 383 Ransom Note | Easy | A | 09:13 | 自行用 dictionary 進行 frequency counting，僅想過 Counter 未使用，無 Hint，O(m+n) time。 |
+
+Day 39 回報三題均 AC，合計 105 題不同 LeetCode。17 使用遞迴分解合併，不等同典型有 Undo 的 Backtracking。46 仍高優先複習。
