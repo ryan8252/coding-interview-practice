@@ -311,3 +311,10 @@ Day 24 觀察：
 - 231 Power of Two：A，04:09 AC；無 Hint，以 n>0 並反覆除 2 判定，O(log n) / O(1)。
 - 今日 3 題 AC；累計 **102 題不同題目**。2026-10-16～18 已各出 3 題，未回報作答；已記於 tracker，後續不得當新題。
 - 使用者對部分邏輯推理題與 Backtracking 建構較缺乏信心；已有多次獨立完成其他 Medium 的證據，避免概括為天生邏輯差。每日 2 Medium + 1 Easy 不因卡關降低難度。
+
+
+## 2026-10-20 Day 39 更新
+- 17 Letter Combinations of a Phone Number：B（暫定），30:32 回報 AC；參考昨天 46 的程式碼記起遞迴形式後自行實作 first-digit + suffix 組合；沒有上網查題解。貼出的版本缺少 empty string input 的處理，需確認版本是否真的 AC。這是遞迴分解合併，尚不能算獨立掌握典型 Backtracking 的 Undo。
+- 102 Binary Tree Level Order Traversal：A，06:10，自行 BFS 按層數切分，無提示。
+- 383 Ransom Note：A，09:13，自己寫 dict 次數統計，無提示。
+- Day 39 三題回報 AC，累計 105 題不同題目。46 高優先複習仍保留，肯定參考已做題後能遷移遞迴的進展。
