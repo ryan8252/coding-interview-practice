@@ -318,3 +318,10 @@ Day 24 觀察：
 - 102 Binary Tree Level Order Traversal：A，06:10，自行 BFS 按層數切分，無提示。
 - 383 Ransom Note：A，09:13，自己寫 dict 次數統計，無提示。
 - Day 39 三題回報 AC，累計 105 題不同題目。46 高優先複習仍保留，肯定參考已做題後能遷移遞迴的進展。
+
+
+## 2026-10-21 Day 40 更新
+- 22 Generate Parentheses：B，24:43 AC。參考 17 的遞迴程式但獨立建構 backtrack(r,l,comb) 分支與合法約束，遞迴實作能力進步；仍需檢驗無參考從零建構。
+- 33 Search in Rotated Sorted Array：C，參考完整答案，程式正確；Accepted 與耗時未回報。關鍵弱點為 sorted-half 推理及 start/mid/end 邊界，安排高優先 Active Recall。
+- 118 Pascal's Triangle：A，05:51 AC；獨立完成。
+- 明確 AC 累計至少 107 題不同 LeetCode；若 33 也已 AC 則 108 題。保留 Day 40 2 Medium +1 Easy 難度；22 進展可視為舊題寫法遷移，不誤記完全無參考 A。
