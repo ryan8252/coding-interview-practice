@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-20  
-> 目前進度：Day 39（2026-10-20）完成。
+> 更新日期：2026-10-21  
+> 目前進度：Day 40（2026-10-21）已作答，#33 AC 時間未確認。
 
 ## 已完成題目總表
 
@@ -120,7 +120,7 @@
 | 435 | Non-overlapping Intervals | Medium | 2026-10-15 | B | H1 7:25 後懂保留較早結束者；Gemini 提供 C++ 語法及狀態變數，36:28 AC |
 | 703 | Kth Largest Element in a Stream | Easy | 2026-10-15 | A | 18:43 AC；自選 min heap；僅查 C++ Class / vector API |
 
-**目前已完成：105 題不同 LeetCode 題目。**
+**目前已確認 AC：107 題不同 LeetCode 題目。另 #33 已參考完整答案並提供正確程式，提交狀態未確認。**
 
 | 15 | 3Sum | Medium | 2026-10-19 | B | 41:08 AC |
 | 46 | Permutations | Medium | 2026-10-19 | C | 13:30 AC；參考完整答案，需複習 |
@@ -128,6 +128,9 @@
 | 17 | Letter Combinations of a Phone Number | Medium | 2026-10-20 | B | 30:32 回報 AC；參考前題遞迴寫法，貼出的版本缺少空輸入判斷 |
 | 102 | Binary Tree Level Order Traversal | Medium | 2026-10-20 | A | 06:10 AC |
 | 383 | Ransom Note | Easy | 2026-10-20 | A | 09:13 AC |
+
+| 22 | Generate Parentheses | Medium | 2026-10-21 | B | 24:43 AC；參考 #17 寫法，獨立構建括號遞迴 |
+| 118 | Pascal's Triangle | Easy | 2026-10-21 | A | 05:51 AC；獨立完成 |
 
 ## 需要複習的題目
 
@@ -167,6 +170,9 @@
 | 低 | 543 | Diameter of Binary Tree | bottom-up depth aggregation 曾需主要提示 | 無提示完成 child → parent aggregation | 待複習 |
 | 低 | 160 | Intersection of Two Linked Lists | traversal / node identity 曾卡住 | 無提示完成並避免漏 pointer 前進 | 待複習 |
 | 低 | 94 | Binary Tree Inorder Traversal | 已能自行完成，但目前額外使用 visited dictionary | 不用 visited set/dict，僅用 stack 完成 iterative inorder | 待複習 |
+
+## 2026-10-21 已出題，完成狀態未確認
+- 33 Search in Rotated Sorted Array：已參考完整答案，提供正確程式；尚未回報 Accepted 與時間；評 C，不再當新題，列高優先無提示複習。
 
 ## 2026-10-16～18 已出題、未回報完成
 - Day 35: 78, 98, 191。
