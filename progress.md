@@ -765,3 +765,16 @@ Day 34 全三題 AC；累計 99 題不同 LeetCode 題目。
 | 383 Ransom Note | Easy | A | 09:13 | 自行用 dictionary 進行 frequency counting，僅想過 Counter 未使用，無 Hint，O(m+n) time。 |
 
 Day 39 回報三題均 AC，合計 105 題不同 LeetCode。17 使用遞迴分解合併，不等同典型有 Undo 的 Backtracking。46 仍高優先複習。
+
+
+---
+
+## 2026-10-21 — Day 40
+
+| 題目 | 難度 | 評價 | 時間 | 紀錄 |
+|---|---|---|---|---|
+| 22. Generate Parentheses | Medium | B | 24:43 AC | 參考前一日 17 程式寫法，自己建立剩餘左、右括號的遞迴狀態與合法分支，沒有照抄本題答案；已能遷移遞迴概念。 |
+| 33. Search in Rotated Sorted Array | Medium | C | 未回報 | 無法自行推導 start/mid/end 區間，抄完整答案；提供的程式邏輯正確，但 Accepted 狀態與時間未確認。需無提示重做。 |
+| 118. Pascal's Triangle | Easy | A | 05:51 AC | 自行依上一列相鄰元素建立新列，正確處理邊界，O(n²) 時間與輸出空間。 |
+
+本日 22、118 明確回報 AC；33 參考完整答案並貼出正確程式，未明確說明提交 AC 或時間。累計明確回報 AC 的不同題目至少 107 題（原 105 + 22、118）；33 若 AC 則 108 題。
