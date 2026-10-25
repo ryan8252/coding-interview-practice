@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-10-21  
-> 目前進度：Day 40（2026-10-21）已作答，#33 AC 時間未確認。
+> 更新日期：2026-10-25  
+> 目前進度：Day 44（2026-10-25）已出題待作答；Day 41～43 狀態見下方。#33 AC 時間未確認。
 
 ## 已完成題目總表
 
@@ -179,6 +179,17 @@
 - Day 36: 347, 518, 268。
 - Day 37: 39, 19, 338。
 - 以上不可重新當作全新題目。
+
+## 2026-10-22～25 已出題／狀態追蹤（不可再當全新題）
+
+| 日期 | Day | 已出題與狀態 |
+|---|---|---|
+| 2026-10-22 | 41 | #79 Word Search：44:57 AC，參考答案，C；#34 Find First and Last Position of Element in Sorted Array：未完成；#66 Plus One：未作答 |
+| 2026-10-23 | 42 | #74 Search a 2D Matrix、#131 Palindrome Partitioning、#28 Find the Index of the First Occurrence in a String：均已出題，未回報 |
+| 2026-10-24 | 43 | #162 Find Peak Element、#90 Subsets II、#9 Palindrome Number：均已出題，未回報 |
+| 2026-10-25 | 44 | #875 Koko Eating Bananas、#77 Combinations、#13 Roman to Integer：今日已出題，待作答 |
+
+以上題目皆不得重複列為全新題目。#79 雖已 AC 但仍需高優先複習狀態標記與 Undo；#34 未完成不可計入 AC。
 
 ## 已出過但未完成／跳過
 
