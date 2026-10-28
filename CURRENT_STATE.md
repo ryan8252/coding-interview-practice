@@ -332,3 +332,8 @@ Day 24 觀察：
 - 依最新 Day 41–45 紀錄避開所有已出題（包括未完成、未回報）與已完成、跳過題；不補休息日，維持 2 Medium + 1 Easy。
 - Day 41：79 C（44:57 AC，參考答案）、34 未完成（11:54，O(log n) 未達標）、66 未作答。Day 42–45 均只有出題紀錄，尚未回報作答。33 AC 狀態仍未確認。
 - 今日三題不計入 AC，待使用者回報後才更新正式評分及進度。
+
+
+## 2026-10-28 Day 47 已出題（尚未回報）
+- 新題：#49 Group Anagrams（Medium）、#230 Kth Smallest Element in a BST（Medium）、#190 Reverse Bits（Easy）。
+- 已核對 tracker、progress、最近 days 紀錄，均非既有已完成／已出題；不可重複作為全新題。未作答不計 AC；不補前幾日題目，不透露 Pattern 或提示。
