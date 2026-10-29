@@ -337,3 +337,9 @@ Day 24 觀察：
 ## 2026-10-28 Day 47 已出題（尚未回報）
 - 新題：#49 Group Anagrams（Medium）、#230 Kth Smallest Element in a BST（Medium）、#190 Reverse Bits（Easy）。
 - 已核對 tracker、progress、最近 days 紀錄，均非既有已完成／已出題；不可重複作為全新題。未作答不計 AC；不補前幾日題目，不透露 Pattern 或提示。
+
+
+## 2026-10-29 Day 48 已出題（尚未回報）
+- 新題：#216 Combination Sum III（Medium）、#53 Maximum Subarray（Medium）、#344 Reverse String（Easy）。
+- 已依 tracker、progress、theory/progress 與 10/19～10/28 days 詳細紀錄去重；均未曾出題或完成，且為免費 LeetCode 題目。維持 2 Medium + 1 Easy，不補前幾日未完成題。
+- 尚無作答或 AC，不計入完成數；等待使用者回報，再依 Idea/Hint/Accepted、獨立性、Debug、Complexity 和正確性評 A/B/C/D。
