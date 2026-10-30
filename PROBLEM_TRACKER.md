@@ -229,3 +229,7 @@
   3. 「已出過但未完成／跳過」也不要隨機再次安排。
   4. 複習題必須明確標成複習，且**不計入每天至少 3 題新題**。
   5. 完成當天紀錄後，同步更新本檔案、`progress.md`、`CURRENT_STATE.md` 與對應 `days/YYYY-MM-DD.md`。
+
+## 2026-10-30 已出題／待作答（不可再當全新題）
+- Day 49：#5 Longest Palindromic Substring（Medium）、#658 Find K Closest Elements（Medium）、#350 Intersection of Two Arrays II（Easy），均已出題、尚未回報作答。
+- 三題不得重複列為全新題目；不補先前未完成題目，不計入 AC，待回報後再更新評分。
