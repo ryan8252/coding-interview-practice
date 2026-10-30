@@ -343,3 +343,8 @@ Day 24 觀察：
 - 新題：#216 Combination Sum III（Medium）、#53 Maximum Subarray（Medium）、#344 Reverse String（Easy）。
 - 已依 tracker、progress、theory/progress 與 10/19～10/28 days 詳細紀錄去重；均未曾出題或完成，且為免費 LeetCode 題目。維持 2 Medium + 1 Easy，不補前幾日未完成題。
 - 尚無作答或 AC，不計入完成數；等待使用者回報，再依 Idea/Hint/Accepted、獨立性、Debug、Complexity 和正確性評 A/B/C/D。
+
+## 2026-10-30 Day 49 已出題（尚未回報）
+- 新題：#5 Longest Palindromic Substring（Medium）、#658 Find K Closest Elements（Medium）、#350 Intersection of Two Arrays II（Easy）。
+- 已核對 tracker、progress、theory/progress 與 2026-10-19～29 days 詳細紀錄，均未曾完成或出題；不得再列為全新題目。
+- 依近期能力維持 2 Medium + 1 Easy，題型分散、不補前日未完成題；尚無作答或 AC，不計入完成數，待回報後再評 A/B/C/D。
