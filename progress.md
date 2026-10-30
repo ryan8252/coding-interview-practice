@@ -778,3 +778,16 @@ Day 39 回報三題均 AC，合計 105 題不同 LeetCode。17 使用遞迴分�
 | 118. Pascal's Triangle | Easy | A | 05:51 AC | 自行依上一列相鄰元素建立新列，正確處理邊界，O(n²) 時間與輸出空間。 |
 
 本日 22、118 明確回報 AC；33 參考完整答案並貼出正確程式，未明確說明提交 AC 或時間。累計明確回報 AC 的不同題目至少 107 題（原 105 + 22、118）；33 若 AC 則 108 題。
+
+---
+
+## 2026-10-30 — Day 49（已出題，尚未回報）
+
+| 題目 | 難度 | 狀態 |
+|---|---|---|
+| 5. Longest Palindromic Substring | Medium | 已出題，未回報 |
+| 658. Find K Closest Elements | Medium | 已出題，未回報 |
+| 350. Intersection of Two Arrays II | Easy | 已出題，未回報 |
+
+- 依 PROBLEM_TRACKER.md、CURRENT_STATE.md、theory/progress.md 及 2026-10-19～29 days 紀錄排除已完成、已出過未完成與跳過題；今日三題均為全新免費 LeetCode 題目。
+- 維持 2 Medium + 1 Easy；不補之前未作答題，不因中斷降低難度。待使用者回報才計 AC、評分及更新詳細進度。
