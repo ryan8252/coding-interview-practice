@@ -260,7 +260,7 @@ Day 24 觀察：
 - Linked List 繼續用不同題型驗證 dummy / tail、traversal、slow/fast。
 - **C++ pointer/object 初始化仍需安排短複習**，直到能無查詢分辨 object、address、pointer、`new`。
 - 複習可刻意換 Python / C++ / C / Java；語法可查，但演算法核心仍需自己完成。
-- **出新題前必須先檢查 `PROBLEM_TRACKER.md`。** 已出現在「已完成題目總表」中的題目不得再當新題；若安排重做只能標成複習，且不計入每日 3 題新題。再搭配 `progress.md` 與最近 `days/` 查看詳細紀錄。35 與 643 在 Day 17 曾誤重複，因此當天只算複習。
+- **出新題前必須先檢查 `PROBLEM_TRACKER.md`。** 已完成或有實際嘗試／提示互動的題目不得再當新題；若安排重做只能標成複習，且不計入每日 3 題新題。再搭配 `progress.md` 與最近 `days/` 查看詳細紀錄。35 與 643 在 Day 17 曾誤重複，因此當天只算複習。
 
 ## 新對話接續方式
 
@@ -309,7 +309,7 @@ Day 24 觀察：
 - 15 3Sum：B，41:08 AC。初版 35:45 TLE，Hint 1 處理重複及固定第一個數字的搜尋方向後，自行完成排序＋雙指標 O(n²)；中優先無提示複習。
 - 46 Permutations：C，13:30 AC。知道 Backtracking 規則但看完整答案才寫出來；可理解現有遞迴碼，無法從零建立 recursion/backtrack structure。高優先補強 State、Choices、Base Case、Undo，採小單位獨立編寫與 Active Recall。
 - 231 Power of Two：A，04:09 AC；無 Hint，以 n>0 並反覆除 2 判定，O(log n) / O(1)。
-- 今日 3 題 AC；累計 **102 題不同題目**。2026-10-16～18 已各出 3 題，未回報作答；已記於 tracker，後續不得當新題。
+- 今日 3 題 AC；累計 **102 題不同題目**。2026-10-16～18 僅出題無作答，已按使用者要求從 tracker 移除。
 - 使用者對部分邏輯推理題與 Backtracking 建構較缺乏信心；已有多次獨立完成其他 Medium 的證據，避免概括為天生邏輯差。每日 2 Medium + 1 Easy 不因卡關降低難度。
 
 
@@ -327,31 +327,14 @@ Day 24 觀察：
 - 明確 AC 累計至少 107 題不同 LeetCode；若 33 也已 AC 則 108 題。保留 Day 40 2 Medium +1 Easy 難度；22 進展可視為舊題寫法遷移，不誤記完全無參考 A。
 
 
-## 2026-10-27 Day 46 出題紀錄
-- 已安排三題全新免費題：40 Combination Sum II（Medium）、540 Single Element in a Sorted Array（Medium）、144 Binary Tree Preorder Traversal（Easy）；均待作答。
-- 依最新 Day 41–45 紀錄避開所有已出題（包括未完成、未回報）與已完成、跳過題；不補休息日，維持 2 Medium + 1 Easy。
-- Day 41：79 C（44:57 AC，參考答案）、34 未完成（11:54，O(log n) 未達標）、66 未作答。Day 42–45 均只有出題紀錄，尚未回報作答。33 AC 狀態仍未確認。
-- 今日三題不計入 AC，待使用者回報後才更新正式評分及進度。
-
-
-## 2026-10-28 Day 47 已出題（尚未回報）
-- 新題：#49 Group Anagrams（Medium）、#230 Kth Smallest Element in a BST（Medium）、#190 Reverse Bits（Easy）。
-- 已核對 tracker、progress、最近 days 紀錄，均非既有已完成／已出題；不可重複作為全新題。未作答不計 AC；不補前幾日題目，不透露 Pattern 或提示。
-
-
-## 2026-10-29 Day 48 已出題（尚未回報）
-- 新題：#216 Combination Sum III（Medium）、#53 Maximum Subarray（Medium）、#344 Reverse String（Easy）。
-- 已依 tracker、progress、theory/progress 與 10/19～10/28 days 詳細紀錄去重；均未曾出題或完成，且為免費 LeetCode 題目。維持 2 Medium + 1 Easy，不補前幾日未完成題。
-- 尚無作答或 AC，不計入完成數；等待使用者回報，再依 Idea/Hint/Accepted、獨立性、Debug、Complexity 和正確性評 A/B/C/D。
-
-## 2026-10-30 Day 49 已出題（尚未回報）
-- 新題：#5 Longest Palindromic Substring（Medium）、#658 Find K Closest Elements（Medium）、#350 Intersection of Two Arrays II（Easy）。
-- 已核對 tracker、progress、theory/progress 與 2026-10-19～29 days 詳細紀錄，均未曾完成或出題；不得再列為全新題目。
-- 依近期能力維持 2 Medium + 1 Easy，題型分散、不補前日未完成題；尚無作答或 AC，不計入完成數，待回報後再評 A/B/C/D。
-
-
 ## 2026-11-06 Day 56 更新
 - 113 Path Sum II：33:36 AC，C++，暫 A（獨立性待確認）；DFS path push，左右子樹回來由父層 pop，合法葉節點才記錄 path。
 - 721 Accounts Merge：43:45 AC，C++，暫 C。使用者明確表示完全抄答案、原本想不出來；下一步驗證能否自己說明 email graph 的連通分量及以首個 email 連接同帳戶內所有 email 的正確性。若仍不能理解核心，依評分標準可能為 D。列高優先複習。
 - 459 Repeated Substring Pattern：23:40 AC，C++；s+s 去首尾後 find(s) 的技巧正確，獨立性未說明，尚不評 A/B/C。
 - 3 題回報 AC。保留 721 的 graph modeling 弱點及 46/79 的 Backtracking 建構復習方向，不因一次抄答案就降整體每日難度。
+
+
+## 2026-11-07 未作答紀錄清理
+- 依使用者要求清理「僅出題、無作答」紀錄；移除 2026-10-23～31 的九份 assignment-only days/ 檔，並清理 tracker、progress 和本檔的相應待作答內容。
+- 保留真正已完成的題目與評分、#33 的參考答案學習、#34 的 11:54 嘗試、#128 的 Hint 1，以及 #79 等 AC 紀錄。
+- 後續新題去重以實際完成或已開始嘗試／看 Hint 的題目為準；未作答僅被安排過的題目不再封鎖。Premium 仍排除，複習題不計每日三題。
