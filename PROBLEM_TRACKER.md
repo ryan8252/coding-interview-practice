@@ -136,6 +136,10 @@
 | 721 | Accounts Merge | Medium | 2026-11-06 | C（暫定） | 43:45 AC；完整抄答案，需驗證理解 graph modeling |
 | 459 | Repeated Substring Pattern | Easy | 2026-11-06 | 待確認 | 23:40 AC；特殊字串技巧，需確認獨立性 |
 
+| 79 | Word Search | Medium | 2026-10-22 | C | 44:57 AC；自行嘗試 DFS 後參考完整答案；需複習 visited 與 Undo |
+
+**已確認完成：111 題不同 LeetCode 題目（含參考答案後 AC；#33 未確認 AC 不計入）。**
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
