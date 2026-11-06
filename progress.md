@@ -791,3 +791,16 @@ Day 39 回報三題均 AC，合計 105 題不同 LeetCode。17 使用遞迴分�
 
 - 依 PROBLEM_TRACKER.md、CURRENT_STATE.md、theory/progress.md 及 2026-10-19～29 days 紀錄排除已完成、已出過未完成與跳過題；今日三題均為全新免費 LeetCode 題目。
 - 維持 2 Medium + 1 Easy；不補之前未作答題，不因中斷降低難度。待使用者回報才計 AC、評分及更新詳細進度。
+
+
+---
+
+## 2026-11-06 — Day 56
+
+| 題目 | 難度 | Accepted | 評價 | 紀錄 |
+|---|---|---|---|---|
+| 113 Path Sum II | Medium | 33:36 | A（暫定；無演算法提示需確認） | C++ DFS；用 path.push_back 記錄路徑，子遞迴後由父節點 pop_back，葉節點且剩餘和為零時記錄答案；程式正確。 |
+| 721 Accounts Merge | Medium | 43:45 | C（暫定） | 自述完整抄答案，原先無法自己做；程式為 email adjacency map + visited DFS + sort；需確認是否能理解核心關係，若看完仍無法解釋可能 D。 |
+| 459 Repeated Substring Pattern | Easy | 23:40 | 待確認獨立性 | C++ 使用 s+s 移除首尾後 find(s) 技巧，回報 AC；需釐清此特殊技巧是否自行發現或查找。 |
+
+Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據；Accounts Merge graph 建模是高優先補強；459 不根據 AC 自動判為 A。
