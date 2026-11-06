@@ -348,3 +348,10 @@ Day 24 觀察：
 - 新題：#5 Longest Palindromic Substring（Medium）、#658 Find K Closest Elements（Medium）、#350 Intersection of Two Arrays II（Easy）。
 - 已核對 tracker、progress、theory/progress 與 2026-10-19～29 days 詳細紀錄，均未曾完成或出題；不得再列為全新題目。
 - 依近期能力維持 2 Medium + 1 Easy，題型分散、不補前日未完成題；尚無作答或 AC，不計入完成數，待回報後再評 A/B/C/D。
+
+
+## 2026-11-06 Day 56 更新
+- 113 Path Sum II：33:36 AC，C++，暫 A（獨立性待確認）；DFS path push，左右子樹回來由父層 pop，合法葉節點才記錄 path。
+- 721 Accounts Merge：43:45 AC，C++，暫 C。使用者明確表示完全抄答案、原本想不出來；下一步驗證能否自己說明 email graph 的連通分量及以首個 email 連接同帳戶內所有 email 的正確性。若仍不能理解核心，依評分標準可能為 D。列高優先複習。
+- 459 Repeated Substring Pattern：23:40 AC，C++；s+s 去首尾後 find(s) 的技巧正確，獨立性未說明，尚不評 A/B/C。
+- 3 題回報 AC。保留 721 的 graph modeling 弱點及 46/79 的 Backtracking 建構復習方向，不因一次抄答案就降整體每日難度。
