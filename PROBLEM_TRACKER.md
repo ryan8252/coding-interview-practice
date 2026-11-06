@@ -4,8 +4,8 @@
 >
 > 每次安排「全新題目」前，**必須先讀這份檔案**。已出現在「已完成題目總表」中的題目，不得再當成全新題目；若要再次安排，只能明確標成「複習題」，且不計入每天至少 3 題的新題額度。
 >
-> 更新日期：2026-11-06  
-> 目前進度：Day 56（2026-11-06）三題回報 AC；其他未回報日仍不得重複出題。
+> 更新日期：2026-11-07  
+> 目前進度：截至 2026-11-06，僅保留有實際作答、提示互動或已完成的題目；僅出題未作答的紀錄依使用者要求移除。
 
 ## 已完成題目總表
 
@@ -175,51 +175,8 @@
 | 低 | 160 | Intersection of Two Linked Lists | traversal / node identity 曾卡住 | 無提示完成並避免漏 pointer 前進 | 待複習 |
 | 低 | 94 | Binary Tree Inorder Traversal | 已能自行完成，但目前額外使用 visited dictionary | 不用 visited set/dict，僅用 stack 完成 iterative inorder | 待複習 |
 
-## 2026-10-21 已出題，完成狀態未確認
+## 2026-10-21 有實際練習，AC 尚未確認
 - 33 Search in Rotated Sorted Array：已參考完整答案，提供正確程式；尚未回報 Accepted 與時間；評 C，不再當新題，列高優先無提示複習。
-
-## 2026-10-16～18 已出題、未回報完成
-- Day 35: 78, 98, 191。
-- Day 36: 347, 518, 268。
-- Day 37: 39, 19, 338。
-- 以上不可重新當作全新題目。
-
-## 2026-10-22～25 已出題／狀態追蹤（不可再當全新題）
-
-| 日期 | Day | 已出題與狀態 |
-|---|---|---|
-| 2026-10-22 | 41 | #79 Word Search：44:57 AC，參考答案，C；#34 Find First and Last Position of Element in Sorted Array：未完成；#66 Plus One：未作答 |
-| 2026-10-23 | 42 | #74 Search a 2D Matrix、#131 Palindrome Partitioning、#28 Find the Index of the First Occurrence in a String：均已出題，未回報 |
-| 2026-10-24 | 43 | #162 Find Peak Element、#90 Subsets II、#9 Palindrome Number：均已出題，未回報 |
-| 2026-10-25 | 44 | #875 Koko Eating Bananas、#77 Combinations、#13 Roman to Integer：今日已出題，待作答 |
-
-以上題目皆不得重複列為全新題目。#79 雖已 AC 但仍需高優先複習狀態標記與 Undo；#34 未完成不可計入 AC。
-
-## 2026-10-26 已出題／待作答（不可再當全新題）
-- Day 45：#130 Surrounded Regions（Medium）、#11 Container With Most Water（Medium）、#387 First Unique Character in a String（Easy），均已出題、尚未回報作答。
-- 當日僅安排新題，不補前幾日未作答的題目。完成後再更新已完成總表與進度。
-
-## 2026-10-27 已出題／待作答（不可再當全新題）
-- Day 46：#40 Combination Sum II（Medium）、#540 Single Element in a Sorted Array（Medium）、#144 Binary Tree Preorder Traversal（Easy），均已出題、尚未回報作答。
-- 不補前幾日未作答題目；三題均不計入 AC 總數，待回報再更新。
-
-## 2026-10-28 已出題／待作答（不可再當全新題）
-- Day 47：#49 Group Anagrams（Medium）、#230 Kth Smallest Element in a BST（Medium）、#190 Reverse Bits（Easy），均已出題、尚未回報作答。
-- 這三題不得重複列為全新題目；待回報後再更新已完成總表與評價。
-
-## 2026-10-29 已出題／待作答（不可再當全新題）
-- Day 48：#216 Combination Sum III（Medium）、#53 Maximum Subarray（Medium）、#344 Reverse String（Easy），均已出題、尚未回報作答。
-- 不補先前未完成題目；以上三題不得再列為全新題目，亦不計入 AC，待使用者回報後更新評分。
-
-## 已出過但未完成／跳過
-
-> 這些題**不要誤記成已完成**。除非明確要重試，否則也不要拿來當隨機的新題。
-
-| # | 題目 | 狀態 | 備註 |
-|---:|---|---|---|
-| 234 | Palindrome Linked List | 未完成 | 9/23 曾出題但未作答 |
-| 243 | Shortest Word Distance | 跳過 | LeetCode Premium，需要付費 |
-| 1213 | Intersection of Three Sorted Arrays | 跳過 | LeetCode Premium，需要付費 |
 
 ## 維護規則
 
@@ -230,17 +187,19 @@
 - 每日出題前：
   1. 先讀本檔案。
   2. 新題不得出現在「已完成題目總表」。
-  3. 「已出過但未完成／跳過」也不要隨機再次安排。
-  4. 複習題必須明確標成複習，且**不計入每天至少 3 題新題**。
+  3. 已經實際嘗試或取得 Hint 而未完成的題目，只能安排為複習；單純出題但未作答者不列入封鎖清單。
+  4. 複習題必須明確標成複習，且**不計入每天至少 3 題新題**；Premium 題目仍不得安排。
   5. 完成當天紀錄後，同步更新本檔案、`progress.md`、`CURRENT_STATE.md` 與對應 `days/YYYY-MM-DD.md`。
-
-## 2026-10-30 已出題／待作答（不可再當全新題）
-- Day 49：#5 Longest Palindromic Substring（Medium）、#658 Find K Closest Elements（Medium）、#350 Intersection of Two Arrays II（Easy），均已出題、尚未回報作答。
-- 三題不得重複列為全新題目；不補先前未完成題目，不計入 AC，待回報後再更新評分。
-
 
 ## 2026-11-06 Day 56 更新
 - #113 Path Sum II：33:36 AC，暫 A（獨立性待確認）。
 - #721 Accounts Merge：43:45 AC，暫 C；答案完整參考，graph 建模列高優先複習；若仍無法理解核心需重新評估。
 - #459 Repeated Substring Pattern：23:40 AC；評價需確認是否獨立想到 s+s 技巧。
-- 2026-10-31～11-05 已出題但未回報的題目，均不得重新當新題：#438 #208 #234 #236 #424 #171 #128 #763 #637 #93 #215 #941 #1980 #287 #1041 #621 #199 #404；11/06 本組已完成。
+- 2026-10-31～11-05 只有出題、無作答紀錄的題目已移除。
+
+## 已嘗試但未確認 Accepted
+- #33 Search in Rotated Sorted Array：已看完整答案並提供程式，AC 未確認，列複習。
+- #34 Find First and Last Position of Element in Sorted Array：11:54 自行嘗試，未達 O(log n)，尚未 AC，列複習。
+- #128 Longest Consecutive Sequence：已要求 Hint 1，尚無完整解答，列複習。
+
+> 依 2026-11-07 使用者要求，單純出題卻沒有實際作答或互動的題目已從 GitHub 追蹤清單移除；不影響已完成題數與歷史解題成績。
