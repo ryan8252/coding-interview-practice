@@ -797,3 +797,16 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 - 依使用者要求，移除僅出題未作答的追蹤資料，不將其列為已完成或禁止再出題；保留所有已 AC 與實際嘗試的題目與成績。
 - #33 已貼完整參考解法但未確認 AC、#34 11:54 未完成、#128 已取 Hint 1，均屬有實際互動，予以保留。
 - 過往 days/ 只有出題無作答的記錄已清理；已完成題目總數不變。
+
+
+---
+
+## 2026-11-09 — Day 59
+
+| 題目 | 難度 | 時間 | 評價 | 紀錄 |
+|---|---|---|---|---|
+| 78 Subsets | Medium | 16:10 AC | A | C++ 完全獨立 backtracking；每層記錄 sub，push/pop 正確；O(n·2^n) time / O(n) auxiliary space。 |
+| 547 Number of Provinces | Medium | 35:27 未 AC | D | C++ 單層鄰接掃描，未追蹤間接連通；DFS 草稿 visited 判斷反向。演算法邏輯錯誤，列高優先複習。 |
+| 2264 Largest 3-Same-Digit Number in String | Easy | 06:54 AC | A | C++ 三字元連續檢查並取最大，O(n) time / O(1) space；未明確回報提示情況。 |
+
+今日 2/3 AC，合計 58:31；累計明確 AC 不同題目 113 題。維持 2 Medium + 1 Easy。
