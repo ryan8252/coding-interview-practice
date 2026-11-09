@@ -138,7 +138,10 @@
 
 | 79 | Word Search | Medium | 2026-10-22 | C | 44:57 AC；自行嘗試 DFS 後參考完整答案；需複習 visited 與 Undo |
 
-**已確認完成：111 題不同 LeetCode 題目（含參考答案後 AC；#33 未確認 AC 不計入）。**
+**已確認完成：113 題不同 LeetCode 題目（含參考答案後 AC；#33 未確認 AC 不計入）。**
+
+| 78 | Subsets | Medium | 2026-11-09 | A | 16:10，完全獨立 C++ Backtracking AC |
+| 2264 | Largest 3-Same-Digit Number in String | Easy | 2026-11-09 | A | 06:54 AC；獨立性未明確回報 |
 
 ## 需要複習的題目
 
@@ -179,6 +182,8 @@
 | 低 | 160 | Intersection of Two Linked Lists | traversal / node identity 曾卡住 | 無提示完成並避免漏 pointer 前進 | 待複習 |
 | 低 | 94 | Binary Tree Inorder Traversal | 已能自行完成，但目前額外使用 visited dictionary | 不用 visited set/dict，僅用 stack 完成 iterative inorder | 待複習 |
 
+| 高 | 547 | Number of Provinces | 35:27 未 AC，單層掃描漏掉間接連通；DFS 草稿 visited 條件反向 | 無提示完整辨認並走訪連通分量 | 待複習 |
+
 ## 2026-10-21 有實際練習，AC 尚未確認
 - 33 Search in Rotated Sorted Array：已參考完整答案，提供正確程式；尚未回報 Accepted 與時間；評 C，不再當新題，列高優先無提示複習。
 
@@ -207,3 +212,9 @@
 - #128 Longest Consecutive Sequence：已要求 Hint 1，尚無完整解答，列複習。
 
 > 依 2026-11-07 使用者要求，單純出題卻沒有實際作答或互動的題目已從 GitHub 追蹤清單移除；不影響已完成題數與歷史解題成績。
+
+## 2026-11-09 Day 59 更新
+- #78 Subsets：Medium，16:10 AC，A；C++ 完全獨立 backtracking，正確 push/pop，O(n·2^n) time。
+- #547 Number of Provinces：Medium，35:27 未 AC，D；已嘗試，單層鄰接掃描漏掉間接連通，屬演算法錯誤；DFS 草稿 visited 判斷反向。高優先複習，不能再作新題。
+- #2264 Largest 3-Same-Digit Number in String：Easy，06:54 AC，A（無提示資訊未明確回報）；C++ 線性掃描正確。
+- 明確 AC 不同題目累計 113（先前 111 + #78、#2264）。
