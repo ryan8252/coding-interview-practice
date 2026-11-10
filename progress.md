@@ -810,3 +810,16 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 | 2264 Largest 3-Same-Digit Number in String | Easy | 06:54 AC | A | C++ 三字元連續檢查並取最大，O(n) time / O(1) space；未明確回報提示情況。 |
 
 今日 2/3 AC，合計 58:31；累計明確 AC 不同題目 113 題。維持 2 Medium + 1 Easy。
+
+
+---
+
+## 2026-11-10 — Day 60
+
+| 題目 | 難度 | 時間 | 評價 | 紀錄 |
+|---|---|---|---|---|
+| 684 Redundant Connection | Medium | 16:43 初版；22:37 Union-Find 版 | C（回報 AC、提交碼待核對） | 初版 visited 只判端點出現過，不能保證已連通，且 edges[-1] 越界；後詢問 GPT Union-Find 寫法，貼出的第二版 parent[n] 未初始化。演算法辨認與獨立實作仍需加強；高優先複習。 |
+| 39 Combination Sum | Medium | 17:46 AC | A | C++ 完全獨立 backtracking；可以重選 candidates[i]，使用 start 與 push/pop 避免重複及狀態污染。 |
+| 268 Missing Number | Easy | 04:22 AC | A | C++ expected sum minus actual sum，O(n) time / O(1) space；提示獨立性未特別回報。 |
+
+使用者回報 3 題 AC。#684 的兩份貼碼與 AC 不一致，實際提交版本待核對；另外兩題正確，累計確定 115 題不同題目（若 #684 成功提交確認則 116）。
