@@ -350,3 +350,6 @@ Day 24 觀察：
 - #39 Combination Sum：17:46，A，完全獨立 C++ backtracking AC；接續 #78 16:10 A，回溯建模已有連續正向證據。
 - #268 Missing Number：04:22，A，C++ sum difference AC，O(n) time / O(1) space。
 - 3/3 題回報 AC，#684 程式碼無法據此確認 AC；不含 #684 的已確認不同題目累計 115 題，待核對後可達 116。保持 2 Medium + 1 Easy。
+
+## 2026-11-10 #684 確認更正
+- #684 使用者再次明確確認第二版 Union-Find 程式在 LeetCode AC，22:37，C（有向 GPT 請教核心實作）。先前誤將 parent[n]=0 判為必然出錯：節點標籤為 1..n，0 不是真正節點，可充當 n 的集合代表；因此本題可 AC，建議改 i<=n 以便閱讀及泛化。累計 **116 題不同題目 AC**，今天 3/3 AC。保留 Union-Find 獨立實作複習。
