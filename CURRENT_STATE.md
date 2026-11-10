@@ -344,3 +344,9 @@ Day 24 觀察：
 - #547 Number of Provinces：35:27 未解，D。將直接鄰接誤當完整連通分量，DFS 草稿 visited 條件反向；屬演算法正確性問題而非純 typo。列高優先複習，不提供完整解法。
 - #2264 Largest 3-Same-Digit Number in String：06:54 AC，A（獨立性未特別說明）；O(n) / O(1)。
 - 今日 2/3 AC，58:31，明確 AC 累計 113 題。後續保持 2 Medium + 1 Easy，不因 #547 失敗降難度。
+
+## 2026-11-10 Day 60 更新
+- #684 Redundant Connection：16:43 第一版自寫，22:37 向 GPT 詢問 Union-Find 寫法，暫 C。兩版貼碼存在問題：endpoint seen 不等於同一 connected component；第二版 parent[n] 未初始化。使用者回報 AC，但需核對實際提交版本；高優先複習 Union-Find from scratch / graph connectivity。
+- #39 Combination Sum：17:46，A，完全獨立 C++ backtracking AC；接續 #78 16:10 A，回溯建模已有連續正向證據。
+- #268 Missing Number：04:22，A，C++ sum difference AC，O(n) time / O(1) space。
+- 3/3 題回報 AC，#684 程式碼無法據此確認 AC；不含 #684 的已確認不同題目累計 115 題，待核對後可達 116。保持 2 Medium + 1 Easy。
