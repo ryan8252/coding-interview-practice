@@ -138,10 +138,13 @@
 
 | 79 | Word Search | Medium | 2026-10-22 | C | 44:57 AC；自行嘗試 DFS 後參考完整答案；需複習 visited 與 Undo |
 
-**已確認完成：113 題不同 LeetCode 題目（含參考答案後 AC；#33 未確認 AC 不計入）。**
+**已確認完成：115 題不同 LeetCode 題目（含參考答案後 AC；#33 未確認 AC 不計入）。**
 
 | 78 | Subsets | Medium | 2026-11-09 | A | 16:10，完全獨立 C++ Backtracking AC |
 | 2264 | Largest 3-Same-Digit Number in String | Easy | 2026-11-09 | A | 06:54 AC；獨立性未明確回報 |
+
+| 39 | Combination Sum | Medium | 2026-11-10 | A | 17:46，完全獨立 C++ Backtracking AC |
+| 268 | Missing Number | Easy | 2026-11-10 | A | 04:22 AC，sum difference |
 
 ## 需要複習的題目
 
@@ -184,6 +187,8 @@
 
 | 高 | 547 | Number of Provinces | 35:27 未 AC，單層掃描漏掉間接連通；DFS 草稿 visited 條件反向 | 無提示完整辨認並走訪連通分量 | 待複習 |
 
+| 高 | 684 | Redundant Connection | 第一版端點 visited 無法代表相同連通分量，Union-Find 版依 GPT 且 parent[n] 未初始化 | 無提示實作 DSU / 或獨立 graph connectivity，對照 edge cases | 待複習 |
+
 ## 2026-10-21 有實際練習，AC 尚未確認
 - 33 Search in Rotated Sorted Array：已參考完整答案，提供正確程式；尚未回報 Accepted 與時間；評 C，不再當新題，列高優先無提示複習。
 
@@ -218,3 +223,9 @@
 - #547 Number of Provinces：Medium，35:27 未 AC，D；已嘗試，單層鄰接掃描漏掉間接連通，屬演算法錯誤；DFS 草稿 visited 判斷反向。高優先複習，不能再作新題。
 - #2264 Largest 3-Same-Digit Number in String：Easy，06:54 AC，A（無提示資訊未明確回報）；C++ 線性掃描正確。
 - 明確 AC 不同題目累計 113（先前 111 + #78、#2264）。
+
+## 2026-11-10 Day 60 更新
+- #684 Redundant Connection：Medium，16:43 第一版回報 AC、22:37 Union-Find 版回報完成，暫 C；第一版僅根據端點出現過判環，會誤判不同連通分量之間的邊，且 edges[-1] 越界；第二版向 GPT 問 Union-Find 寫法，parent[n] 未初始化。使用者回報 AC 但貼出的兩版均有正確性問題，標記「回報 AC、提交版本待核對」。列高優先複習，不再作新題。
+- #39 Combination Sum：Medium，17:46 AC，A，獨立 C++ backtracking，正確允許重複選擇、start 防重複、push/pop。
+- #268 Missing Number：Easy，04:22 AC，A（未明確回報是否查提示），C++ 數學總和差，O(n)/O(1)。
+- 明確無程式正確性疑慮的 AC 不同題目累計 115（原 113 + #39、#268）；若使用者 #684 實際提交 AC 經確認則 116。今日 3 題均已嘗試，不再列新題。
