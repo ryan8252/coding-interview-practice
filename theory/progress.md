@@ -33,3 +33,7 @@
 3. Data Structures — Hash Table 複習：從零實作 Linear Probing + tombstone；之後補 Load Factor / resize
 4. C++ — STL containers / const / pass-by-value vs pass-by-reference
 5. Data Structures — Stack / Queue / Heap 的操作與 complexity
+
+
+## 2026-11-10 新增待複習主題
+- Data Structures / Graph — Disjoint Set Union（Union-Find）：#684 需要求助 GPT 才能寫出 find/unite；雖已理解連通原理，但 parent 初始化與獨立實作待驗證。安排約 20–30 分鐘、無提示重新實作並測試多個連通分量，尚未進行理論評分。
