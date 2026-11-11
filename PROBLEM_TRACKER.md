@@ -138,7 +138,7 @@
 
 | 79 | Word Search | Medium | 2026-10-22 | C | 44:57 AC；自行嘗試 DFS 後參考完整答案；需複習 visited 與 Undo |
 
-**已確認完成：116 題不同 LeetCode 題目（含參考答案後 AC；#33 未確認 AC 不計入）。**
+**已確認完成：117 題不同 LeetCode 題目（含參考答案後 AC；#33 未確認 AC 不計入）。**
 
 | 78 | Subsets | Medium | 2026-11-09 | A | 16:10，完全獨立 C++ Backtracking AC |
 | 2264 | Largest 3-Same-Digit Number in String | Easy | 2026-11-09 | A | 06:54 AC；獨立性未明確回報 |
@@ -147,6 +147,8 @@
 | 268 | Missing Number | Easy | 2026-11-10 | A | 04:22 AC，sum difference |
 
 | 684 | Redundant Connection | Medium | 2026-11-10 | C | 22:37 Union-Find AC，曾詢問 GPT 核心實作；第一版 16:43 演算法有誤 |
+
+| 841 | Keys and Rooms | Medium | 2026-11-11 | A | 07:48，獨立 C++ BFS AC |
 
 ## 需要複習的題目
 
@@ -234,3 +236,9 @@
 
 ## 2026-11-10 #684 AC 核對更正
 - 使用者再次確認貼出的 Union-Find 版本在 LeetCode **AC（22:37）**，評 C（核心實作向 GPT 請教）。`parent[n]` 預設為 0，因節點只在 1..n，0 可作為 n 的代表根，於本題條件下仍能正確運作；但建議使用 `i<=n` 作清楚、標準的初始化。不應將此 AC 判為失敗。累計 **116 題不同題目已回報 AC**。
+
+## 2026-11-11 Day 61 更新（重複出題修正）
+- #841 Keys and Rooms：Medium，07:48 AC，A；完全獨立 C++ queue traversal，O(V+E) time，queue 可含重複待處理項；**首次完成，新題**。
+- #416 Partition Equal Subset Sum：Medium，32:55 AC，**複習 C**；2026-10-02 已 AC（當時 B），本次無法自行重建，查看舊程式後完成。保持歷史最佳 B，列高優先無參考重做。
+- #242 Valid Anagram：Easy，06:59 AC，**複習 A**；2026-09-11 已 AC，僅查 unordered_map API，無演算法提示。最佳 A 不變。
+- 本日錯誤安排兩題舊題，僅 #841 計入全新題目；另外兩題不得算新題。累計 **117 題不同 LeetCode 已確認 AC**，不是 119 題。後續出題須先與 tracker 完成表比對。
