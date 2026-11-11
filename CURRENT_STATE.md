@@ -353,3 +353,9 @@ Day 24 觀察：
 
 ## 2026-11-10 #684 確認更正
 - #684 使用者再次明確確認第二版 Union-Find 程式在 LeetCode AC，22:37，C（有向 GPT 請教核心實作）。先前誤將 parent[n]=0 判為必然出錯：節點標籤為 1..n，0 不是真正節點，可充當 n 的集合代表；因此本題可 AC，建議改 i<=n 以便閱讀及泛化。累計 **116 題不同題目 AC**，今天 3/3 AC。保留 Union-Find 獨立實作複習。
+
+## 2026-11-11 Day 61 更新
+- #841 Keys and Rooms：7:48 C++ 完全獨立 AC，A；Graph BFS / visited 實作進步。
+- #416 Partition Equal Subset Sum：32:55 AC，複習 C；看 10/02 舊程式後才完成。核心 DP state/transition 尚無法從零獨立重建，保留高優先 active recall；歷史最佳 B 不覆寫。
+- #242 Valid Anagram：6:59 AC，複習 A；只查 C++ unordered_map 語法。歷史最佳 A 不變。
+- 今日出題疏失：#416、#242 已在 tracker 完成表中，錯誤再作為新題安排。當日 3/3 AC，但只有 1 題全新，累計 117 題。下次須確實去重，維持 2 Medium+1 Easy 新題原則，不因休息或弱項降低難度。
