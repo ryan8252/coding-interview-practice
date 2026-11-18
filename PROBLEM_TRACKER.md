@@ -150,6 +150,9 @@
 
 | 841 | Keys and Rooms | Medium | 2026-11-11 | A | 07:48，獨立 C++ BFS AC |
 
+| 785 | Is Graph Bipartite? | Medium | 2026-11-18 | B | 20:55 AC；外部查 BFS/DFS coloring，實作獨立 |
+| 387 | First Unique Character in a String | Easy | 2026-11-18 | A | 03:11 AC，字元頻率統計 |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -192,6 +195,8 @@
 | 高 | 547 | Number of Provinces | 35:27 未 AC，單層掃描漏掉間接連通；DFS 草稿 visited 條件反向 | 無提示完整辨認並走訪連通分量 | 待複習 |
 
 | 高 | 684 | Redundant Connection | 第一版端點 visited 無法代表相同連通分量，Union-Find 版依 GPT 且 parent[n] 未初始化 | 無提示實作 DSU / 或獨立 graph connectivity，對照 edge cases | 待複習 |
+
+| 高 | 518 | Coin Change II | 35:01 未解；自行嘗試 DP 但組合計數狀態建模錯誤 | 不看提示重新建立計數模型並解釋重複組合問題 | 待複習 |
 
 ## 2026-10-21 有實際練習，AC 尚未確認
 - 33 Search in Rotated Sorted Array：已參考完整答案，提供正確程式；尚未回報 Accepted 與時間；評 C，不再當新題，列高優先無提示複習。
@@ -254,3 +259,9 @@
 | 中 | 66 | Plus One | 待複習；AC 待確認 | 受挫後抄答案。驗證進位與全 9 處理；一次表現不代表整體 Easy 退步。 |
 
 #162、#66 自述思考超過 10／15 分鐘，未確認逐題對應及 Accepted time。三題均未驗證看解後理解程度。完整程式與審閱見 days/2026-11-17.md。
+
+## 2026-11-18 實際作答更新
+- #785 Is Graph Bipartite?：Medium，20:55 AC，**B**；Google 查詢如何判斷 Bipartite，看到 BFS/DFS 著色法（演算法方向外部提示），之後自行 C++ 實作，含 disconnected components。程式正確；外層反覆掃描未著色節點最壞 O(V²+E)，Space O(V)。不得再作新題。
+- #518 Coin Change II：Medium，35:01 未解出，**D（本次）**；自行嘗試 amount-based dp 與 used map，但無法正確計算組合，有重複計數風險，核心 DP state/transition 未建立。未看核心提示／完整解法；高優先複習，不得再作新題。
+- #387 First Unique Character in a String：Easy，03:11 AC，**A（依本次貼碼，無外部提示回報）**；C++ frequency map + ordered scan，O(n) time/O(1) alphabet-bound space。不得再作新題。
+- 本日 2/3 AC、59:07，三題均第一次實際作答；已確認不同 AC 數量從 117 增為 **119**。#2316、#162、#66 於 11/17 仍待 AC 確認，不計數。不得把 #518 算 AC。
