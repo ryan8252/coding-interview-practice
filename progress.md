@@ -869,3 +869,6 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 | 387 First Unique Character in a String | Easy | 03:11 | A | AC；C++ unordered_map<char,int> 先數次數再按原序尋找，O(n) time/O(1) fixed-alphabet space，未回報外部演算法提示。 |
 
 今日 **2/3 AC、59:07**。新增 **2 題不同 AC**，由原 117 到 **119**；#518 是已嘗試但未 AC，#2316/#162/#66 11/17 AC 仍待確認。維持 2 Medium + 1 Easy 全新題，不主動提供 Hint。
+
+### 2026-11-18 #518 Hint 1 後續
+- 使用者 35:01 未解後主動要求 H1。提示僅引導區分 combination vs permutation，例示相同組合不同順序，追問 dp state 是否能避免重複計數。仍未 AC，評價本次 D 尚未改變。Hint 時間未知（發生於 35:01 回報之後）。
