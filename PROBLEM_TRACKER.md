@@ -265,3 +265,6 @@
 - #518 Coin Change II：Medium，35:01 未解出，**D（本次）**；自行嘗試 amount-based dp 與 used map，但無法正確計算組合，有重複計數風險，核心 DP state/transition 未建立。未看核心提示／完整解法；高優先複習，不得再作新題。
 - #387 First Unique Character in a String：Easy，03:11 AC，**A（依本次貼碼，無外部提示回報）**；C++ frequency map + ordered scan，O(n) time/O(1) alphabet-bound space。不得再作新題。
 - 本日 2/3 AC、59:07，三題均第一次實際作答；已確認不同 AC 數量從 117 增為 **119**。#2316、#162、#66 於 11/17 仍待 AC 確認，不計數。不得把 #518 算 AC。
+
+## 2026-11-18 #518 Hint 1
+- #518 已實際嘗試 35:01 未解，之後明確要求 H1；提示內容聚焦組合與排列的差異、dp state 如何避免順序重複，不透露完整解法。之後只能複習，不能作新題。
