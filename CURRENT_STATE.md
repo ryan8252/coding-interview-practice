@@ -371,3 +371,9 @@ Day 24 觀察：
 - 出題前讀 tracker、current state、progress、theory/progress、近 7–14 天 days；不足則往前找最近 5–10 次實際練習。主要 C++、亦可 Python。
 - 使用者明確要求才給漸進 Hint，明確要求完整答案才給完整程式。不把語法/API/Debug 與演算法提示混為一談；可讓使用者先說卡在哪，不因時間一到直接公布答案。
 - 只有實際回報或 Hint 互動才建立 days；同步維護紀錄、不寫空白排程檔。重做不增加不同題數、最佳評價與當次表現分開。以最近 10–20 題 Medium 無提示 AC 率達至少 60% 為方向，未知獨立性或未確認 AC 不虛構為成功。
+
+## 2026-11-18 實際練習更新
+- #785 Medium 20:55 AC，B：Google 提供 BFS/DFS coloring 核心方向，使用者獨立實作 BFS、跨 disconnected component 著色與矛盾檢測；分開記錄 Algorithm Design 外部提示、Implementation 獨立。最壞 O(V²+E)，因外層尋找下個未染色節點每輪重掃。
+- #518 Medium 35:01 未解，D（本次）：有自行嘗試 amount-based DP 與 used，但組合數建模錯誤。未索取 Hint，禁止主動透露核心轉移。高優先後續複習。
+- #387 Easy 03:11 AC，A：C++ char frequency and first unique index，O(n)/O(1) alphabet bound。
+- 今日 2/3 AC、59:07，累計不同 LeetCode 明確 AC **119**（11/17 #2316 #162 #66 均僅參考答案且未明確回報 AC）。需關注最近 10–20 題 Medium 無演算法提示 AC 率，不能把 #785 當無提示；保留 2 Medium+1 Easy，不降難度。
