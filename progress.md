@@ -856,3 +856,16 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 - #162：邊界預先判斷加上區間排除邏輯正確，O(log n) 時間、O(1) 空間；本人能否解釋捨棄區間的理由仍待驗證。
 - #66：進位與全 9 情況處理正確，最差 O(n) 時間；不計回傳向量儲存為 O(1) 輔助空間，vector 擴容可能配置 O(n) 儲存。cnt 未使用但不影響結果。
 - 先保留使用者受挫的情境，不能由今天 #66 推論整體 Easy 能力退步；#78、#39、#841 的獨立完成證據仍有效。維持 2 Medium + 1 Easy，無需補題。
+
+
+---
+
+## 2026-11-18 — Coding Interview 實際練習
+
+| 題目 | 難度 | 時間 | 本次評價 | 結果與獨立性 |
+|---|---|---|---|---|
+| 785 Is Graph Bipartite? | Medium | 20:55 | B | AC；Google 查到 BFS/DFS 著色策略，之後完全獨立 C++ queue+color map 實作，處理不連通圖。演算法方向曾外部提示，不算無提示 Medium。最壞時間 O(V²+E)（反覆掃描未訪節點）、空間 O(V)。 |
+| 518 Coin Change II | Medium | 35:01 | D（本次） | 未解出；嘗試 amount-based dp 與 used 避免重複，但計數模型／狀態轉移不正確。尚未看核心解答，無主動 Hint。 |
+| 387 First Unique Character in a String | Easy | 03:11 | A | AC；C++ unordered_map<char,int> 先數次數再按原序尋找，O(n) time/O(1) fixed-alphabet space，未回報外部演算法提示。 |
+
+今日 **2/3 AC、59:07**。新增 **2 題不同 AC**，由原 117 到 **119**；#518 是已嘗試但未 AC，#2316/#162/#66 11/17 AC 仍待確認。維持 2 Medium + 1 Easy 全新題，不主動提供 Hint。
