@@ -888,3 +888,12 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 - Concept：認出有向先修關係並建立 pre -> course adjacency；Algorithm Design：visited 只標數字，沒有 visiting/done 區別，也沒有正確拓樸序列，核心不完整；Implementation：n 未宣告、vector<int> 未回傳；Debug／Complexity：未回報。
 - 原碼中 labels 以值傳遞且未產生可回傳順序；從未出現在 course set 的節點開始不足以檢查無入度節點不存在的 cyclic component。
 - 本日只有 #210 已回報；#875、#338 尚無作答回報。累計已確認不同 AC 仍 119。
+
+
+### 2026-11-19 #875、#338 作答回報（更新當日完整成績）
+| 題目 | 難度 | Accepted | 本次評價 | 獨立性與複雜度 |
+|---|---|---|---|---|
+| 875 Koko Eating Bananas | Medium | 21:54 AC | A（暫定） | C++ binary search answer + ceil_sum，自行貼出正確版本；未明確回報演算法查詢。O(n log M) time，O(1) space。 |
+| 338 Counting Bits | Easy | 19:47 AC | A（暫定） | 使用者二次確認 AC；dp[i]=dp[i-sub]+1，sub 最大 2 的冪；O(n) time，O(n) output space；未明確回報演算法查詢。 |
+
+今日 #210 D 40:25 未獨立解出／AC 待確認，#875 AC，#338 AC；2/3 已確認 AC，新增 2 題不同題目，累計 **121 題**。作答總時間 82:06。不可把 #210 參考答案計成獨立完成。
