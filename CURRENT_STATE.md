@@ -388,3 +388,8 @@ Day 24 觀察：
 ## 2026-11-19 #210 實際練習更新
 - #210 Course Schedule II：40:25，未獨立解出；DFS + 數字 label 想法不能構成正確拓樸排序，visited 未分 visiting/done，無輸出結果與完整 cycle 判斷，另有 n 未宣告等 implementation 問題。向 Gemini 取得正確程式，未貼該程式也未回報本人 AC；40 分鐘規則下教練提供 Kahn 完整解法。獨立建模暫 D，理解待確認，不算獨立 Medium AC；未確認 AC 總數維持 119。
 - 近期 Graph traversal 基礎 (#841) 較穩定，但需排序/依賴約束的 Graph design 仍需加強。#875/#338 未回報，不能推斷已開始或完成。
+
+## 2026-11-19 #875、#338 完成與能力更新
+- #875 Koko Eating Bananas：21:54 AC，C++ 自行提供正確 binary search on answer，O(n log M)/O(1)，A 暫定（外部演算法提示資訊未確認）；對 Binary Search 變形提供新的正面證據。
+- #338 Counting Bits：19:47 AC，使用者明確確認，C++ 最大 2 次方分段 DP 正確，O(n) time/O(n) output space，A 暫定（外部提示資訊未知）。
+- 11/19 #210 未獨立解出 40:25，D，Gemini/教練完整解答已看，但未回報本人 AC。今日 2/3 AC，總時間 82:06，累計已確認 **121 題不同 LeetCode AC**。保留 Graph ordering / DFS state 弱點，不因此降低每日 2 Medium+1 Easy 難度。#875 A 不直接假定完全無演算法提示。
