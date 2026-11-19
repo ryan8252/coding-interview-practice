@@ -875,3 +875,16 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 
 ### 2026-11-18 #518 完整解法提供
 - 使用者在 H1 後明確要求完整答案。已提供 coin 外層、金額正向內層的 C++ 一維 DP，與 combination/permutation 差異。完整解法已看，沒有本人 AC 回報；本次 D（35:01 未解）不變，累計已確認 AC 119。不應把參考答案後的理解或完成視為無提示。
+
+
+---
+
+## 2026-11-19 — 當日部分作答
+
+| 題目 | 難度 | 時間 | 本次評價 | 狀態與獨立性 |
+|---|---|---|---|---|
+| 210 Course Schedule II | Medium | 40:25 | D（暫，理解待驗證） | 自行 DFS + label 嘗試未形成正確 cycle detection / course order，後詢問 Gemini 並取得正確程式碼；本人 AC 未明確回報。按 40 分鐘規則已提供 Kahn 完整參考答案。 |
+
+- Concept：認出有向先修關係並建立 pre -> course adjacency；Algorithm Design：visited 只標數字，沒有 visiting/done 區別，也沒有正確拓樸序列，核心不完整；Implementation：n 未宣告、vector<int> 未回傳；Debug／Complexity：未回報。
+- 原碼中 labels 以值傳遞且未產生可回傳順序；從未出現在 course set 的節點開始不足以檢查無入度節點不存在的 cyclic component。
+- 本日只有 #210 已回報；#875、#338 尚無作答回報。累計已確認不同 AC 仍 119。
