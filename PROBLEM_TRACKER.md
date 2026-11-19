@@ -153,6 +153,9 @@
 | 785 | Is Graph Bipartite? | Medium | 2026-11-18 | B | 20:55 AC；外部查 BFS/DFS coloring，實作獨立 |
 | 387 | First Unique Character in a String | Easy | 2026-11-18 | A | 03:11 AC，字元頻率統計 |
 
+| 875 | Koko Eating Bananas | Medium | 2026-11-19 | A（暫定） | 21:54 AC；C++ binary search |
+| 338 | Counting Bits | Easy | 2026-11-19 | A（暫定） | 19:47 AC；C++ DP |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -274,3 +277,8 @@
 
 ## 2026-11-19 #210 實際嘗試
 - #210 Course Schedule II：Medium，40:25 **未獨立解出**；自行寫 DFS + label + visited 草稿，存在排序與 cycle state 建模錯誤，程式有未宣告 n 與缺回傳問題；使用者後向 Gemini 取得正確程式（未提供 Gemini 版本／未回報 AC）。依本次獨立建模表現暫 D，理解與 AC 待驗證。依 40 分鐘規則，教練已提供 Kahn 完整參考答案。高優先複習，不得再作新題，累計 AC **119** 不變。#875 與 #338 尚未回報，不建立已完成紀錄。
+
+## 2026-11-19 #875、#338 完成回報
+- #875 Koko Eating Bananas：Medium，**21:54 AC**，A（暫定，未回報是否查演算法提示）。正確 C++ binary search on answer，ceil_sum O(n)，總 O(n log M) time / O(1) space。已完成，不得再作新題。
+- #338 Counting Bits：Easy，**19:47 AC**（使用者再明確確認），A（暫定，未回報是否查演算法提示）。正確 C++ DP，O(n) time / O(n) space（輸出陣列）。已完成，不得再作新題。
+- 今日 #210 40:25 未獨立解出、參考完整答案但本人 AC 未確認；#875、#338 AC，當日 **2/3 AC**。累計不同 LeetCode 已確認 AC **121**（前 119 + 兩題）。
