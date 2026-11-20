@@ -156,6 +156,8 @@
 | 875 | Koko Eating Bananas | Medium | 2026-11-19 | A（暫定） | 21:54 AC；C++ binary search |
 | 338 | Counting Bits | Easy | 2026-11-19 | A（暫定） | 19:47 AC；C++ DP |
 
+| 740 | Delete and Earn | Medium | 2026-11-20 | C | 35:56 AC；Gemini 提示 House Robber 核心模型，後獨立 DP 實作 |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -200,6 +202,8 @@
 | 高 | 684 | Redundant Connection | 第一版端點 visited 無法代表相同連通分量，Union-Find 版依 GPT 且 parent[n] 未初始化 | 無提示實作 DSU / 或獨立 graph connectivity，對照 edge cases | 待複習 |
 
 | 高 | 518 | Coin Change II | 35:01 未解；自行嘗試 DP 但組合計數狀態建模錯誤 | 不看提示重新建立計數模型並解釋重複組合問題 | 待複習 |
+
+| 高 | 399 | Evaluate Division | 5:04 嘗試，已知外部 Graph 方向但不會轉換，尚未 AC | 無提示自行將 equation 建模，實作並驗證 | 待複習 |
 
 ## 2026-10-21 有實際練習，AC 尚未確認
 - 33 Search in Rotated Sorted Array：已參考完整答案，提供正確程式；尚未回報 Accepted 與時間；評 C，不再當新題，列高優先無提示複習。
@@ -282,3 +286,8 @@
 - #875 Koko Eating Bananas：Medium，**21:54 AC**，A（暫定，未回報是否查演算法提示）。正確 C++ binary search on answer，ceil_sum O(n)，總 O(n log M) time / O(1) space。已完成，不得再作新題。
 - #338 Counting Bits：Easy，**19:47 AC**（使用者再明確確認），A（暫定，未回報是否查演算法提示）。正確 C++ DP，O(n) time / O(n) space（輸出陣列）。已完成，不得再作新題。
 - 今日 #210 40:25 未獨立解出、參考完整答案但本人 AC 未確認；#875、#338 AC，當日 **2/3 AC**。累計不同 LeetCode 已確認 AC **121**（前 119 + 兩題）。
+
+## 2026-11-20 部分作答紀錄
+- #399 Evaluate Division：Medium，5:04 無方向，已從外部提示得知使用 Graph，但仍不知如何把 equations 轉成 Graph。尚無程式與 AC；未超過 30 分鐘，不再主動透露 Hint。本題已實際嘗試且看過核心演算法方向，之後不得再列全新題；後續需複習 Graph modeling。暫不評 A/B/C/D。
+- #740 Delete and Earn：Medium，35:56 **AC**，**C**。最初試 Greedy 未成功，Gemini 提供「可轉成 House Robber」的重要模型提示，後獨立完成 C++ frequency map 與 1D DP；核心轉換非獨立，實作正確。Time O(n+M) average，Space O(M)，M=max(nums)。新完成題 +1，已確認不同 AC **122**。
+- #605 Can Place Flowers：排程中但尚未回報實際作答，不記錄為完成或嘗試。
