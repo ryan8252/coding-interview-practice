@@ -408,3 +408,7 @@ Day 24 觀察：
 ## #399 2026-11-20 最終 AC 更新
 - #399 Evaluate Division：**49:47 AC，C**。從 5:04 不知如何建模，到 37:48 自行寫正反向 Graph 草稿，再經 Hint 3 的 DFS 參數與搜尋流程引導，於 49:47 獨立組裝完整 C++ 程式 Accepted。Concept/Algorithm Design 仍依賴重要 Graph 建模與 DFS 方向提示，Implementation、C++ STL/Debug、邊界檢查成功，不應評 D 或無提示 A。Time O(E+Q(V+E))，space O(V+E)。
 - 今天 #399 AC C、#740 AC C、#605 尚未回報。累計不同題確認 AC **123**（原 122 + #399）。Graph modeling 仍需無提示再驗證；維持原每日難度。
+
+## 2026-11-20 #605 AC 與完整日結（最新）
+- #605 Can Place Flowers：12:33 AC，C 語言 greedy 正確處理 n=0、len=1、頭尾、內部及更新 flowerbed；O(m) time/O(1) extra space，A 暫定（演算法提示資訊未明確回報）。
+- 今日 #399 Evaluate Division 49:47 AC C（教練建模／DFS 重要提示）、#740 Delete and Earn 35:56 AC C（Gemini House Robber reduction 提示）、#605 12:33 AC A 暫定。**3/3 AC、98:16、累計已確認不同題 124**。兩題 Medium 並非無提示，核心陌生 Medium modeling 仍需加強；保留適度分散其他題型，不降低 2 Medium + 1 Easy 難度。
