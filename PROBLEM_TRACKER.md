@@ -160,6 +160,8 @@
 
 | 399 | Evaluate Division | Medium | 2026-11-20 | C | 49:47 AC；Graph/DFS 重要提示後獨立實作 |
 
+| 605 | Can Place Flowers | Easy | 2026-11-20 | A（暫定） | 12:33 AC，C greedy 正確；無演算法提示回報 |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -302,3 +304,7 @@
 
 ## #399 2026-11-20 最終 Accepted 更正
 - #399 Evaluate Division：Medium，**49:47 AC，C**。經外部 Graph 方向、Hint 2 加權邊建模與 Hint 3 DFS 搜尋偽碼後，自行寫出完整 C++ 並 AC。正向／反向圖、weighted DFS、visited 與 query 邊界均正確。單次搜尋 O(V+E)，總 O(E+Q(V+E)) time / O(V+E) extra space。不計完全獨立 Medium AC。此最新結果取代前面「尚未 AC／暫不評」的中途記錄。已完成，不得當全新題；保留無提示建模複習目標。累計 **123 題不同 LeetCode 確認 AC**（前 122 + #399）。
+
+## 2026-11-20 #605 AC 及最終日結
+- #605 Can Place Flowers：Easy，**12:33 AC，A（暫定）**，C greedy scan、原地種植及頭尾/單格邊界，Time O(m) / Space O(1)；目前未回報任何演算法提示。已完成，不得再當新題。
+- 今日 #399 49:47 AC C、#740 35:56 AC C、#605 12:33 AC A（暫），**3/3 AC**，總時間 98:16。累計不同題目確認 AC **124**（前 123 + #605）。兩題 Medium 皆使用重要方向提示，不納入 Medium 無提示成功率分子。
