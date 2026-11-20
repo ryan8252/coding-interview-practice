@@ -920,3 +920,7 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 ### #399 2026-11-20 最終 AC 回報
 - #399 Evaluate Division：**49:47 AC，C**。使用者在外部 Graph 方向、教練 weighted graph Hint 2 與 DFS 偽碼 Hint 3 後，獨立將 C++ graph/DFS/query 流程寫完且 AC。Concept/Algorithm Design 曾依賴重要建模與搜尋提示，Implementation 及 Debug 成功；非無提示 Medium。O(E+Q(V+E)) time、O(V+E) extra space（不含答案）。此前「未 AC」為中途狀態，現以此最新結果為準。
 - 累計已確認不同 AC：**123**；#605 未回報，#740 35:56 AC C 不變。
+
+### 2026-11-20 #605 最終回報與完整日結
+- #605 Can Place Flowers：**12:33 AC，A（暫定）**；C 原地 greedy 左至右種植、開頭/結尾/長度 1/n=0 邊界正確；O(m) time / O(1) extra space，沒有回報演算法提示，但不憑 AC 自動假定完全獨立。
+- 今日 #399 49:47 AC C（教練重要 Hint 2/3）、#740 35:56 AC C（Gemini 核心 reduction 提示）、#605 12:33 AC A 暫定；**3/3 AC**，總時間 **98:16**，新增 3 題不同 AC，累計 **124**。先前「#605 尚未回報／總數 123」為舊時點中途紀錄，由本段取代。
