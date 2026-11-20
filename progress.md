@@ -916,3 +916,7 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 
 ### #399 2026-11-20 37:48 新進度與 Hint 3
 - 使用者貼 Graph 建構 + 未完成 DFS 程式：正向 weight 與反向倒數關係已自行寫出；Graph 跨函式作用域、pair/STL 與 Python/C++ 混用造成 implementation 問題；核心 DFS visited 與累積乘積尚未完成。37:48 仍未 AC；依提示階段給 DFS(node,target,product,visited) 及回溯搜尋偽碼（Hint 3），未提供完整 C++ 答案。該題已獲重要提示，不算無提示 Medium。累計明確 AC 仍 122。
+
+### #399 2026-11-20 最終 AC 回報
+- #399 Evaluate Division：**49:47 AC，C**。使用者在外部 Graph 方向、教練 weighted graph Hint 2 與 DFS 偽碼 Hint 3 後，獨立將 C++ graph/DFS/query 流程寫完且 AC。Concept/Algorithm Design 曾依賴重要建模與搜尋提示，Implementation 及 Debug 成功；非無提示 Medium。O(E+Q(V+E)) time、O(V+E) extra space（不含答案）。此前「未 AC」為中途狀態，現以此最新結果為準。
+- 累計已確認不同 AC：**123**；#605 未回報，#740 35:56 AC C 不變。
