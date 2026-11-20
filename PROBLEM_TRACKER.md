@@ -158,6 +158,8 @@
 
 | 740 | Delete and Earn | Medium | 2026-11-20 | C | 35:56 AC；Gemini 提示 House Robber 核心模型，後獨立 DP 實作 |
 
+| 399 | Evaluate Division | Medium | 2026-11-20 | C | 49:47 AC；Graph/DFS 重要提示後獨立實作 |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -203,7 +205,7 @@
 
 | 高 | 518 | Coin Change II | 35:01 未解；自行嘗試 DP 但組合計數狀態建模錯誤 | 不看提示重新建立計數模型並解釋重複組合問題 | 待複習 |
 
-| 高 | 399 | Evaluate Division | 5:04 嘗試，已知外部 Graph 方向但不會轉換，尚未 AC | 無提示自行將 equation 建模，實作並驗證 | 待複習 |
+| 中 | 399 | Evaluate Division | 49:47 AC，C（重要 Hint 2/3 後完成） | 不看提示重建 weighted Graph 與 DFS | 待複習 |
 
 ## 2026-10-21 有實際練習，AC 尚未確認
 - 33 Search in Rotated Sorted Array：已參考完整答案，提供正確程式；尚未回報 Accepted 與時間；評 C，不再當新題，列高優先無提示複習。
@@ -297,3 +299,6 @@
 
 ## #399 2026-11-20 37:48 進度
 - 37:48 未解出，使用者已建構正反向加權邊草稿，DFS 函式未完成；C++ 語法與作用域問題並存。依門檻給 **Hint 3**（DFS 累積權重與 visited 偽碼、STL 語法修正）；未給完整程式。本人 AC 待確認，不得計入不同 AC，也不得當新題。已取得重要 Graph modeling/DFS 實作提示。
+
+## #399 2026-11-20 最終 Accepted 更正
+- #399 Evaluate Division：Medium，**49:47 AC，C**。經外部 Graph 方向、Hint 2 加權邊建模與 Hint 3 DFS 搜尋偽碼後，自行寫出完整 C++ 並 AC。正向／反向圖、weighted DFS、visited 與 query 邊界均正確。單次搜尋 O(V+E)，總 O(E+Q(V+E)) time / O(V+E) extra space。不計完全獨立 Medium AC。此最新結果取代前面「尚未 AC／暫不評」的中途記錄。已完成，不得當全新題；保留無提示建模複習目標。累計 **123 題不同 LeetCode 確認 AC**（前 122 + #399）。
