@@ -897,3 +897,16 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 | 338 Counting Bits | Easy | 19:47 AC | A（暫定） | 使用者二次確認 AC；dp[i]=dp[i-sub]+1，sub 最大 2 的冪；O(n) time，O(n) output space；未明確回報演算法查詢。 |
 
 今日 #210 D 40:25 未獨立解出／AC 待確認，#875 AC，#338 AC；2/3 已確認 AC，新增 2 題不同題目，累計 **121 題**。作答總時間 82:06。不可把 #210 參考答案計成獨立完成。
+
+
+---
+
+## 2026-11-20 — 部分實際練習
+
+| 題目 | 難度 | 時間 | 結果／評價 | 分析 |
+|---|---|---|---|---|
+| 399 Evaluate Division | Medium | 05:04 | 已嘗試未 AC，暫不評分 | 已看外部 Graph 方向提示，但仍無法把 equation 建模成圖；沒有提交程式，Concept/Algorithm Design 待確認。 |
+| 740 Delete and Earn | Medium | 35:56 | AC，C | 原 Greedy 想不出；Gemini 提示可轉 House Robber，是核心 modeling 提示；後獨立實作 frequency map 和 1D DP，程式正確，Time O(n+M)、Space O(M)。 |
+| 605 Can Place Flowers | Easy | 尚未回報 | 未開始／未知 | 僅安排過，不得擅自記為實際作答。 |
+
+已確認不同 AC 累計 122 題（先前 121 + #740）；不把 #399 算完成。#740 的 C 表示有重要外部算法方向提示，非 implementation bug。
