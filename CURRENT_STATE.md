@@ -401,3 +401,6 @@ Day 24 觀察：
 
 ## 2026-11-20 #399 Hint 2
 - Graph 方向仍無法自行轉成模型，使用者要求更具體提示；已提供 weighted graph modeling 的重要 Hint 2：除法關係為有向加權邊，從反向邊及連乘路徑例子思考。尚無 AC／實作回報，不能據此評為獨立解出。
+
+## #399 2026-11-20 37:48 進度更新
+- Graph 建模能力有進展：使用者能自行寫正向商權重、反向倒數邊；但 DFS 搜尋目標、visited、路徑乘積與 return 尚無完整架構。另有 C++ unordered_map/pair/push_back/作用域與 Python 語法混用等 implementation 問題。37:48 未 AC；依使用者 30/40 分鐘規則提供 **Hint 3 的 DFS 偽碼 + 語法修正**，尚未提供完整答案。後續須區分 modeling 的改進與依賴重要提示，不能當無提示成功。累計確認 AC 122。
