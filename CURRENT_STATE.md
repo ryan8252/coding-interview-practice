@@ -398,3 +398,6 @@ Day 24 觀察：
 - #399 Evaluate Division：5:04 未解，已知外部 Graph 方向但不會將式子轉換為圖，反映 Graph modeling 卡點；沒有程式或 AC，暫不評分。未到 30 分鐘，不主動再給 Hint；已實際嘗試不得列新題。
 - #740 Delete and Earn：35:56 AC，C。獨立 Greedy 嘗試無法完成；向 Gemini 問到 House Robber 的核心 reduction，再獨立建立 counting map + DP；演算法建模需關鍵提示，但 C++ 實作正確，O(n+M) time/O(M) space。保留轉換式 DP 高優先複習方向。
 - #605 尚未回報。明確不同 LeetCode AC 累計 122（121 + #740）。此次不是 3 題全部完成，不應記當日完整 AC 率。維持 30 分鐘未解經回報給 Hint、40 分鐘給答案規則。
+
+## 2026-11-20 #399 Hint 2
+- Graph 方向仍無法自行轉成模型，使用者要求更具體提示；已提供 weighted graph modeling 的重要 Hint 2：除法關係為有向加權邊，從反向邊及連乘路徑例子思考。尚無 AC／實作回報，不能據此評為獨立解出。
