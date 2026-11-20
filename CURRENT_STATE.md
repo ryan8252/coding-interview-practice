@@ -404,3 +404,7 @@ Day 24 觀察：
 
 ## #399 2026-11-20 37:48 進度更新
 - Graph 建模能力有進展：使用者能自行寫正向商權重、反向倒數邊；但 DFS 搜尋目標、visited、路徑乘積與 return 尚無完整架構。另有 C++ unordered_map/pair/push_back/作用域與 Python 語法混用等 implementation 問題。37:48 未 AC；依使用者 30/40 分鐘規則提供 **Hint 3 的 DFS 偽碼 + 語法修正**，尚未提供完整答案。後續須區分 modeling 的改進與依賴重要提示，不能當無提示成功。累計確認 AC 122。
+
+## #399 2026-11-20 最終 AC 更新
+- #399 Evaluate Division：**49:47 AC，C**。從 5:04 不知如何建模，到 37:48 自行寫正反向 Graph 草稿，再經 Hint 3 的 DFS 參數與搜尋流程引導，於 49:47 獨立組裝完整 C++ 程式 Accepted。Concept/Algorithm Design 仍依賴重要 Graph 建模與 DFS 方向提示，Implementation、C++ STL/Debug、邊界檢查成功，不應評 D 或無提示 A。Time O(E+Q(V+E))，space O(V+E)。
+- 今天 #399 AC C、#740 AC C、#605 尚未回報。累計不同題確認 AC **123**（原 122 + #399）。Graph modeling 仍需無提示再驗證；維持原每日難度。
