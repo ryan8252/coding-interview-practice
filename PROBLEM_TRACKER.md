@@ -291,3 +291,6 @@
 - #399 Evaluate Division：Medium，5:04 無方向，已從外部提示得知使用 Graph，但仍不知如何把 equations 轉成 Graph。尚無程式與 AC；未超過 30 分鐘，不再主動透露 Hint。本題已實際嘗試且看過核心演算法方向，之後不得再列全新題；後續需複習 Graph modeling。暫不評 A/B/C/D。
 - #740 Delete and Earn：Medium，35:56 **AC**，**C**。最初試 Greedy 未成功，Gemini 提供「可轉成 House Robber」的重要模型提示，後獨立完成 C++ frequency map 與 1D DP；核心轉換非獨立，實作正確。Time O(n+M) average，Space O(M)，M=max(nums)。新完成題 +1，已確認不同 AC **122**。
 - #605 Can Place Flowers：排程中但尚未回報實際作答，不記錄為完成或嘗試。
+
+## #399 2026-11-20 Hint 2
+- 使用者於知道 Graph 方向後再要求提示；已提供加權 Graph 建模提示（商作為 edge weight、反向邊及多邊查詢），未提供完整程式。AC 未確認，後續複習須記錄已看重要建模提示，不算無提示。
