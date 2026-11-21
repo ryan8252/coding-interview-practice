@@ -162,6 +162,8 @@
 
 | 605 | Can Place Flowers | Easy | 2026-11-20 | A（暫定） | 12:33 AC，C greedy 正確；無演算法提示回報 |
 
+| 1091 | Shortest Path in Binary Matrix | Medium | 2026-11-21 | B | 35:30 AC；BFS 獨立，Hint 1 Debug visited 時機 |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -311,3 +313,6 @@
 
 ## 2026-11-21 #1091 已實際嘗試與 Hint 1
 - #1091 Shortest Path in Binary Matrix：Medium，31:21 TLE；自主 C++ 8 方向 BFS、層級計數、邊界處理，visited 標記設在 dequeue，致使同一格被多次 enqueue。教練已提供 Hint 1（引導觀察多父節點重複入列和標記時機），未提供完整解答。**已嘗試且看 Hint，不得再作全新題；尚未 AC**，後續觀察自行 Debug。#279、#2215 尚無作答回報，累計已確認 AC 124 不變。
+
+## 2026-11-21 #1091 最終 Accepted 更正
+- #1091 Shortest Path in Binary Matrix：Medium，**35:30 AC、B**。原 31:21 TLE（visited pop 才標記）；經教練 Hint 1 Debug 引導後，用 `set<pair<int,int>>` 在 enqueue 時插入 visited，自行修正並 AC。核心 BFS 模型原本獨立，僅效率 Debug 需提示；本次不算完全無提示 AC，但 **不是演算法方向錯誤**。Time O(n² log n) / Space O(n²)。最新狀態已完成，不再作全新題。累計已確認不同題 **125**（124 + #1091）。#279、#2215 尚未回報。
