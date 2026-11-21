@@ -429,3 +429,7 @@ Day 24 觀察：
 ## 2026-11-21 #279 24:06 AC（最新）
 - #279 Perfect Squares：24:06 AC，C；原 22:05 只能寫一維 dp + 最大平方數貪婪選擇，知道 12 的反例卻不能自行寫出正確轉移。教練 Hint 2 提供枚舉 j*j<=i 的取最小狀態轉移後，2:01 內自行完成 C++ 並 AC；正確 Implementation，Algorithm Design 依賴重要提示。O(n sqrt n) time / O(n) space，不能算 Medium 無提示 AC。之後複習應由使用者自己從零推導候選枚舉與轉移，提示要針對實際卡點而非重述已知反例。
 - 11/21 #1091 35:30 B AC、#279 24:06 C AC、#2215 尚未回報；累計已確認不同 LeetCode AC **126**，不得把 #279 算兩次。
+
+## 2026-11-21 #2215 AC 與最終日結（最新）
+- #2215 Find the Difference of Two Arrays：05:39 AC，C++ set 去重、雙向差集正確；O(m log(m+1)+n log(n+1)) time / O(m+n) space，A 暫定（演算法提示資訊未明確回報）。
+- 今日 #1091 35:30 AC B（BFS 模型獨立、visited Debug Hint 1）、#279 24:06 AC C（重要 DP 狀態轉移 Hint 2）、#2215 05:39 AC A 暫定；**3/3 AC、65:15、累計不同題明確 AC 127**。重點繼續放在陌生 Medium 的 Algorithm Design 無提示推導，並將 Debug 提示與核心建模提示分開。不因 3/3 AC 自動提高 Medium 無提示 AC 率。
