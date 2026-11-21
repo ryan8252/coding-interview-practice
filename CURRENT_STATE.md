@@ -419,3 +419,6 @@ Day 24 觀察：
 ## 2026-11-21 #1091 35:30 AC 最新狀態
 - #1091 Medium：35:30 AC、B，先前 31:21 TLE；自身獨立建立 8-direction level BFS 短路模型，失誤在 visited 於 pop 才設導致重複 enqueue。取得教練 Hint 1 的 Debug 方向後，自行使用 set visited 在 enqueue 時標記，約 4:09 修正 AC。Algorithm Design 正面證據，Implementation/Debug 需少量提示；不要統稱為 Graph modeling 不會。Time O(n² log n)，Space O(n²)；使用 grid 入列即標記可以 O(n²) time。
 - 11/21 目前 #1091 AC，其餘 #279/#2215 尚未回報。累計已確認不同 LeetCode AC **125**。維持 2 Medium+1 Easy 及 30/40 分鐘輔助規則。
+
+## 2026-11-21 #279 DP 建模進度
+- #279 22:05 未解，能獨立想到一維 DP，但僅以最大平方數做唯一轉移導致不保證最優；教練 Hint 1 提供 n=12 反例，引導比較不同平方數。這是 Algorithm Design 狀態轉移完整性缺口；尚未 AC，最終評分待定。#1091 35:30 B AC、#2215 未回報，累計不同 AC 125。不降低 Medium 難度。
