@@ -164,6 +164,8 @@
 
 | 1091 | Shortest Path in Binary Matrix | Medium | 2026-11-21 | B | 35:30 AC；BFS 獨立，Hint 1 Debug visited 時機 |
 
+| 279 | Perfect Squares | Medium | 2026-11-21 | C | 24:06 AC；Hint 2 提供核心 DP 轉移 |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -322,3 +324,6 @@
 
 ## #279 2026-11-21 Hint 2 補充
 - 使用者反映 Hint 1 無效且已知 n=12 反例，真正卡在 DP 轉移；後續已給 Hint 2（對每個 i 遍歷全部 j*j<=i，以 dp[i-j*j]+1 取最小），沒有完整 code。#279 尚未 AC，不再當全新題，後續評分須記錄核心演算法提示。
+
+## #279 2026-11-21 最終 AC 更正
+- #279 Perfect Squares：Medium，**24:06 AC，C**。使用者原 DP 只取最大平方數；對 Hint 1 的已知反例無助，取得 Hint 2 的核心遍歷全部平方數／最小化轉移後，**自行**補完程式並 AC。不是獨立 Algorithm Design，卻有正確 DP Implementation，Time O(n sqrt n) / Space O(n)。已完成不得當全新題；後續可無提示重建 DP 轉移。累計 **126 題不同 LeetCode 確認 AC**（前 125 + #279）。#2215 未回報。
