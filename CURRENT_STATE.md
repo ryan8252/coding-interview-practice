@@ -412,3 +412,6 @@ Day 24 觀察：
 ## 2026-11-20 #605 AC 與完整日結（最新）
 - #605 Can Place Flowers：12:33 AC，C 語言 greedy 正確處理 n=0、len=1、頭尾、內部及更新 flowerbed；O(m) time/O(1) extra space，A 暫定（演算法提示資訊未明確回報）。
 - 今日 #399 Evaluate Division 49:47 AC C（教練建模／DFS 重要提示）、#740 Delete and Earn 35:56 AC C（Gemini House Robber reduction 提示）、#605 12:33 AC A 暫定。**3/3 AC、98:16、累計已確認不同題 124**。兩題 Medium 並非無提示，核心陌生 Medium modeling 仍需加強；保留適度分散其他題型，不降低 2 Medium + 1 Easy 難度。
+
+## 2026-11-21 #1091 31:21 TLE 實際回報
+- #1091 Medium：31:21 TLE，C++ BFS 八方向與 level-based shortest-path 架構已自行建立；重複 enqueue 是 visited 標記過晚的 implementation / performance bug。自行提出從終點往回做的候選想法，但不必換演算法。要求並已取得 Hint 1（觀察多父節點重複入列與 visited 時機）。尚未 AC，不能評 A，也不能判作 Graph algorithm design 完全失敗。優先讓使用者自行 debug，未到 40 分鐘不提供完整程式碼。#279、#2215 尚未作答回報，累計 AC 維持 124。
