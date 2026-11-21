@@ -935,3 +935,6 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 ### 2026-11-21 #1091 35:30 AC 補充（本題最新結果）
 - #1091 Shortest Path in Binary Matrix：**35:30 AC，B**，原 31:21 TLE；教練 Hint 1 只引導 debugging 重複 enqueue 問題，使用者自行加 `set<pair<int,int>> visited` 並在 enqueue 時標記，約 4:09 後 AC。Algorithm Design（8-direction BFS + 層級最短路）獨立建立；Implementation/Debug 取得少量提示後成功，**不是核心演算法不會**。Time O(n² log n)／Space O(n²)，可用原地入列標記優化為 O(n²) time。
 - 本日已回報 1 題 AC；#279、#2215 尚未回報。已確認不同題目 AC **125**（前 124 + #1091）。以上取代先前同題「31:21 TLE／未 AC」的中途狀態。
+
+### 2026-11-21 #279 22:05 嘗試／Hint 1
+- #279 Perfect Squares：22:05 未解，已有一維 dp[i] 概念，但只選最大平方數 dp[i-s*s]+1，n=12 反例會計 4 而正確為 3。問題為 Algorithm Design（只考慮局部最大選項），非語法問題。提供 Hint 1 反例引導比較不同選項，未公布完整轉移／程式。AC 未回報，暫不評最終級別。累計 125 題 AC 不變。
