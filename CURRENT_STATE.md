@@ -415,3 +415,7 @@ Day 24 觀察：
 
 ## 2026-11-21 #1091 31:21 TLE 實際回報
 - #1091 Medium：31:21 TLE，C++ BFS 八方向與 level-based shortest-path 架構已自行建立；重複 enqueue 是 visited 標記過晚的 implementation / performance bug。自行提出從終點往回做的候選想法，但不必換演算法。要求並已取得 Hint 1（觀察多父節點重複入列與 visited 時機）。尚未 AC，不能評 A，也不能判作 Graph algorithm design 完全失敗。優先讓使用者自行 debug，未到 40 分鐘不提供完整程式碼。#279、#2215 尚未作答回報，累計 AC 維持 124。
+
+## 2026-11-21 #1091 35:30 AC 最新狀態
+- #1091 Medium：35:30 AC、B，先前 31:21 TLE；自身獨立建立 8-direction level BFS 短路模型，失誤在 visited 於 pop 才設導致重複 enqueue。取得教練 Hint 1 的 Debug 方向後，自行使用 set visited 在 enqueue 時標記，約 4:09 修正 AC。Algorithm Design 正面證據，Implementation/Debug 需少量提示；不要統稱為 Graph modeling 不會。Time O(n² log n)，Space O(n²)；使用 grid 入列即標記可以 O(n²) time。
+- 11/21 目前 #1091 AC，其餘 #279/#2215 尚未回報。累計已確認不同 LeetCode AC **125**。維持 2 Medium+1 Easy 及 30/40 分鐘輔助規則。
