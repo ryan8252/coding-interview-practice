@@ -945,3 +945,7 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 ### 2026-11-21 #279 24:06 AC 最終更新
 - #279 Perfect Squares：**24:06 AC，C**。原 22:05 一維 DP 僅取最大平方數；原本就知道 n=12 反例，Hint 1 無效。獲教練 Hint 2 的關鍵狀態轉移（遍歷所有 j*j<=i，取 min(dp[i],dp[i-j*j]+1)）後，約 2:01 內自行補完 C++ AC。Algorithm Design 重要提示，Implementation 正確；O(n sqrt n) time / O(n) space。不能納入無提示 Medium AC。
 - 目前 #1091 B AC、#279 C AC，#2215 尚未回報；累計已確認不同 AC **126**。此更新取代 #279「尚未 AC」的中途記錄。
+
+### 2026-11-21 #2215 AC 與完整日結
+- #2215 Find the Difference of Two Arrays：**05:39 AC，A（暫定）**。C++ set 去重並計算雙向差集，正確；Time O(m log(m+1)+n log(n+1))、Space O(m+n)。未回報演算法提示，獨立性暫待確認。
+- 本日 #1091 35:30 AC B（BFS 獨立、Debug Hint）、#279 24:06 AC C（核心 DP Hint 2）、#2215 05:39 AC A（暫）。**3/3 AC、65:15**，累計已確認不同 LeetCode **127 AC**。本段取代前述「#2215 尚未回報／累計126」的中途狀態。#1091 不應混同為模型不會；#279 核心轉移需補強。
