@@ -166,6 +166,8 @@
 
 | 279 | Perfect Squares | Medium | 2026-11-21 | C | 24:06 AC；Hint 2 提供核心 DP 轉移 |
 
+| 2215 | Find the Difference of Two Arrays | Easy | 2026-11-21 | A（暫定） | 05:39 AC；C++ set 差集 |
+
 ## 需要複習的題目
 
 > 複習題不計入每日 3 題新題額度。完成複習後更新「最近複習 / 結果 / 狀態」，確認已穩定者可改成「已解除」。
@@ -327,3 +329,7 @@
 
 ## #279 2026-11-21 最終 AC 更正
 - #279 Perfect Squares：Medium，**24:06 AC，C**。使用者原 DP 只取最大平方數；對 Hint 1 的已知反例無助，取得 Hint 2 的核心遍歷全部平方數／最小化轉移後，**自行**補完程式並 AC。不是獨立 Algorithm Design，卻有正確 DP Implementation，Time O(n sqrt n) / Space O(n)。已完成不得當全新題；後續可無提示重建 DP 轉移。累計 **126 題不同 LeetCode 確認 AC**（前 125 + #279）。#2215 未回報。
+
+## 2026-11-21 #2215 Accepted 與完整日結
+- #2215 Find the Difference of Two Arrays：Easy，**05:39 AC，A（暫定）**。C++ 兩個 set 去重與雙向差集，正確；Time O(m log(m+1)+n log(n+1))，Space O(m+n)。未明確回報演算法提示。已完成，不得再當全新題。
+- 11/21 #1091 35:30 AC B（Debug Hint 1）、#279 24:06 AC C（核心 DP Hint 2）、#2215 05:39 AC A（暫），**3/3 AC，總 65:15，累計 127 題不同 LeetCode AC**。上述最新結果取代先前「#2215 尚未回報／126 題」的中途資訊。
