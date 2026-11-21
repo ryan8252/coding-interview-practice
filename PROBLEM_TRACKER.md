@@ -316,3 +316,6 @@
 
 ## 2026-11-21 #1091 最終 Accepted 更正
 - #1091 Shortest Path in Binary Matrix：Medium，**35:30 AC、B**。原 31:21 TLE（visited pop 才標記）；經教練 Hint 1 Debug 引導後，用 `set<pair<int,int>>` 在 enqueue 時插入 visited，自行修正並 AC。核心 BFS 模型原本獨立，僅效率 Debug 需提示；本次不算完全無提示 AC，但 **不是演算法方向錯誤**。Time O(n² log n) / Space O(n²)。最新狀態已完成，不再作全新題。累計已確認不同題 **125**（124 + #1091）。#279、#2215 尚未回報。
+
+## 2026-11-21 #279 已嘗試與 Hint 1
+- #279 Perfect Squares：Medium，22:05 未解；C++ 一維 DP 只取最大平方數的貪婪式轉移，n=12 會算 4 而最佳是 3。提供 Hint 1 反例與比較不同平方數的引導；未提供完整公式或答案。**已實際嘗試／看提示，日後只能複習，不得當全新題**。未 AC，累計 125 不變。
