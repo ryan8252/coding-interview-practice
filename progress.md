@@ -931,3 +931,7 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 ## 2026-11-21 — 目前部分實際練習
 - #1091 Shortest Path in Binary Matrix：31:21 TLE，C++ 八方向 BFS，逐層計數邏輯基本正確；visited 到 pop 時才設置，造成同格多次入列、Queue 大量重複處理。使用者提出 bidirectional search 想法，尚未實行。超過 30 分鐘且要求提示，已提供 Hint 1（思考重複入列與標記時機）；未給完整答案，AC 未回報，不評最終 A/B/C/D，分類為 Implementation/Debug/效率問題而非缺乏 BFS 概念。
 - #279、#2215 尚未回報實際作答；累計 124 題明確不同 AC 不變。
+
+### 2026-11-21 #1091 35:30 AC 補充（本題最新結果）
+- #1091 Shortest Path in Binary Matrix：**35:30 AC，B**，原 31:21 TLE；教練 Hint 1 只引導 debugging 重複 enqueue 問題，使用者自行加 `set<pair<int,int>> visited` 並在 enqueue 時標記，約 4:09 後 AC。Algorithm Design（8-direction BFS + 層級最短路）獨立建立；Implementation/Debug 取得少量提示後成功，**不是核心演算法不會**。Time O(n² log n)／Space O(n²)，可用原地入列標記優化為 O(n²) time。
+- 本日已回報 1 題 AC；#279、#2215 尚未回報。已確認不同題目 AC **125**（前 124 + #1091）。以上取代先前同題「31:21 TLE／未 AC」的中途狀態。
