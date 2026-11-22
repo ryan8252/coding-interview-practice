@@ -139,3 +139,8 @@ Accepted: 40:00
 - [`notes/patterns.md`](notes/patterns.md)：整理可以重複使用的演算法 Pattern 與學到的觀念。
 - [`theory/`](theory/)：C++、資料結構、演算法、OS、Networking、Database、計組與 ML/CV 理論複習。
 - [`theory/progress.md`](theory/progress.md)：每日理論複習紀錄、評價與下一次複習安排。
+
+## 群聯 AI 系統驗證面試準備（2026/11）
+
+- [`11/20 Python 字串／Log Parser／邊界條件`](notes/Phison_AI_Verification_2026-11-20_Python.md)：逐步練習紀錄、最後 AC 程式、常見語法錯誤與測試。
+- [`11/21 PyTorch Tensor／Inference／CPU-GPU／模型驗證`](notes/Phison_AI_Verification_2026-11-21_PyTorch.md)：第 1～10 題與追問、建議回答、重要程式碼和待補強觀念（部分追問於 11/22 完成）。
