@@ -433,3 +433,11 @@ Day 24 觀察：
 ## 2026-11-21 #2215 AC 與最終日結（最新）
 - #2215 Find the Difference of Two Arrays：05:39 AC，C++ set 去重、雙向差集正確；O(m log(m+1)+n log(n+1)) time / O(m+n) space，A 暫定（演算法提示資訊未明確回報）。
 - 今日 #1091 35:30 AC B（BFS 模型獨立、visited Debug Hint 1）、#279 24:06 AC C（重要 DP 狀態轉移 Hint 2）、#2215 05:39 AC A 暫定；**3/3 AC、65:15、累計不同題明確 AC 127**。重點繼續放在陌生 Medium 的 Algorithm Design 無提示推導，並將 Debug 提示與核心建模提示分開。不因 3/3 AC 自動提高 Medium 無提示 AC 率。
+
+
+## 2026-11-22 最新能力狀態
+- #130 Medium 40:20 AC A（暫定）：自主貼出完整 DFS 連通分量、邊界 flag 與座標集合，O(mn log(mn)) time、O(mn) space。Graph traversal 與 component reasoning 有新正面證據；獨立性仍待確認。
+- #983 Medium 30:51 AC A（暫定）：按日 min-cost DP 轉移正確，O(D) time、O(366) space；DP state 設計有新正面證據，外部提示未知。
+- #345 Easy 08:54 AC A（暫定）：雙指標交換母音，O(n)/O(1)。
+- 今日 3/3 AC，總 80:05；已確認不同 AC **130**。沒有 Idea time、外部查詢、本人 Complexity 解釋與 Debug 歷程，不虛構；嚴格 Medium 無提示 AC 率暫不把 A（暫定）當確證。維持 2 Medium+1 Easy，Graph modeling/DP/Binary Search 動態追蹤。
+- 使用者最新規則：**回報單題已超過 30 分鐘且仍未解時直接給提示；超過 40 分鐘且仍未解時直接給完整答案**。無法在使用者未發訊息時自行監測或主動通知。單純花 40 分鐘但已 AC 不須補答案。
