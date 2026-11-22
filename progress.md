@@ -949,3 +949,15 @@ Day 56 三題均回報 AC。訓練重點：Path 回溯實作已有正面證據�
 ### 2026-11-21 #2215 AC 與完整日結
 - #2215 Find the Difference of Two Arrays：**05:39 AC，A（暫定）**。C++ set 去重並計算雙向差集，正確；Time O(m log(m+1)+n log(n+1))、Space O(m+n)。未回報演算法提示，獨立性暫待確認。
 - 本日 #1091 35:30 AC B（BFS 獨立、Debug Hint）、#279 24:06 AC C（核心 DP Hint 2）、#2215 05:39 AC A（暫）。**3/3 AC、65:15**，累計已確認不同 LeetCode **127 AC**。本段取代前述「#2215 尚未回報／累計126」的中途狀態。#1091 不應混同為模型不會；#279 核心轉移需補強。
+
+
+## 2026-11-22 — 實際作答（3/3 AC）
+| 題號 | 題名 | 難度 | 時間 | 本次評價 | 紀錄 |
+|---|---|---|---|---|---|
+| 130 | Surrounded Regions | Medium | 40:20 | A（暫定） | C++ DFS 搜尋每個 O 連通分量，res 收集座標，flag 記是否接觸邊界；無演算法 Hint 回報，但外部查詢未知。set visited 導致 O(mn log(mn)) time，O(mn) space；遞迴深度風險。 |
+| 983 | Minimum Cost For Tickets | Medium | 30:51 | A（暫定） | C++ 按日 DP；非旅遊日沿用 dp[i-1]，旅遊日取 1/7/30 日票最小成本，正確處理 max(0,i-k)；O(D) time / O(366) space，D<=365。外部提示與 Idea time 未回報。 |
+| 345 | Reverse Vowels of a String | Easy | 08:54 | A（暫定） | C++ 雙指標 + 固定大小 set<char> 母音判定，正確大小寫及交換；O(n) time / O(1) extra space。外部提示未回報。 |
+
+總計 **80:05**，三題均本人明確回報 AC；最新已確認不同 AC **130**（先前127 + 3）。A 均為暫定，未確認是否查演算法或核心提示，不得直接納入嚴格無提示 Medium AC 分子。
+
+能力面向：Concept：#130 正確辨認邊界連通性、#983 正確辨認最小費用決策；Algorithm Design：兩題皆有可執行完整模型；Implementation：C++ 三題 AC；Debug：未提供修正歷程，不評；Complexity：可由程式推導但使用者尚未親自解釋，不視為已驗證。最近 Graph connected-component 和 calendar DP 皆有正向新證據，仍須後續無提示確認獨立性。
