@@ -446,3 +446,9 @@ Day 24 觀察：
 ### 2026-11-22 後續確認：#130 / #983 獨立性（最新覆蓋先前暫定評價）
 - 使用者確認 #130 Surrounded Regions 與 #983 Minimum Cost For Tickets **核心演算法完全獨立想出**，Google **僅查語法**，無演算法提示。兩題本次評價由 **A（暫定）正式改為 A**，計入 Medium 無演算法提示 AC 分子。#130 40:20、#983 30:51，兩題均已 AC；Idea time、Debug 歷程與本人 complexity 解釋仍未知。
 - 語法/API 查詢不等於演算法 Hint；#345 獨立性未進一步確認，維持 A（暫定）。不同題 AC 總數仍為 **130**，不得重複加題數。歷史段落保留，依本段最新更正為準。
+
+
+## 2026-11-23 #802 實際嘗試（最新）
+- **#802 Find Eventual Safe States**：Medium，**44:25 未解出，D（本次獨立建模）**；C++ DFS 草稿，已自行想到 visited/state，但用鄰居索引 i 當節點 DFS(i)（應 graph[node][i]）、未正確區分搜尋中/安全/不安全、terminal 未快取、安全節點判斷變數 a 可能未初始化或沿用舊值。
+- 依使用者 **40 分鐘以上仍未解直接給完整答案**規則，教練已提供四狀態 DFS C++ 正解與 O(V+E) / O(V) 複雜度。這是外部完整答案，**本人未回報 AC，不可增加不同 AC 題數或計入無提示 Medium AC**；之後僅能作複習，優先驗證 cycle detection 與 memoized DFS 的狀態設計。
+- Concept 有 DFS/terminal 概念，Algorithm Design 狀態判定未正確建立，Implementation 鄰居索引及變數使用有錯；Debug、Idea time、本人 Complexity 理解未回報。#1049/#190 尚未回報，不視為完成。**累計確認不同題 AC 仍為 130**。
