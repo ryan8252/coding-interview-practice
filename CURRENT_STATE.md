@@ -459,3 +459,8 @@ Day 24 觀察：
 - **Complexity**：O(n*S) time / O(S) space，S=sum(stones)；為教練分析，使用者理解尚未驗證。
 - **能力**：Concept 分組最小差值模型是否獨立想出未知；Algorithm Design 受 Gemini 教學，暫 C；Implementation AC；Debug 未回報；本人 complexity 解釋未回報。待確認 Gemini 幫助程度，可修正評分。#190 尚未回報。
 - **2026-11-23 更新**：#1049 已確認 AC，與先前 130 題無重複前提下，**不同題 AC 暫更新為 131**；#802 仍未 AC。
+
+### 2026-11-23 #1049 Gemini 協助程度確認（覆蓋先前暫評）
+- 使用者明確確認：**Gemini 直接教「分成兩組、轉成 0/1 背包」的核心轉換，並幫忙寫好 DP 轉移式**。因此 #1049 27:18 AC 的 **C 評價正式確認**（非獨立演算法設計、非無提示 Medium AC）。
+- Concept 與 Algorithm Design 的核心均由外部協助；Implementation 程式 AC，但使用者獨立編寫程度未確認；Debug 與本人 Complexity 理解未回報。
+- #1049 已 AC，累計不同題 AC 仍 **131**，本次只修正獨立性，不重複加題。日後僅當複習，不當新題。
