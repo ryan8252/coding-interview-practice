@@ -359,3 +359,10 @@
 | 優先度 | # | 題目 | 狀態 | 複習目標 |
 |---|---:|---|---|---|
 | 高 | 802 | Find Eventual Safe States | 44:25 未解，已看完整 C++ DFS 解答；本人 AC 未確認 | 無提示獨立設計 DFS 搜尋中／安全／不安全狀態與 cycle 判斷；不當新題 |
+
+## #1049 Last Stone Weight II — Medium
+- **27:18 AC，C（暫評）**。使用者明確回報「Gemini 教我的」，未具體說明 Gemini 提供到哪一層；保守視為外部核心解法協助，**不得計入 Medium 無提示 AC**。此題已 AC，往後不得列為全新題。
+- **使用者提交程式**：先算 total_weight 與 target=total_weight/2；一維 dp[target+1]，逐石頭 s，倒序 i=target..s，dp[i]=max(dp[i],dp[i-s]+s)；return total_weight-2*dp[target]。程式正確，0/1 背包倒序防重複取石頭。
+- **Complexity**：O(n*S) time / O(S) space，S=sum(stones)；為教練分析，使用者理解尚未驗證。
+- **能力**：Concept 分組最小差值模型是否獨立想出未知；Algorithm Design 受 Gemini 教學，暫 C；Implementation AC；Debug 未回報；本人 complexity 解釋未回報。待確認 Gemini 幫助程度，可修正評分。#190 尚未回報。
+- **2026-11-23 更新**：#1049 已確認 AC，與先前 130 題無重複前提下，**不同題 AC 暫更新為 131**；#802 仍未 AC。
