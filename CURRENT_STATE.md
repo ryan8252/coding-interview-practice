@@ -452,3 +452,10 @@ Day 24 觀察：
 - **#802 Find Eventual Safe States**：Medium，**44:25 未解出，D（本次獨立建模）**；C++ DFS 草稿，已自行想到 visited/state，但用鄰居索引 i 當節點 DFS(i)（應 graph[node][i]）、未正確區分搜尋中/安全/不安全、terminal 未快取、安全節點判斷變數 a 可能未初始化或沿用舊值。
 - 依使用者 **40 分鐘以上仍未解直接給完整答案**規則，教練已提供四狀態 DFS C++ 正解與 O(V+E) / O(V) 複雜度。這是外部完整答案，**本人未回報 AC，不可增加不同 AC 題數或計入無提示 Medium AC**；之後僅能作複習，優先驗證 cycle detection 與 memoized DFS 的狀態設計。
 - Concept 有 DFS/terminal 概念，Algorithm Design 狀態判定未正確建立，Implementation 鄰居索引及變數使用有錯；Debug、Idea time、本人 Complexity 理解未回報。#1049/#190 尚未回報，不視為完成。**累計確認不同題 AC 仍為 130**。
+
+## #1049 Last Stone Weight II — Medium
+- **27:18 AC，C（暫評）**。使用者明確回報「Gemini 教我的」，未具體說明 Gemini 提供到哪一層；保守視為外部核心解法協助，**不得計入 Medium 無提示 AC**。此題已 AC，往後不得列為全新題。
+- **使用者提交程式**：先算 total_weight 與 target=total_weight/2；一維 dp[target+1]，逐石頭 s，倒序 i=target..s，dp[i]=max(dp[i],dp[i-s]+s)；return total_weight-2*dp[target]。程式正確，0/1 背包倒序防重複取石頭。
+- **Complexity**：O(n*S) time / O(S) space，S=sum(stones)；為教練分析，使用者理解尚未驗證。
+- **能力**：Concept 分組最小差值模型是否獨立想出未知；Algorithm Design 受 Gemini 教學，暫 C；Implementation AC；Debug 未回報；本人 complexity 解釋未回報。待確認 Gemini 幫助程度，可修正評分。#190 尚未回報。
+- **2026-11-23 更新**：#1049 已確認 AC，與先前 130 題無重複前提下，**不同題 AC 暫更新為 131**；#802 仍未 AC。
